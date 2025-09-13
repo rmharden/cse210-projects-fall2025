@@ -18,7 +18,7 @@ class Program
         Console.Write("What is your grade percentage? ");
         string userInput = Console.ReadLine();
         int gradePercentage = int.Parse(userInput);
-
-
+        // Test to be sure the user interaction and variable works.
+        Console.WriteLine($"{gradePercentage}");
     }
 }
