@@ -14,6 +14,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep2 World!");
+        // 1. Asks the user for their grade percentage and stores their input into a string varible. Then the string variable is converted into an interger by using the int.Parse() function.
+        Console.Write("What is your grade percentage? ");
+        string userInput = Console.ReadLine();
+        int gradePercentage = int.Parse(userInput);
+
+
     }
 }
