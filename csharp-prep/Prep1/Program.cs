@@ -1,3 +1,10 @@
+/*
+Rebekah Harden
+CSE 210 - Programming with Classes
+Brother Randal Booth
+September 13, 2025
+*/
+
 using System;
 
 class Program
