@@ -10,6 +10,9 @@ class Program
         Console.Write("What is your last name? ");
         string last = Console.ReadLine();
 
+        // adding this to create a space between questions asked to the user and the displayed message.
+        Console.WriteLine();
+
         Console.WriteLine($"Your name is {last}, {first} {last}.");
     }
 }
