@@ -1,7 +1,7 @@
 /*
 Rebekah Harden
 CSE 210 - Programming with Classes
-Brother Randal Booth
+Brother Randall Booth
 September 13, 2025
 */
 
