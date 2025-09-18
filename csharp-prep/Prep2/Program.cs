@@ -21,6 +21,10 @@ class Program
         // Test to be sure the user interaction and variable works.
         // Console.WriteLine($"{gradePercentage}");
 
+        // Step 3:
+        string letter = "";
+
+
         if (gradePercentage >= 70)
         {
             Console.WriteLine("Congratulations, you passed the class!");
@@ -30,6 +34,32 @@ class Program
             Console.WriteLine("I'm sorry. You did not pass.");
         }
 
+        // Step 3"
+        if (gradePercentage >= 90)
+        {
+            letter = "A";
+        }
+        else if (gradePercentage >= 80)
+        {
+            letter = "B";
+        }
+        else if (gradePercentage >= 70)
+        {
+            letter = "C";
+        }
+        else if (gradePercentage >= 60)
+        {
+            letter = "D";
+        }
+        else
+        {
+            letter = "F";
+        }
+
+        
+
+        // Step 1 & 2:
+        /*
         if (gradePercentage >= 90)
         {
             Console.WriteLine("Your grade is an A.");
@@ -50,5 +80,6 @@ class Program
         {
             Console.WriteLine("Your grade is a F.");
         }
+        */
     }
 }
