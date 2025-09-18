@@ -19,7 +19,16 @@ class Program
         string userInput = Console.ReadLine();
         int gradePercentage = int.Parse(userInput);
         // Test to be sure the user interaction and variable works.
-        Console.WriteLine($"{gradePercentage}");
+        // Console.WriteLine($"{gradePercentage}");
+
+        if (gradePercentage >= 70)
+        {
+            Console.WriteLine("Congratulations, you passed the class!");
+        }
+        else
+        {
+            Console.WriteLine("I'm sorry. You did not pass.");
+        }
 
         if (gradePercentage >= 90)
         {
@@ -35,11 +44,11 @@ class Program
         }
         else if (gradePercentage >= 60)
         {
-            Console.WriteLine("Your grade is a D. You did not pass.");
+            Console.WriteLine("Your grade is a D.");
         }
         else
         {
-            Console.WriteLine("Your grade is a F. You did not pass.");
+            Console.WriteLine("Your grade is a F.");
         }
     }
 }
