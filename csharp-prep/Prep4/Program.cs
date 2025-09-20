@@ -22,7 +22,19 @@ class Program
                 numbers.Add(response);
             }
         }
-        Console.WriteLine($"The sun is: {}");
+
+        // Finding the sum:
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
+
+        // Finding the Average:
+        int average = 0;
+        
+
+        Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The Average is: {}");
         Console.WriteLine($"The largest number is: {}");
     }
