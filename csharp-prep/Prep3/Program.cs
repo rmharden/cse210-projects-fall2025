@@ -4,6 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep3 World!");
+        // Step 1:
+        Console.Write("\nWhat is the magic number? ");
+        string userInput = Console.ReadLine();
+        int magicNumber = int.Parse(userInput);
+
+        // Test:
+        Console.WriteLine($"\nYou entered: {magicNumber}");
     }
 }
