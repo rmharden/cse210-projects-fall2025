@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         // Step 1:
-        Console.WriteLine("Enter a list of numbers, type 0 when finished.");
+        Console.WriteLine("\nEnter a list of numbers, type 0 when finished.");
 
         List<int> numbers = new List<int>();
 
@@ -32,7 +32,10 @@ class Program
         }
 
         // Finding the Average:
-        float average = sum / numbers.Count;
+        // This is originally what I had, but it didn't show the decimal:
+        // float average = sum / numbers.Count;
+        // I used the example from our lesson:
+        float average = ((float)sum) / numbers.Count;
 
         // Finding the Largest Number
         // place holder:
