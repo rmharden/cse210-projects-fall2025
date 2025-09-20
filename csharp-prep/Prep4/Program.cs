@@ -37,6 +37,13 @@ class Program
         // I used the example from our lesson:
         float average = ((float)sum) / numbers.Count;
 
+
+
+
+
+        // This is where I left off. Research how to find the largest number in a list:
+
+
         // Finding the Largest Number
         // place holder:
         int largest = 0;
