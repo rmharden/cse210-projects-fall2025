@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Step 1:
+
+        List<int> numbers;
+        numbers = new List<int>();
         
         int response = -1;
 
