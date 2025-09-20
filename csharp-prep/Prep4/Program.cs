@@ -22,7 +22,8 @@ class Program
                 numbers.Add(response);
             }
         }
-        
-        for (int i = 0; )
+        Console.WriteLine($"The sun is: {}");
+        Console.WriteLine($"The Average is: {}");
+        Console.WriteLine($"The largest number is: {}");
     }
 }
