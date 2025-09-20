@@ -16,7 +16,11 @@ class Program
 
         // Step 3
         Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1, 100);
+        // This is what I had but the example had (1, 101);
+        // int magicNumber = randomGenerator.Next(1, 100);
+        // changed 100 to 101 - is this because it won't display 100? if it won't, will the random generator never choose 1, then?
+        int magicNumber = randomGenerator.Next(1, 101);
+
 
         int guess = -1;
 
