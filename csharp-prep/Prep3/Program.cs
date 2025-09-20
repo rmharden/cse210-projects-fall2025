@@ -12,15 +12,16 @@ class Program
         // Test:
         // Console.WriteLine($"\nYou entered: {magicNumber}");
 
-        Console.WriteLine("What is your guess? ");
-        string userpInput2 = Console.ReadLine();
-        int guess = int.Parse(userpInput2);
+        int guess = -1;
 
-        do
+        while (guess != magicNumber)
         {
+            Console.WriteLine("What is your guess? ");
+            guess = int.Parse(Console.ReadLine());
+
             if (guess > magicNumber)
             {
-                Console.WriteLine("\nLower");
+                Console.WriteLine("Lower");
             }
             else if (guess < magicNumber)
             {
@@ -30,7 +31,7 @@ class Program
             {
                 Console.WriteLine("You guessed it!");
             }
-        } while (guess != magicNumber);
+        }
      
     }
 }
