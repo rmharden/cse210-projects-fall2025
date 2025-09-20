@@ -31,11 +31,15 @@ class Program
         }
 
         // Finding the Average:
-        int average = 0;
-        
+        float average = sum / numbers.Count;
+
+        // Finding the Largest Number
+        // place holder:
+        int largest = 0;
+
 
         Console.WriteLine($"The sum is: {sum}");
-        Console.WriteLine($"The Average is: {}");
-        Console.WriteLine($"The largest number is: {}");
+        Console.WriteLine($"The Average is: {average}");
+        Console.WriteLine($"The largest number is: {largest}");
     }
 }
