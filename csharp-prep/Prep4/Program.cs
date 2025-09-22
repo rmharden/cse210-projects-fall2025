@@ -34,19 +34,24 @@ class Program
         // Finding the Average:
         // This is originally what I had, but it didn't show the decimal:
         // float average = sum / numbers.Count;
+
         // I used the example from our lesson:
         float average = ((float)sum) / numbers.Count;
 
 
+        // Finding the Largest Number:
+        // I could not find how to do this through microsoft learn. I chose to see how the example did it.
 
+        // This part I don't understand. Why are we making the largest number be the first number in the list?
+        int largest = numbers[0];
 
-
-        // This is where I left off. Research how to find the largest number in a list:
-
-
-        // Finding the Largest Number
-        // place holder:
-        int largest = 0;
+        foreach (int number in numbers)
+        {
+            if (number > largest)
+            {
+                largest = number;
+            }
+        }
 
 
         Console.WriteLine($"The sum is: {sum}");
