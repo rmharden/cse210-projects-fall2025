@@ -17,7 +17,10 @@ class Program
         string userInput2 = Console.ReadLine();
         int userYear = int.Parse(userInput2);
 
-        Console.WriteLine($"{userName}, the square of your number is {userNumber}.");
+        // This works.
+        int squaredNumber = userNumber * userNumber;
+
+        Console.WriteLine($"{userName}, the square of your number is {squaredNumber}.");
         Console.WriteLine($"{userName}, you will turn {userYear} this year.");
 
     }
