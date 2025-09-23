@@ -11,9 +11,14 @@ class Program
 
         Console.Write("Please enter your favorite number: ");
         string userInput = Console.ReadLine();
-        int userNumaber = int.Parse(userInput);
-        
-        
+        int userNumber = int.Parse(userInput);
+
+        Console.Write("Please enter your the year you were born: ");
+        string userInput2 = Console.ReadLine();
+        int userYear = int.Parse(userInput2);
+
+        Console.WriteLine($"{userName}, the square of your number is {userNumber}.");
+        Console.WriteLine($"{userName}, you will turn {userYear} this year.");
 
     }
 }
