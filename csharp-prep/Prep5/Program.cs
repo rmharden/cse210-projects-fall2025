@@ -20,8 +20,11 @@ class Program
         // This works.
         int squaredNumber = userNumber * userNumber;
 
+        // This works too.
+        int userAge = 2025 - userYear;
+        
         Console.WriteLine($"{userName}, the square of your number is {squaredNumber}.");
-        Console.WriteLine($"{userName}, you will turn {userYear} this year.");
+        Console.WriteLine($"{userName}, you will turn {userAge} this year.");
 
     }
 }
