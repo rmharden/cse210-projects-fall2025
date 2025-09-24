@@ -11,8 +11,8 @@ class Program
 
         int squaredNumber = SquareNumber(userNumber);
 
-        int birthYear;
-        PromptUserBirthYear(out birthYear);
+        int userYear;
+        PromptUserBirthYear(out userYear);
 
         DisplayResult(userName, squaredNumber, userNumber);
     }
@@ -47,11 +47,16 @@ class Program
     static void PromptUserBirthYear(out int userYear)
     {
         Console.Write("Please enter the year you were born: ");
-        string userInput2 = Console.ReadLine();
-        userYear = int.Parse(userInput2);
+
+        // This is what I originally had:
+        // string userInput2 = Console.ReadLine();
+        // userYear = int.Parse(userInput2);
 
         // This works too. //I'm not sure this goes here. it doesn't go here.
         // int userAge = 2025 - userYear;
+
+        // trying the example in the lesson:
+        userYear = int.Parse(Console.ReadLine());
     }
 
     // The main function is saying it doesn't like the void, changing it to int.
