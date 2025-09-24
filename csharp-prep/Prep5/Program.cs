@@ -13,17 +13,24 @@ class Program
     {
         Console.Write("Please enter your name: ");
         string userName = Console.ReadLine();
-
+    }
+    static void PromptUserNumber()
+    {
         Console.Write("Please enter your favorite number: ");
         string userInput = Console.ReadLine();
         int userNumber = int.Parse(userInput);
-
-        Console.Write("Please enter your the year you were born: ");
+    }
+    static void PromptUserBirthYear()
+    {
+        Console.Write("Please enter the year you were born: ");
         string userInput2 = Console.ReadLine();
         int userYear = int.Parse(userInput2);
-
+    }
+    static void SquareNumber()
+    {
         // This works.
         int squaredNumber = userNumber * userNumber;
+    }
 
         // This works too.
         int userAge = 2025 - userYear;
