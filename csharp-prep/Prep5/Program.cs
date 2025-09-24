@@ -28,32 +28,38 @@ class Program
 
         return userName;
 
-
         // this is the code I hade before I made functions:
         // string userName = Console.ReadLine();
     }
-    static void PromptUserNumber()
+
+    // Also needed to remove void so I can return a value.
+    static int PromptUserNumber()
     {
         Console.Write("Please enter your favorite number: ");
         string userInput = Console.ReadLine();
         int userNumber = int.Parse(userInput);
+
+        return userNumber;
     }
-    static void PromptUserBirthYear()
+
+    // In our lesson, it says we have to pass a reference type to change the value of that type by passing out as a parameter.
+    static void PromptUserBirthYear(out int userYear)
     {
         Console.Write("Please enter the year you were born: ");
         string userInput2 = Console.ReadLine();
         int userYear = int.Parse(userInput2);
-        // This works too. //I'm not sure this goes here.
-        int userAge = 2025 - userYear;
+
+        // This works too. //I'm not sure this goes here. it doesn't go here.
+        // int userAge = 2025 - userYear;
     }
-    static void SquareNumber()
+    static void SquareNumber(int userNumber)
     {
         // This works.
         int squaredNumber = userNumber * userNumber;
     }
-    static void DisplayResult()
+    static void DisplayResult(string userName, int squaredNumber, int userYear)
     {
         Console.WriteLine($"{userName}, the square of your number is {squaredNumber}.");
-        Console.WriteLine($"{userName}, you will turn {userAge} this year.");
+        Console.WriteLine($"{userName}, you will turn {2025 - userYear} this year.");
     }
 }
