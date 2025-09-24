@@ -14,7 +14,9 @@ class Program
         int userYear;
         PromptUserBirthYear(out userYear);
 
-        DisplayResult(userName, squaredNumber, userNumber);
+        // I had the wrong reference in the parameters for the age.
+        // Changed it to the variable userYear.
+        DisplayResult(userName, squaredNumber, userYear);
     }
     static void DisplayWelcome()
     {
