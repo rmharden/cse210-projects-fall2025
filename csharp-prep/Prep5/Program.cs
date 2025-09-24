@@ -25,18 +25,17 @@ class Program
         Console.Write("Please enter the year you were born: ");
         string userInput2 = Console.ReadLine();
         int userYear = int.Parse(userInput2);
+        // This works too. //I'm not sure this goes here.
+        int userAge = 2025 - userYear;
     }
     static void SquareNumber()
     {
         // This works.
         int squaredNumber = userNumber * userNumber;
     }
-
-        // This works too.
-        int userAge = 2025 - userYear;
-
+    static void DisplayResult()
+    {
         Console.WriteLine($"{userName}, the square of your number is {squaredNumber}.");
         Console.WriteLine($"{userName}, you will turn {userAge} this year.");
-
     }
 }
