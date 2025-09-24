@@ -53,6 +53,8 @@ class Program
         // This works too. //I'm not sure this goes here. it doesn't go here.
         // int userAge = 2025 - userYear;
     }
+
+    // The main function is saying it doesn't like the void, changing it to int.
     static void SquareNumber(int userNumber)
     {
         // This works.
