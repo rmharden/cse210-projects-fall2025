@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        DisplayWelcome();
+
+        string userName = PropmptUserName();
     }
     static void DisplayWelcome()
     {
