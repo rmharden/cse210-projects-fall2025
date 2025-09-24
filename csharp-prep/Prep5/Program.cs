@@ -7,15 +7,30 @@ class Program
         DisplayWelcome();
 
         string userName = PropmptUserName();
+        int userNumber = PromptUserNumber();
+
+        int squaredNumber = SquareNumber(userNumber);
+
+        int birthYear;
+        PromptUserBirthYear(out birthYear);
+
+        DisplayResult(userName, squaredNumber, userNumber);
     }
     static void DisplayWelcome()
     {
         Console.WriteLine("Welcome to the program!");
     }
-    static void PropmptUserName()
+    // I had this as a void, but I need it to be a string. It wouldn't return a value as a void.
+    static string PropmptUserName()
     {
         Console.Write("Please enter your name: ");
         string userName = Console.ReadLine();
+
+        return userName;
+
+
+        // this is the code I hade before I made functions:
+        // string userName = Console.ReadLine();
     }
     static void PromptUserNumber()
     {
