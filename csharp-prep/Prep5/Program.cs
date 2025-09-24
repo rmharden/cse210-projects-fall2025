@@ -64,6 +64,7 @@ class Program
     static void DisplayResult(string userName, int squaredNumber, int userYear)
     {
         Console.WriteLine($"{userName}, the square of your number is {squaredNumber}.");
+        // This doesn't work. It displays a year, not what we need.
         Console.WriteLine($"{userName}, you will turn {2025 - userYear} this year.");
     }
 }
