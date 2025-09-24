@@ -36,6 +36,7 @@ class Program
     static int PromptUserNumber()
     {
         Console.Write("Please enter your favorite number: ");
+
         string userInput = Console.ReadLine();
         int userNumber = int.Parse(userInput);
 
@@ -47,7 +48,7 @@ class Program
     {
         Console.Write("Please enter the year you were born: ");
         string userInput2 = Console.ReadLine();
-        int userYear = int.Parse(userInput2);
+        userYear = int.Parse(userInput2);
 
         // This works too. //I'm not sure this goes here. it doesn't go here.
         // int userAge = 2025 - userYear;
