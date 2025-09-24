@@ -55,10 +55,11 @@ class Program
     }
 
     // The main function is saying it doesn't like the void, changing it to int.
-    static void SquareNumber(int userNumber)
+    static int SquareNumber(int userNumber)
     {
         // This works.
         int squaredNumber = userNumber * userNumber;
+        return squaredNumber;
     }
     static void DisplayResult(string userName, int squaredNumber, int userYear)
     {
