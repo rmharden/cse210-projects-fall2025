@@ -4,8 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
+    }
+    static void DisplayWelcome()
+    {
         Console.WriteLine("Welcome to the program!");
-
+    }
+    static void PropmptUserName()
+    {
         Console.Write("Please enter your name: ");
         string userName = Console.ReadLine();
 
@@ -22,7 +27,7 @@ class Program
 
         // This works too.
         int userAge = 2025 - userYear;
-        
+
         Console.WriteLine($"{userName}, the square of your number is {squaredNumber}.");
         Console.WriteLine($"{userName}, you will turn {userAge} this year.");
 
