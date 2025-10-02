@@ -34,7 +34,5 @@ class Program
         // Step 8:
         resume1._name = "Allison Rose";
         resume1.Display();
-
-
     }
 }
