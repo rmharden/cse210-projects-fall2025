@@ -25,25 +25,25 @@ class Program
             // 1. Write
             if (_userChoice == "1")
             {
-
+                Console.WriteLine($"You chose option 1");
             }
 
             // 2. Display
             else if (_userChoice == "2")
             {
-                Console.WriteLine($"You chose option {_userChoice}");
+                Console.WriteLine($"You chose option 2");
             }
 
             // 3. Load
             else if (_userChoice == "3")
             {
-                Console.WriteLine($"You chose option {_userChoice}");
+                Console.WriteLine($"You chose option 3");
             }
 
             // 4. Save
             else if (_userChoice == "4")
             {
-                Console.WriteLine($"You chose option {_userChoice}");
+                Console.WriteLine($"You chose option 4");
             }
 
             // 5. Quit
