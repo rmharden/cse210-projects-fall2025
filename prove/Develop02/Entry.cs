@@ -1,9 +1,9 @@
 using System;
 public class Entry
 {
-    string _date;
-    string _prompt;
-    string _entry;
+   public string _date;
+    public string _prompt;
+    public string _entry;
     public void Display()
     {
         Console.WriteLine($"Date: {_date} - Prompt: {_prompt}");

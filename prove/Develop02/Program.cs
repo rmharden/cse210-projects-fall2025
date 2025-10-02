@@ -1,3 +1,12 @@
+// Rebekah Harden
+// CSE 210: Programming with Classes
+// Brother Randall Booth
+// Finished 
+
+// W04 Prove: Developer
+// Unit 02 Develop: Journal Program
+
+
 using System;
 
 class Program
@@ -32,6 +41,9 @@ class Program
 
                 DateTime theCurrentTime = DateTime.Now;
                 string dateText = theCurrentTime.ToShortDateString();
+
+                Entry anEntry = new Entry();
+                anEntry._date = dateText;
             }
 
             // 2. Display
