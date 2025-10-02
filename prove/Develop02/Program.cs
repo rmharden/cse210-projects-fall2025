@@ -4,7 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        PromptGenerator _aPrompt = new PromptGenerator();
+        List<Entry> _entries = new List<Entry>();
 
         Console.WriteLine("\nWelcome to the Journal Program!");
 
@@ -31,9 +32,6 @@ class Program
 
                 DateTime theCurrentTime = DateTime.Now;
                 string dateText = theCurrentTime.ToShortDateString();
-
-                Entry anEntry = new Entry();
-                anEntry._date = _date;
             }
 
             // 2. Display
