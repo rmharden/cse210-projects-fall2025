@@ -17,10 +17,10 @@ class Program
         job2._endYear = 2023;
 
         // Step 5:
-        Console.WriteLine();
-        job1.Display();
-        job2.Display();
-        Console.WriteLine("");
+        // Console.WriteLine();
+        // job1.Display();
+        // job2.Display();
+        // Console.WriteLine("");
 
         //Step 7:
         Resume resume1 = new Resume();
