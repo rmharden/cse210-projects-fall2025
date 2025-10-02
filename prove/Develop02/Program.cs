@@ -44,6 +44,12 @@ class Program
 
                 Entry anEntry = new Entry();
                 anEntry._date = dateText;
+
+                anEntry._prompt = _aPrompt.RandomPromptGenerator();
+                Console.WriteLine(anEntry._prompt);
+                Console.Write("> ");
+
+                anEntry._entry = Console.ReadLine();               
             }
 
             // 2. Display
