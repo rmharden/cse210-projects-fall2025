@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        
+
         Console.WriteLine("\nWelcome to the Journal Program!");
 
 
@@ -26,6 +28,12 @@ class Program
             if (_userChoice == "1")
             {
                 Console.WriteLine($"You chose option 1");
+
+                DateTime theCurrentTime = DateTime.Now;
+                string dateText = theCurrentTime.ToShortDateString();
+
+                Entry anEntry = new Entry();
+                anEntry._date = _date;
             }
 
             // 2. Display
