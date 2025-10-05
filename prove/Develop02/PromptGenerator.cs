@@ -1,6 +1,6 @@
 public class PropmptGenerator
 {
-    List<string> _prompts = new List<string>();
+    public List<string> _prompts = new List<string>();
     public string GetRandomPrompt()
     {
         return "";
