@@ -8,6 +8,8 @@ class Program
         int userInput = -1;
 
         while (userInput != 5)
-        { }
+        {
+            Console.Write("Please select one of the following choices: ");
+        }
     }
 }
