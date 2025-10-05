@@ -7,6 +7,7 @@ class Program
         Console.WriteLine("Welcome to the Journal Program!");
         string userInput = "";
 
+        // This works so far.
         while (userInput != "5")
         {
             Console.WriteLine("Please select one of the following choices:");
