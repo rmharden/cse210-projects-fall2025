@@ -20,6 +20,30 @@ class Program
 
             Console.Write("What would you like to do? ");
             userInput = Console.ReadLine();
+            if (userInput == "1")
+            {
+                Console.WriteLine("You would like to Write.");
+            }
+            else if (userInput == "2")
+            {
+                Console.WriteLine("You would like to Display.");
+            }
+            else if (userInput == "3")
+            {
+                Console.WriteLine("You would like to Load.");
+            }
+            else if (userInput == "4")
+            {
+                Console.WriteLine("You would like to Save.");
+            }
+            else if (userInput == "5")
+            {
+                Console.WriteLine("Thank you for using the Journal Program.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid number.");
+            }
         }
     }
 }
