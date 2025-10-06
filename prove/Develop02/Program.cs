@@ -55,8 +55,8 @@ class Program
 
                 // This works:
                 // This is is here to test the code:
-                anEntry.Display();
-                Console.WriteLine("");
+                // anEntry.Display();
+                // Console.WriteLine("");
 
             }
             else if (userInput == "2")
