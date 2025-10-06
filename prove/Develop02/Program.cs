@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         PromptGenerator aPrompt = new PromptGenerator();
+        Journal aJournal = new Journal();
 
         // Changing this to a list:
         // Entry anEntry = new Entry();
@@ -57,6 +58,8 @@ class Program
                 // This is is here to test the code:
                 // anEntry.Display();
                 // Console.WriteLine("");
+
+                aJournal.AddEntry(anEntry);
 
             }
             else if (userInput == "2")
