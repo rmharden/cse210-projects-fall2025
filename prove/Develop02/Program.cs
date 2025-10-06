@@ -102,7 +102,7 @@ class Program
             }
             else if (userInput == "5")
             {
-                Console.WriteLine("Thank you for using the Journal Program.");
+                Console.WriteLine("Thank you for using the Journal Program.\n");
             }
             else
             {
