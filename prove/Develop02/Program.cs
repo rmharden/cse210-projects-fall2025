@@ -103,7 +103,7 @@ class Program
             }
             else if (userInput == "5")
             {
-                Console.WriteLine("The fives senses can improve our writing and enhance our experiences.\nTo display one of the five sense, press a key or type 'q' to return to the main menu.");
+                Console.WriteLine("The fives senses can improve our writing and enhance our experiences.\nTo display one of the five senses, press a key - or type 'q' to return to the main menu.");
 
                 string userInteraction = "";
                 while (userInteraction.ToLower() == "q")
