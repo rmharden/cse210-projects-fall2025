@@ -15,7 +15,7 @@ class Program
         string userInput = "";
 
         // This works so far.
-        while (userInput != "5")
+        while (userInput != "6")
         {
             Console.WriteLine("Please select one of the following choices:");
 
@@ -23,7 +23,8 @@ class Program
             Console.WriteLine("2. Display");
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
-            Console.WriteLine("5. Quit");
+            Console.WriteLine("5. Be Inspired");
+            Console.WriteLine("6. Quit");
 
             Console.Write("What would you like to do? ");
             userInput = Console.ReadLine();
@@ -101,6 +102,18 @@ class Program
                 aJournal.SaveToFile(filename);
             }
             else if (userInput == "5")
+            {
+                Console.WriteLine("The fives senses can improve our writing and enhance our experiences.\nTo display one of the five sense, press a key or type 'q' to return to the main menu.");
+
+                string userInteraction = "";
+                while (userInteraction.ToLower() == "q")
+                {
+                    userInteraction = Console.ReadLine();
+                    FiveSenses aSense = new FiveSenses();
+                    Console.WriteLine(aSense.GetRandomSense());
+                }
+            }
+            else if (userInput == "6")
             {
                 Console.WriteLine("Thank you for using the Journal Program.\n");
             }
