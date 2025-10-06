@@ -49,6 +49,10 @@ public class Journal
             anEntry._date = parts[0];
             anEntry._promptText = parts[1];
             anEntry._entryText = parts[2];
+
+
+            // I forgot to add the items to the list once they are loaded.
+            _entries.Add(anEntry);
         }
     }
 }
