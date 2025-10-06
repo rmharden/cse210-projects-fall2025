@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        Entry anEntry = new Entry();
+
         Console.WriteLine("Welcome to the Journal Program!");
         string userInput = "";
 
@@ -30,10 +32,17 @@ class Program
                 string dateText = theCurrentTime.ToShortDateString();
 
                 // This works:
-                Entry anEntry = new Entry();
+                // I think I need this outside of the loop, though, because I have other menu options that need to use the Entry instance.
+                // Entry anEntry = new Entry();
+               
                 anEntry._date = dateText;
 
                 // This works:
+                PropmptGenerator aPrompt = new PropmptGenerator();
+                Console.WriteLine(aPrompt.GetRandomPrompt());
+
+                // This works:
+                // This is is here to test the code:
                 anEntry.Display();
 
             }
