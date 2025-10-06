@@ -47,3 +47,7 @@ class Program
         }
     }
 }
+
+
+// https://video.byui.edu/media/t/1_vmeovorz
+// This video talks about setting up the "stubs" for each class.
