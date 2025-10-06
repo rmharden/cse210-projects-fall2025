@@ -93,6 +93,7 @@ class Program
                 Console.WriteLine("What is the filename?");
                 string filename = Console.ReadLine();
 
+                aJournal.SaveToFile(filename);
             }
             else if (userInput == "5")
             {
