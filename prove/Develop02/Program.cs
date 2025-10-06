@@ -68,6 +68,9 @@ class Program
                 //     Console.WriteLine(entry);
                 // }
 
+                // Test:
+                aJournal.DisplayAll();
+
             }
             else if (userInput == "2")
             {
