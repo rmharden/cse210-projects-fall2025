@@ -7,7 +7,7 @@ public class Journal
 
     public void AddEntry(Entry anEntry)
     {
-        // This is a guess. I'm trying to add our details entries from the main Program.cs to the list of entries.
+        // This is a guess. I'm trying to add the details of the entries from the main Program.cs to the list of entries.
         _entries.Add(anEntry);
     }
     public void SaveToFile(string file)
