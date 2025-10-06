@@ -30,7 +30,7 @@ public class Journal
     }
     public void DisplayAll()
     {
-        // This displays the current list, but it doesn't actually display the items in the file... How do I get the items in the file in this list??
+        // This displays the current list, but it doesn't actually display the items in the file... How do I get the items in the file in this list?? ** I forgot to add items to the list in the LoadFromFile method.
         foreach (Entry entry in _entries)
         {
             entry.Display();
