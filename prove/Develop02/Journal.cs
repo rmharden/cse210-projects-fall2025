@@ -31,6 +31,17 @@ public class Journal
     }
     public void LoadFromFile(string filename)
     {
+        // I'm not sure this is right. I am using the example from the lesson on reading a text file in C# from our lesson.
+        string[] lines = System.IO.File.ReadAllLines(filename);
 
+        foreach (string line in lines)
+        {
+            string[] parts = line.Split("|");
+
+            Entry anEntry = new Entry();
+            anEntry._date = parts[0];
+            anEntry._promptText = parts[1];
+            anEntry._entryText = parts[2];
+        }
     }
 }

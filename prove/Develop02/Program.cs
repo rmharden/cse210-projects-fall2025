@@ -83,7 +83,12 @@ class Program
             }
             else if (userInput == "3")
             {
-                Console.WriteLine("You would like to Load.");
+                // Console.WriteLine("You would like to Load.");
+
+                Console.WriteLine("What is the filename?");
+                string filename = Console.ReadLine();
+
+                aJournal.LoadFromFile(filename);
             }
             else if (userInput == "4")
             {
