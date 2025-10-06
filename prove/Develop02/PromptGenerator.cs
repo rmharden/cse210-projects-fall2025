@@ -1,6 +1,6 @@
 using System;
 
-public class PropmptGenerator
+public class PromptGenerator
 {
     public List<string> _prompts = new List<string>()
     {
