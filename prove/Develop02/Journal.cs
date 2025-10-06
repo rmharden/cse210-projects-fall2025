@@ -11,9 +11,16 @@ public class Journal
         // This is a guess. I'm trying to add the details of the entries from the main Program.cs to the list of entries.
         _entries.Add(anEntry);
     }
-    public void SaveToFile(string file)
+    public void SaveToFile(string filename)
     {
-
+        using (StreamWriter outputFile = new StreamWriter(filename))
+        {
+            // I don't think this is correct. How do I know how to do this? The lesson doesn't explain.
+            foreach (Entry entry in _entries)
+            {
+                outputFile.WriteLine(entry);
+            }            
+        }
     }
     public void DisplayAll()
     {
@@ -22,7 +29,7 @@ public class Journal
             entry.Display();
         }
     }
-    public void LoadFromFile(string file)
+    public void LoadFromFile(string filename)
     {
 
     }

@@ -87,7 +87,12 @@ class Program
             }
             else if (userInput == "4")
             {
-                Console.WriteLine("You would like to Save.");
+                // Test:
+                // Console.WriteLine("You would like to Save.");
+
+                Console.WriteLine("What is the filename?");
+                string filename = Console.ReadLine();
+
             }
             else if (userInput == "5")
             {
