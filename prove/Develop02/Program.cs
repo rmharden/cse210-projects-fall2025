@@ -60,10 +60,13 @@ class Program
                 // Console.WriteLine("");
 
                 aJournal.AddEntry(anEntry);
-                foreach (Entry entry in _entries)
-                {
-                    Console.WriteLine(entry);
-                }
+
+
+                // This doesn't work:
+                // foreach (Entry entry in _entries)
+                // {
+                //     Console.WriteLine(entry);
+                // }
 
             }
             else if (userInput == "2")

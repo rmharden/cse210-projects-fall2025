@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 public class Journal
 {
     public List<Entry> _entries = new List<Entry>();
+    Entry anEntry = new Entry();
 
     public void AddEntry(Entry anEntry)
     {
@@ -16,7 +17,10 @@ public class Journal
     }
     public void DisplayAll()
     {
-
+        foreach (Entry entry in _entries)
+        {
+            entry.Display();
+        }
     }
     public void LoadFromFile(string file)
     {
