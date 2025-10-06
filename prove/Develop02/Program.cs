@@ -22,7 +22,20 @@ class Program
             userInput = Console.ReadLine();
             if (userInput == "1")
             {
-                Console.WriteLine("You would like to Write.");
+                // Menu Test:
+                // Console.WriteLine("You would like to Write.");
+
+                // This works:
+                DateTime theCurrentTime = DateTime.Now;
+                string dateText = theCurrentTime.ToShortDateString();
+
+                // This works:
+                Entry anEntry = new Entry();
+                anEntry._date = dateText;
+
+                // This works:
+                anEntry.Display();
+
             }
             else if (userInput == "2")
             {
