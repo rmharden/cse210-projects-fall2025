@@ -16,10 +16,16 @@ public class Journal
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
             // I don't think this is correct. How do I know how to do this? The lesson doesn't explain.
+            // foreach (Entry entry in _entries)
+            // {
+            //     outputFile.WriteLine(entry);
+            // }            
+
+            // This is another guess, based on the need to split files:
             foreach (Entry entry in _entries)
             {
-                outputFile.WriteLine(entry);
-            }            
+                outputFile.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText}");
+            }
         }
     }
     public void DisplayAll()
