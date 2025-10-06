@@ -77,6 +77,8 @@ class Program
             {
                 // Test:
                 // Console.WriteLine("You would like to Display.");
+
+                // This works. - But, I think I am supposed to have this read from a file - is that right???
                 aJournal.DisplayAll();
             }
             else if (userInput == "3")
