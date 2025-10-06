@@ -43,9 +43,12 @@ class Program
                 // Moving this outside of the loop:
                 // PromptGenerator aPrompt = new PromptGenerator();
 
-                Console.WriteLine(aPrompt.GetRandomPrompt());
+                // Console.WriteLine(aPrompt.GetRandomPrompt());
 
                 anEntry._promptText = aPrompt.GetRandomPrompt();
+                // This makes a whole new prompt and does not display the same one that was saved as anEntry propmt.
+                // Console.WriteLine(aPrompt.GetRandomPrompt());
+                Console.WriteLine(anEntry._promptText);
 
                 Console.Write("> ");
                 anEntry._entryText = Console.ReadLine();
@@ -53,6 +56,7 @@ class Program
                 // This works:
                 // This is is here to test the code:
                 anEntry.Display();
+                Console.WriteLine("");
 
             }
             else if (userInput == "2")
