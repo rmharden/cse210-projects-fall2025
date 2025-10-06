@@ -69,12 +69,15 @@ class Program
                 // }
 
                 // Test:
-                aJournal.DisplayAll();
+                // moving this to the Display menu option... but I'm supposed to read from a file for that, right???
+                // aJournal.DisplayAll();
 
             }
             else if (userInput == "2")
             {
-                Console.WriteLine("You would like to Display.");
+                // Test:
+                // Console.WriteLine("You would like to Display.");
+                aJournal.DisplayAll();
             }
             else if (userInput == "3")
             {
