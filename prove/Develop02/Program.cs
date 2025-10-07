@@ -103,19 +103,17 @@ class Program
             }
             else if (userInput == "5")
             {
-                Console.WriteLine("The fives senses can improve our writing and enhance our experiences.\nTo display one of the five senses, press a key - or type 'q' to return to the main menu.");
+                Console.WriteLine("\nDescriptive writing can improve our journal entries. \nBy including descriptions of the the fives senses, our experiences become more than just statements in our journals. \nAs you read the prompt, think about what you can write in your entry that includes this sense. \nIf you don't want to use this sense in your journal entry, that's alright. You can skip it or move on to a different part of your journal.\nPress any key to continue.");
 
-                string userInteraction = "";
-                while (userInteraction.ToLower() == "q")
-                {
-                    userInteraction = Console.ReadLine();
-                    FiveSenses aSense = new FiveSenses();
-                    Console.WriteLine(aSense.GetRandomSense());
-                }
+                Console.ReadKey();
+
+                Console.Clear();
+                FiveSenses aSense = new FiveSenses();
+                Console.WriteLine($"\n{aSense.GetRandomSense()}\n");
             }
             else if (userInput == "6")
             {
-                Console.WriteLine("Thank you for using the Journal Program.\n");
+                Console.WriteLine("Thank you for using the Journal Program!\n");
             }
             else
             {

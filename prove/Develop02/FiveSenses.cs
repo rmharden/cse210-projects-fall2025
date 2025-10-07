@@ -4,11 +4,11 @@ public class FiveSenses
 {
     public List<string> _sensesPrompts = new List<string>()
     {
-        "What did you see?",
-        "What did you hear?",
-        "What was the scent around you?",
-        "What was the flavor you could taste?",
-        "What did the feel like? What was the texture?"
+        "Sight:  What did you see?",
+        "Sound:  What did you hear?",
+        "Smell:  Was there a scent?",
+        "Taste:  Could you taste anything? What was the flavor?",
+        "Touch:  What did it feel like? Was there a texture?"
     };
     public string GetRandomSense()
     {
