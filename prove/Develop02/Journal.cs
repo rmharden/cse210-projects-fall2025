@@ -51,7 +51,7 @@ public class Journal
             anEntry._entryText = parts[2];
 
 
-            // I forgot to add the items to the list once they are loaded.
+            // I forgot to add the items to the list once they are split.
             _entries.Add(anEntry);
         }
     }
