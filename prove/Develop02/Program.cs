@@ -1,3 +1,11 @@
+/*
+Rebekah Harden
+CSE 210: Programming with Classes
+Brother Randall Booth
+October 6, 2025
+*/
+
+
 using System;
 
 class Program
@@ -103,6 +111,7 @@ class Program
             }
             else if (userInput == "5")
             {
+                // This is part of the "Shows Creativity" requirments: 
                 Console.WriteLine("\nDescriptive writing can improve our journal entries. \nBy including descriptions of the the fives senses, our experiences become more than just statements in our journals. \nAs you read the prompt, think about what you can write in your entry that includes this sense. \nIf you don't want to use this sense in your journal entry, that's alright. You can skip it or move on to a different part of your journal.\nPress any key to continue.");
 
                 Console.ReadKey();
@@ -122,6 +131,13 @@ class Program
         }
     }
 }
+
+/* 
+Showing creativity:
+I created another menu option where the user can choose to be given a prompt where they will be aksed about one of the five senses. They can use that inspiration in their journal entry writing or pick another one.
+Choosing option 5 gives a description of how to use the random sense, asks the user to press a key to continue, and then it calls the FiveSenses class where it randomly chooses one of the senses to display to the user.
+The user is brought back to the main menu where they can choose any of the options provided.
+*/
 
 
 // https://video.byui.edu/media/t/1_vmeovorz

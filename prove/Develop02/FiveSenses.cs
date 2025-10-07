@@ -1,3 +1,5 @@
+// This is part of the "Shows Creativity" requirments: 
+
 using System;
 
 public class FiveSenses
