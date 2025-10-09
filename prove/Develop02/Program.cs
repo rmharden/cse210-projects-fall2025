@@ -19,7 +19,7 @@ class Program
         // Entry anEntry = new Entry();
         List<Entry> _entries = new List<Entry>();
 
-        Console.WriteLine("Welcome to the Journal Program!");
+        Console.WriteLine("\nWelcome to the Journal Program!");
         string userInput = "";
 
         // This works so far.
