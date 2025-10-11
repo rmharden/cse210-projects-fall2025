@@ -4,7 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Fraction f = new Fraction();
-        
+        // Step 4
+        Fraction f1 = new Fraction();
+
+        Fraction f2 = new Fraction(6);
+
+        Fraction f3 = new Fraction(6, 7);
+
+
     }
 }
