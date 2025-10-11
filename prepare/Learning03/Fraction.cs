@@ -1,46 +1,49 @@
 using System.Diagnostics;
 
-public class Fractions
+public class Fraction
 {
     private int _top;
     private int _bottom;
 
-    private void Fraction()
+    public Fraction()
     {
+        _top = 1;
+        _bottom = 1;
 
     }
-    private void Fraction(int wholeNumber)
+    public Fraction(int wholeNumber)
     {
-        wholeNumber = 1;
+        _top = wholeNumber;
+        _bottom = 1;
     }
 
-    private void Fraction(int bottom, int top)
+    public Fraction(int bottom, int top)
     {
         _bottom = bottom;
         _top = top;
     }
 
-    private int GetTop()
+    public int GetTop()
     {
         return _top;
     }
-    private void SetTop(int top)
+    public void SetTop(int top)
     {
         _top = top;
     }
-    private int GetBottom()
+    public int GetBottom()
     {
         return _bottom;
     }
-    private void SetBottom(int bottom)
+    public void SetBottom(int bottom)
     {
         _bottom = bottom;
     }
-    private string GetFractionString()
+    public string GetFractionString()
     {
         return "";
     }
-    private double GetDecimalValue()
+    public double GetDecimalValue()
     {
         return 0;
     }
