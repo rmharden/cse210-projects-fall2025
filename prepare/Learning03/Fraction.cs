@@ -21,7 +21,7 @@ public class Fraction
     }
 
     // Consturctor that has two parameters for both the numerator and the demominator.
-    public Fraction(int bottom, int top)
+    public Fraction(int top, int bottom)
     {
         _bottom = bottom;
         _top = top;
