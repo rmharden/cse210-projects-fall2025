@@ -27,6 +27,7 @@ public class Fraction
         _top = top;
     }
 
+    // Step 5:
     public int GetTop()
     {
         return _top;
@@ -43,12 +44,20 @@ public class Fraction
     {
         _bottom = bottom;
     }
+    // Step 6:
     public string GetFractionString()
     {
-        return "";
+        return $"{_top}/{_bottom}";
     }
     public double GetDecimalValue()
     {
-        return 0;
+        // I did not how to do this and I didn't find it in our lesson. I looked at the example to find out how to do this:
+        return (double)_top / (double)_bottom;
     }
 }
+
+// I looked up what this is and what I found is that the member variables are being converted to a double data type from the int data type.
+// return (double)_top/(double)_bottom;
+
+// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types
+// This site shows how to convert data types.
