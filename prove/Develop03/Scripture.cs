@@ -36,6 +36,9 @@ public class Scripture
         // Step 1: Need to find a set of visible words by using the Word class, and the Word Method, IsHidden." "If it returns false, it is visible."
 
         // Step 2: "Randomly select 'numberToHide' of those word...." This video by Chad Macbeth and the 7 week class of CSE 210 passes the parameter "int numberToHide" in the "HideRandomWords" method in the Scripture class; but, I don't see this mentioned anywhere in the 14 week course of CSE 210. I don't know if we're supposed to do that or not. Is it necessary?
+        // "Think about if-statements, call the IsVisible function, select a random set of words to hide and then go and hide just visible words."
+
+        // "Hide them with the Hide function."
 
     }
 
@@ -48,6 +51,7 @@ public class Scripture
     // Is this method the same thing as "Get Rendered Text"?
     public string DisplayScripture()
     {
+        // So, Brother Chad Macbeth is saying that the job of the Word class is to return the word as underscores or as a visible word. Does this mean that we call the Word class and make an instance in the Scripture class? If so, do I do that here? Would I need to iterate through the list here too, so it displays each word of the scripture verse? If so, does Word have another list that it is replaces words with underscores? I'm not sure how this works yet.
         return $"{_reference.DisplayReference()} {_verse}";
     }
 }
