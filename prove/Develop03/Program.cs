@@ -37,3 +37,6 @@ class Program
         Console.Clear();
     }
 }
+
+// Used this site to learn how to make the user input all lower case:
+// https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-9.0#system-string-tolower

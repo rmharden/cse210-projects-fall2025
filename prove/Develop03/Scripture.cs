@@ -20,6 +20,7 @@ public class Scripture
     public void HideWords()
     {
         // I don't know if this method is void yet. I put it this way for now.
+        // Is this were a random generator goes?
     }
 
     public bool IsCompletelyHidden()
