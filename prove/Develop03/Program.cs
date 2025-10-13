@@ -22,7 +22,7 @@ class Program
 
         Console.WriteLine($"{s1.DisplayScripture()}\n");
 
-        string _proverbs = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
+        string _proverbs = "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknoledge him, and he shall direct thy paths.";
         Reference r2 = new Reference("Proverbs", 3, 5, 6);
         Scripture s2 = new Scripture(r2, _proverbs);
         
