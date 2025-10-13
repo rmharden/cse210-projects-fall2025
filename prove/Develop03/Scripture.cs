@@ -1,9 +1,11 @@
 public class Scripture
 {
     private Reference _reference;
+    private string _verse;
     public Scripture(Reference reference, string verse)
     {
         _reference = reference;
+        _verse = verse;
     }
     // public string GetVerse()
     // {
@@ -15,6 +17,6 @@ public class Scripture
     // }
     public string DisplayScripture()
     {
-        return $"{_reference.DisplayReference()}";
+        return $"{_reference.DisplayReference()} {_verse}";
     }
 }
