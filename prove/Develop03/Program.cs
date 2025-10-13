@@ -14,6 +14,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03: Scripture Memorizer World!");
+        Scripture john316 = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+        Console.WriteLine(john316.DisplayScripture());
     }
 }
