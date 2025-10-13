@@ -11,9 +11,8 @@ public class Word
 
     public Word(string verse)
     {
-        // I think this would need a string parameter of the scripture verse to pass through so it can split the words and display the words of the scripture verse.
+        // I think this would need a string parameter of the scripture verse to pass through so it can split the words and display the words of the scripture verse. I'm not sure this is where we split the scripture verse because the design activity says that we split it in the Scripture class.
         _verse = verse;
-        // does this go here?
         _isHidden = false;
     }
     public void Hide()
@@ -34,7 +33,10 @@ public class Word
     public string GetRenderedText()
     {
         // Does this have an if statement too?
-        return "";
+        // return "";
+
+        // Testing bool _isHidden:
+        return _verse;
     }
 
 }
