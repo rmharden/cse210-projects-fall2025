@@ -15,12 +15,28 @@ public class Scripture
         _verse = verse;
 
         // The guidance from a Mentor section says that I need to split the verse in the constructor.
+        // Chad Macbeth walks through this example to split from last week's lesson:
+        string name = "John Deere";
+        string[] words = name.Split(" ");
+        Console.WriteLine(words[0]);
+        Console.WriteLine(words[1]);
+
+        // "split and then loop through each word"
+            // "create a word object and put it into _words"
+
     }
 
     public void HideWords()
     {
         // I don't know if this method is void yet. I put it this way for now.
         // Is this were a random generator goes?
+
+        // "Set the state of a randomly selected group of words to be hidden"
+
+        // Step 1: Need to find a set of visible words by using the Word class, and the Word Method, IsHidden." "If it returns false, it is visible."
+
+        // Step 2: "Randomly select 'numberToHide' of those word...." This video and the 7 week class of CSE 210 passes int numberToHide in the HideRandomWords method in the Scripture class, but I don't see the mentioned anywhere in the 14 week course of CSE 210. I don't know if we're supposed to do that or not. Is it necessary?
+
     }
 
     public bool IsCompletelyHidden()
