@@ -1,3 +1,5 @@
+// The Reference class keeps track of the book, chapter, and verse information.
+
 public class Reference
 {
     private string _book;

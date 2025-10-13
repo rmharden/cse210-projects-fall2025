@@ -1,3 +1,5 @@
+// The Scripture class hides words and gets the rendered display of the text.
+
 public class Scripture
 {
     private Reference _reference;
@@ -7,6 +9,8 @@ public class Scripture
         _reference = reference;
         _verse = verse;
     }
+
+
     public string DisplayScripture()
     {
         return $"{_reference.DisplayReference()} {_verse}";
