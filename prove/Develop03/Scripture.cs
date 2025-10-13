@@ -29,8 +29,6 @@ public class Scripture
         return false;
     }
 
-    
-
     // Is this method the same thing as "Get Rendered Text"?
     public string DisplayScripture()
     {

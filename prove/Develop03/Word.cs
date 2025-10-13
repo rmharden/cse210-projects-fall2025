@@ -27,7 +27,9 @@ public class Word
     public bool IsHidden()
     {
         // I am not sure about this.
-        return true;
+        // return true;
+        // Chad Macbeth has this set to false:
+        return false;
     }
     public string GetRenderedText()
     {
@@ -39,3 +41,5 @@ public class Word
 
 // How to code boolean operators:
 // https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool
+// Brother Chad Macbeth from BYU-I Videos shows how to work with boolean operators in this video:
+// https://video.byui.edu/media/t/1_sv3gxgzs
