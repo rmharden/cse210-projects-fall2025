@@ -2,12 +2,19 @@
 
 public class Scripture
 {
+    // Does this class need a list?
+    // Do I put this here too??
+    private List<Word> _words;
     private Reference _reference;
     private string _verse;
+
     public Scripture(Reference reference, string verse)
     {
+        List<Word> _words = new List<Word>();
         _reference = reference;
         _verse = verse;
+
+        // The guidance from a Mentor section says that I need to split the verse in the constructor.
     }
 
     public void HideWords()
