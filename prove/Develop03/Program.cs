@@ -40,3 +40,6 @@ class Program
 
 // Used this site to learn how to make the user input all lower case:
 // https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-9.0#system-string-tolower
+
+// Brother Chad Macbeth sets up the stubs for the program, the scripture memorizer, in this BYU-Idaho video:
+// https://video.byui.edu/media/t/1_sv3gxgzs
