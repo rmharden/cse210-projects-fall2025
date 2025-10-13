@@ -7,6 +7,7 @@ public class Word
     // Does this class need constuctors and/or a list?
     // I don't know what attributes should be in this class yet.
     private string _verse;
+    // This doesn't like this: It's telling me I'm not using. Do I need getters and setters?
     private bool _isHidden;
 
     public Word(string verse)
@@ -17,7 +18,7 @@ public class Word
     }
     public void Hide()
     {
-
+        _isHidden = true;
     }
     public void Show()
     {
@@ -36,7 +37,19 @@ public class Word
         // return "";
 
         // Testing bool _isHidden:
-        return _verse;
+
+        // Returns the word if visible or returs underscores ___ if hidden.
+        //return _verse;
+
+        // This is a guess... I'm not sure how to do this yet.
+        if (_isHidden == false)
+        {
+            return _verse;
+        }
+        else
+        {
+            return "_";
+        }
     }
 
 }
