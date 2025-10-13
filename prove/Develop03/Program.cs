@@ -43,3 +43,4 @@ class Program
 
 // Brother Chad Macbeth sets up the stubs for the program, the Scripture Memorizer, in this BYU-Idaho video:
 // https://video.byui.edu/media/t/1_sv3gxgzs
+// This video offers help for the boolean operator.
