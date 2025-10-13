@@ -36,3 +36,6 @@ public class Word
     }
 
 }
+
+// How to code boolean operators:
+// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool
