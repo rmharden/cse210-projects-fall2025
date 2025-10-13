@@ -35,7 +35,7 @@ public class Scripture
 
         // Step 1: Need to find a set of visible words by using the Word class, and the Word Method, IsHidden." "If it returns false, it is visible."
 
-        // Step 2: "Randomly select 'numberToHide' of those word...." This video and the 7 week class of CSE 210 passes int numberToHide in the HideRandomWords method in the Scripture class, but I don't see the mentioned anywhere in the 14 week course of CSE 210. I don't know if we're supposed to do that or not. Is it necessary?
+        // Step 2: "Randomly select 'numberToHide' of those word...." This video by Chad Macbeth and the 7 week class of CSE 210 passes the parameter "int numberToHide" in the "HideRandomWords" method in the Scripture class; but, I don't see this mentioned anywhere in the 14 week course of CSE 210. I don't know if we're supposed to do that or not. Is it necessary?
 
     }
 
