@@ -18,18 +18,22 @@ class Program
         Reference r1 = new Reference("John", 3, 6);
         Scripture s1 = new Scripture(r1, _john);
 
-        Console.Clear();
-
-        Console.WriteLine($"{s1.DisplayScripture()}\n");
-
         string _proverbs = "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknoledge him, and he shall direct thy paths.";
         Reference r2 = new Reference("Proverbs", 3, 5, 6);
         Scripture s2 = new Scripture(r2, _proverbs);
 
-        Console.WriteLine($"{s2.DisplayScripture()}\n");
+        string userInput = "";
+        while (userInput.ToLower() != "quit")
+        {
+            Console.Clear();
 
-        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-        Console.ReadKey();
+            Console.WriteLine($"{s1.DisplayScripture()}\n");
+
+            Console.WriteLine($"{s2.DisplayScripture()}\n");
+
+            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+            userInput = Console.ReadLine();
+        }
         Console.Clear();
     }
 }
