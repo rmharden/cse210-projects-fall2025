@@ -1,5 +1,7 @@
 // The Word class keeps track of a single word and whether it is shown or hidden... Is this where a random generator goes??
 
+// How do you hide words and display them with the underscore, _, per letter? It would go here, in this class, right?
+
 public class Word
 {
     // Does this class need constuctors and/or a list?
