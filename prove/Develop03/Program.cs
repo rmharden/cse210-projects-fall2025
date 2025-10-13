@@ -19,7 +19,13 @@ class Program
         Scripture s1 = new Scripture(r1, _john);
 
         Console.Clear();
-        
+
         Console.WriteLine($"{s1.DisplayScripture()}\n");
+
+        string _proverbs = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
+        Reference r2 = new Reference("Proverbs", 3, 5, 6);
+        Scripture s2 = new Scripture(r2, _proverbs);
+        
+        Console.WriteLine($"{s2.DisplayScripture()}\n");
     }
 }
