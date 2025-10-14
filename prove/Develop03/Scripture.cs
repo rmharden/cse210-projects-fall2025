@@ -62,7 +62,10 @@ public class Scripture
     {
         // So, Brother Chad Macbeth is saying that the job of the Word class is to return the word as underscores or as a visible word. Does this mean that we call the Word class and make an instance in the Scripture class? If so, do I do that here? Would I need to iterate through the list here too, so it displays each word of the scripture verse? If so, does Word have another list that it is replaces words with underscores? I'm not sure how this works yet.
 
-        
+
         return $"{_reference.DisplayReference()} {_verse}";
     }
 }
+
+// This website shows how to create instances of types like objects.
+// https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects
