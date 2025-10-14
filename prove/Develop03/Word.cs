@@ -22,7 +22,7 @@ public class Word
     }
     public void Show()
     {
-        _isHidden = true;
+        _isHidden = false;
 
     }
     public bool IsHidden()
@@ -32,7 +32,6 @@ public class Word
         // Chad Macbeth has this set to false:
         // return false;
         return _isHidden;
-
     }
     public string GetRenderedText()
     {
