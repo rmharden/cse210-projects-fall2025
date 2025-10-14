@@ -41,20 +41,19 @@ public class Word
 
         // Testing bool _isHidden:
 
-        // Returns the word if visible or returs underscores ___ if hidden.
+        // Returns the word if visible or returns underscores ___ if hidden.
         //return _verse;
 
         // This is a guess... I'm not sure how to do this yet.
         if (_isHidden)
         {
-            return "_";
+            return new string ('_', _verse.Length);
         }
         else
         {
             return _verse;
         }
     }
-
 }
 
 // How to code boolean operators:
@@ -63,7 +62,27 @@ public class Word
 // Brother Chad Macbeth from BYU-I Videos shows how to work with boolean operators in this video:
 // https://video.byui.edu/media/t/1_sv3gxgzs
 
-// This shows how to use String Contructors. It "initializes a new instance of the String class." 
+/* This shows how to use String Contructors. It "initializes a new instance of the String class." The examples make a string from the  "Char" data type. From my understanding, '_' is a Char data type and in order for the program to change each Word data type that's split from strings, we have to get the length of that Word data type and return it as a string, so we make a new String constructor like:
+
+String(Char, Int32)
+
+
+This works for what I need because, Int32 is allocating memory, right?, and I'm trying to get the length of the word... right? so the following is how I write this because it makes a new string constructor and it tells the program that the underscores are a Char data type, but it changes it to a string data type, right?, and then I am going to return the number of letters in the word but allocating the length of the _verse to memory, right?
+return new string ('_', _verse.Length); 
+*/
 // https://learn.microsoft.com/en-us/dotnet/api/system.string.-ctor?view=net-9.0#system-string-ctor(system-char*-system-int32-system-int32)
 
 
+// This one shows an example of the char data type with an array or a list of letters. It sets it up like an instance of a class... But I don't think it is... I'm not sure I completely understand. It looks like this:
+/*
+// Use the String constructor only when creating
+// a string from a char*, char[], or sbyte*. See
+// System.String documentation for details.
+char[] letters = { 'A', 'B', 'C' };
+string alphabet = new string(letters);
+*/
+// https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/
+
+
+// This site shows the String.Length Property:
+// https://learn.microsoft.com/en-us/dotnet/api/system.string.length?view=net-9.0
