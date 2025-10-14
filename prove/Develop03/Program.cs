@@ -29,10 +29,14 @@ class Program
         Reference r2 = new Reference("Proverbs", 3, 5, 6);
         Scripture s2 = new Scripture(r2, _proverbs);
 
+        // If we can handle different scriptures, what do we do for the two scriptures? Will it be a random scripture each time the user starts the program? If so, how do I do this? Is this like the random prompt generator in the Journal program?
+
+        
+
         // loop:
         // "display, hide, check if we need to quit"
         // "Use the functions in the Scripture class. We don't call anything else. Everything we need is in the Scripture class."
-             
+
         string userInput = "";
         while (userInput.ToLower() != "quit")
         {
