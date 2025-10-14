@@ -10,20 +10,27 @@ public class Scripture
 
     public Scripture(Reference reference, string verse)
     {
-        List<Word> _words = new List<Word>();
+        _words = new List<Word>();
         _reference = reference;
         _verse = verse;
 
         // The guidance from a Mentor section says that I need to split the verse in the constructor.
         // Chad Macbeth walks through this example to split from last week's lesson:
-        string name = "John Deere";
-        string[] words = name.Split(" ");
-        Console.WriteLine(words[0]);
-        Console.WriteLine(words[1]);
+        // string name = "John Deere";
+        // string[] words = name.Split(" ");
+        // Console.WriteLine(words[0]);
+        // Console.WriteLine(words[1]);
 
         // "split and then loop through each word"
-            // "create a word object and put it into _words"
+        // "create a word object and put it into _words"
 
+        /*
+        This splits the scripture verse into string objects between spaces. It then adds each new Word object made from the split words by removing spaces and adds them to the _words list as Word objects.
+        */
+        foreach (string word in verse.Split(" "))
+        {
+            _words.Add(new Word(word));
+        }
     }
 
     public void HideWords()
