@@ -22,26 +22,30 @@ class Program
 
 
         string _john = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
-            Reference r1 = new Reference("John", 3, 6);
-            Scripture s1 = new Scripture(r1, _john);
+        Reference r1 = new Reference("John", 3, 6);
+        Scripture s1 = new Scripture(r1, _john);
 
-            string _proverbs = "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknoledge him, and he shall direct thy paths.";
-            Reference r2 = new Reference("Proverbs", 3, 5, 6);
-            Scripture s2 = new Scripture(r2, _proverbs);
+        string _proverbs = "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknoledge him, and he shall direct thy paths.";
+        Reference r2 = new Reference("Proverbs", 3, 5, 6);
+        Scripture s2 = new Scripture(r2, _proverbs);
 
-            string userInput = "";
-            while (userInput.ToLower() != "quit")
-            {
-                Console.Clear();
-
-                Console.WriteLine($"{s1.DisplayScripture()}\n");
-
-                Console.WriteLine($"{s2.DisplayScripture()}\n");
-
-                Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-                userInput = Console.ReadLine();
-            }
+        // loop:
+        // "display, hide, check if we need to quit"
+        // "Use the functions in the Scripture class. We don't call anything else. Everything we need is in the Scripture class."
+             
+        string userInput = "";
+        while (userInput.ToLower() != "quit")
+        {
             Console.Clear();
+
+            Console.WriteLine($"{s1.DisplayScripture()}\n");
+
+            Console.WriteLine($"{s2.DisplayScripture()}\n");
+
+            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+            userInput = Console.ReadLine();
+        }
+        Console.Clear();
         }
     }
 
