@@ -47,7 +47,12 @@ public class Scripture
         // Step 2: "Randomly select 'numberToHide' of those word...." This video by Chad Macbeth and the 7 week class of CSE 210 passes the parameter "int numberToHide" in the "HideRandomWords" method in the Scripture class; but, I don't see this mentioned anywhere in the 14 week course of CSE 210. I don't know if we're supposed to do that or not. Is it necessary?
         // "Think about if-statements, call the IsVisible function, select a random set of words to hide and then go and hide just visible words."
 
+        Random randomWord = new Random();
+        
+
         // "Hide them with the Hide function."
+        // Is this an if statement?
+
 
     }
 
