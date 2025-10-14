@@ -48,7 +48,8 @@ public class Scripture
         // "Think about if-statements, call the IsVisible function, select a random set of words to hide and then go and hide just visible words."
 
         Random randomWord = new Random();
-        
+        int i = randomWord.Next(); // What goes in the parentheses for this method? 
+
 
         // "Hide them with the Hide function."
         // Is this an if statement?
