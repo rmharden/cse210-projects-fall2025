@@ -19,7 +19,8 @@ class Program
         // Word w = new Word("truth");
         // Console.WriteLine(w.GetRenderedText());
 
-
+        // making a random generator for any use:
+        Random newRandom = new Random();
 
         string _john = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
         Reference r1 = new Reference("John", 3, 6);
@@ -31,7 +32,14 @@ class Program
 
         // If we can handle different scriptures, what do we do for the two scriptures? Will it be a random scripture each time the user starts the program? If so, how do I do this? Is this like the random prompt generator in the Journal program?
 
+        List<string> _chosenScipture = new List<string>();
+        _chosenScipture.Add(_john);
+        _chosenScipture.Add(_proverbs);
+
+        int scriptureIndex = newRandom.Next(_chosenScipture.Count);
+
         
+
 
         // loop:
         // "display, hide, check if we need to quit"
@@ -42,9 +50,9 @@ class Program
         {
             Console.Clear();
 
-            Console.WriteLine($"{s1.DisplayScripture()}\n");
+            // Console.WriteLine($"{s1.DisplayScripture()}\n");
 
-            Console.WriteLine($"{s2.DisplayScripture()}\n");
+            // Console.WriteLine($"{s2.DisplayScripture()}\n");
 
             Console.WriteLine("Press enter to continue or type 'quit' to finish:");
             userInput = Console.ReadLine();
