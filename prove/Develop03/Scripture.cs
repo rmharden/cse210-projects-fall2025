@@ -15,7 +15,9 @@ public class Scripture
         _verse = verse;
 
         // The guidance from a Mentor section says that I need to split the verse in the constructor.
+
         // Chad Macbeth walks through this example to split from last week's lesson:
+
         // string name = "John Deere";
         // string[] words = name.Split(" ");
         // Console.WriteLine(words[0]);
