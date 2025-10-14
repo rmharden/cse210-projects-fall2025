@@ -22,6 +22,7 @@ public class Word
     }
     public void Show()
     {
+        _isHidden = true;
 
     }
     public bool IsHidden()
@@ -29,7 +30,9 @@ public class Word
         // I am not sure about this.
         // return true;
         // Chad Macbeth has this set to false:
-        return false;
+        // return false;
+        return _isHidden;
+
     }
     public string GetRenderedText()
     {
@@ -42,13 +45,13 @@ public class Word
         //return _verse;
 
         // This is a guess... I'm not sure how to do this yet.
-        if (_isHidden == false)
+        if (_isHidden)
         {
-            return _verse;
+            return "_";
         }
         else
         {
-            return "_";
+            return _verse;
         }
     }
 
@@ -56,5 +59,11 @@ public class Word
 
 // How to code boolean operators:
 // https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool
+
 // Brother Chad Macbeth from BYU-I Videos shows how to work with boolean operators in this video:
 // https://video.byui.edu/media/t/1_sv3gxgzs
+
+// This shows how to use String Contructors. It "initializes a new instance of the String class." 
+// https://learn.microsoft.com/en-us/dotnet/api/system.string.-ctor?view=net-9.0#system-string-ctor(system-char*-system-int32-system-int32)
+
+
