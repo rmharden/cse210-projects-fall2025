@@ -23,7 +23,6 @@ public class Word
     public void Show()
     {
         _isHidden = false;
-
     }
     public bool IsHidden()
     {

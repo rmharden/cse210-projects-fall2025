@@ -60,7 +60,11 @@ public class Scripture
     public bool IsCompletelyHidden()
     {
         // I'm guessing here. I don't know how to do this. Is this where an if statement goes. Also, I don't understand booleans very well, but I think a boolean goes here.
-        return false;
+        foreach (Word _word in _words)
+        {
+            if (!_word.IsHidden()) return false;
+        }
+        return true;
     }
 
     // Is this method the same thing as "Get Rendered Text"?
@@ -68,8 +72,12 @@ public class Scripture
     {
         // So, Brother Chad Macbeth is saying that the job of the Word class is to return the word as underscores or as a visible word. Does this mean that we call the Word class and make an instance in the Scripture class? If so, do I do that here? Would I need to iterate through the list here too, so it displays each word of the scripture verse? If so, does Word have another list that it is replaces words with underscores? I'm not sure how this works yet.
 
-
-        return $"{_reference.DisplayReference()} {_verse}";
+        string _outputDisplay = _reference.DisplayReference() + " ";
+        foreach (Word _word in _words)
+        {
+            _outputDisplay = _outputDisplay + _word.GetRenderedText();
+        }
+        return _outputDisplay;
     }
 }
 
