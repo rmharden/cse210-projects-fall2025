@@ -72,7 +72,7 @@ class Program
 
             Console.WriteLine(_chosenScripture.DisplayScripture());
 
-            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+            Console.WriteLine("\nPress enter to continue or type 'quit' to finish:");
             userInput = Console.ReadLine();
         }
         Console.Clear();
