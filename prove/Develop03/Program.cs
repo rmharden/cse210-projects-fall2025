@@ -75,9 +75,10 @@ class Program
             Console.WriteLine("Press enter to continue or type 'quit' to finish:");
             userInput = Console.ReadLine();
         }
-            Console.Clear();
-            }
+        Console.Clear();
+        Console.WriteLine(_chosenScripture.DisplayScripture());
         }
+    }
 
 // Used this site to learn how to make the user input all lower case:
 // https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-9.0#system-string-tolower
