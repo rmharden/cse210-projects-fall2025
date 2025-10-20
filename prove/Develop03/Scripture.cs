@@ -75,7 +75,7 @@ public class Scripture
         string _outputDisplay = _reference.DisplayReference() + " ";
         foreach (Word _word in _words)
         {
-            _outputDisplay = _outputDisplay + _word.GetRenderedText();
+            _outputDisplay = _outputDisplay + _word.GetRenderedText() + " ";
         }
         return _outputDisplay;
     }
