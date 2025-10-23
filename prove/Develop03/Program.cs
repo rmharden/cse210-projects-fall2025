@@ -62,7 +62,7 @@ class Program
         // "Use the functions in the Scripture class. We don't call anything else. Everything we need is in the Scripture class."
 
         string userInput = "";
-        while (userInput.ToLower() != "quit")
+        while (!_chosenScripture.IsCompletelyHidden() && userInput.ToLower() != "quit")
         {
             Console.Clear();
 
@@ -71,6 +71,10 @@ class Program
             // Console.WriteLine($"{s2.DisplayScripture()}\n");
 
             Console.WriteLine(_chosenScripture.DisplayScripture());
+            //_chosenScripture.HideWords();
+
+            int numberToHide = newRandom.Next(1, 4);
+            _chosenScripture.HideWords(numberToHide);
 
             Console.WriteLine("\nPress enter to continue or type 'quit' to finish:");
             userInput = Console.ReadLine();
