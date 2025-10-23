@@ -5,7 +5,11 @@ public class Scripture
     private List<Word> _words;
     public Scripture(Reference reference, string verse)
     {
-        
 
+
+    }
+    public string DisplayScripture()
+    {
+        return "";
     }
 }
