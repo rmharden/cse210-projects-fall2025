@@ -9,4 +9,8 @@ public class WordTest
     {
         _verse = verse;
     }
+    public string DisplayWord()
+    {
+        return _verse;
+    }
 }

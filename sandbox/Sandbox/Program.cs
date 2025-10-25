@@ -5,8 +5,12 @@ class Program
     static void Main(string[] args)
     {
         Random _random = new Random();
+
         ReferenceTest referenceTest1 = new ReferenceTest("John", 3, 16);
         ReferenceTest referenceTest2 = new ReferenceTest("Proverbs", 3, 5, 6);
+
+
+        WordTest _aWord = new WordTest("test");
 
         List<ReferenceTest> _scriptureChoices = new List<ReferenceTest>
         {
@@ -19,13 +23,14 @@ class Program
         Console.Clear();
 
         string userInput = "";
-        while (userInput != "quit")
+        while (userInput.ToLower() != "quit")
         {
 
             // Console.WriteLine($"\n{referenceTest1.DisplayReference()}\n");
             // Console.WriteLine($"\n{referenceTest2.DisplayReference()}\n");
 
             Console.WriteLine($"\n{_chosenReference.DisplayReference()}\n");
+            Console.WriteLine(_aWord.DisplayWord());
 
             Console.WriteLine("Press enter to continue or type 'quit' to finish:");
 
