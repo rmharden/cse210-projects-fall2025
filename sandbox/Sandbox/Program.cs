@@ -6,6 +6,12 @@ class Program
     {
         ReferenceTest referenceTest1 = new ReferenceTest("John", 3, 16);
         ReferenceTest referenceTest2 = new ReferenceTest("Proverbs", 3, 5, 6);
+
+        List<ReferenceTest> _scriptureChoice = new List<ReferenceTest>
+        {
+            referenceTest1,
+            referenceTest2
+        };
         
         string userInput = "";
         while (userInput != "quit")
