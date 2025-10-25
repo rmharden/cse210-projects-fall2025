@@ -8,6 +8,15 @@ public class ReferenceTest
     public ReferenceTest(string book, int chapter, int startVerse)
     {
         _book = book;
-        
+        _chapter = chapter;
+        _startVerse = startVerse;
+        _endVerse = startVerse;
+    }
+    public ReferenceTest(string book, int chapter, int startVerse, int endVerse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _startVerse = startVerse;
+        _endVerse = endVerse;        
     }
 }
