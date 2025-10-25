@@ -15,7 +15,7 @@ public class ScriptureTest
 
         // The Mircorsoft Learn site had ' ' instead of " " in the example, does that matter? I thought " " was a string and ' ' is a Char data type. If I have ' ' will there be problems in my code later?
 
-        string[] _splitWords = _verse.Split(' ');
+        string[] _splitWords = _verse.Split(" ");
         for (int i = 0; i < _splitWords.Length; i++)
         {
             WordTest _aWord = new WordTest(_splitWords[i]);
@@ -76,7 +76,7 @@ public class ScriptureTest
         {
             _displayedRefScripture = _displayedRefScripture + _aWord.DisplayWord() + " ";
         }
-        return _displayedRefScripture;
+        return _displayedRefScripture.Trim();
     }
 }
 

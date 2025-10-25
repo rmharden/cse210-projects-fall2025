@@ -25,11 +25,12 @@ class Program
 
         ScriptureTest _chosenScripture = _scriptureChoices[_random.Next(_scriptureChoices.Count)];
 
-        Console.Clear();
+        // Console.Clear();
 
         string userInput = "";
         while (userInput.ToLower() != "quit")
         {
+            // Console.Clear();
 
             // Console.WriteLine($"\n{referenceTest1.DisplayReference()}\n");
             // Console.WriteLine($"\n{referenceTest2.DisplayReference()}\n");
@@ -43,7 +44,7 @@ class Program
             Console.Clear();
         }
         Console.Clear();
-        Console.WriteLine(_chosenScripture.DisplayScripture());
+        //Console.WriteLine(_chosenScripture.DisplayScripture());
     }
 }
 
