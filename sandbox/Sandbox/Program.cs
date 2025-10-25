@@ -14,7 +14,7 @@ class Program
 
         ScriptureTest _john316 = new ScriptureTest(referenceTest1, "For God so loved the world, that He gave his only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life.");
 
-        ScriptureTest _proverbs356 = new ScriptureTest(referenceTest1, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknoledge Him, and He shall direct thy paths.");
+        ScriptureTest _proverbs356 = new ScriptureTest(referenceTest2, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknoledge Him, and He shall direct thy paths.");
 
 
         List<ScriptureTest> _scriptureChoices = new List<ScriptureTest>()
