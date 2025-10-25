@@ -50,10 +50,21 @@ public class ScriptureTest
             Console.Clear();
             Console.Write(_words + " ");
         }
+        for (int i = 0; i < 3; i++)
+        {
+            int _randomWordIndex = _aNewRandom.Next(_wordsNotHidden.Count);
+            int _wordsNotHiddenIndex = _wordsNotHidden[_randomWordIndex];
+            _words[_wordsNotHiddenIndex].Hide();
+            _wordsNotHidden.RemoveAt(_randomWordIndex);
+        }
     }
     public bool IsCompletelyHidden()
     {
-        return false;
+        foreach (WordTest _aWord in _words)
+        {
+            if (_aWord.IsHidden() == false) return false;
+        }
+        return true;
     }
 
     public string DisplayScripture()
