@@ -10,15 +10,20 @@ class Program
         ReferenceTest referenceTest2 = new ReferenceTest("Proverbs", 3, 5, 6);
 
 
-        WordTest _aWord = new WordTest("test");
+        //WordTest _aWord = new WordTest("test");
 
-        List<ReferenceTest> _scriptureChoices = new List<ReferenceTest>
+        ScriptureTest _john316 = new ScriptureTest(referenceTest1, "For God so loved the world, that He gave his only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life.");
+
+        ScriptureTest _proverbs356 = new ScriptureTest(referenceTest1, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknoledge Him, and He shall direct thy paths.");
+
+
+        List<ScriptureTest> _scriptureChoices = new List<ScriptureTest
         {
-            referenceTest1,
-            referenceTest2
+            _john316,
+            _proverbs356
         };
 
-        ReferenceTest _chosenReference = _scriptureChoices[_random.Next(_scriptureChoices.Count)];
+        ScriptureTest _chosenScripture = _scriptureChoices[_random.Next(_scriptureChoices.Count)];
 
         Console.Clear();
 
@@ -29,8 +34,8 @@ class Program
             // Console.WriteLine($"\n{referenceTest1.DisplayReference()}\n");
             // Console.WriteLine($"\n{referenceTest2.DisplayReference()}\n");
 
-            Console.WriteLine($"\n{_chosenReference.DisplayReference()}\n");
-            Console.WriteLine(_aWord.DisplayWord());
+            Console.WriteLine($"\n{_chosenScripture.DisplayScripture()}\n");
+            // Console.WriteLine(_aWord.DisplayWord());
 
             Console.WriteLine("Press enter to continue or type 'quit' to finish:");
 

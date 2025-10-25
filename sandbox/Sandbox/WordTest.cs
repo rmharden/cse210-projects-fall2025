@@ -32,7 +32,7 @@ public class WordTest
         // return false;
         return _isHidden;
     }
-    public string GetRenderedText()
+    public string DisplayWord()
     {
         // Does this have an if statement too?
         // return "";

@@ -43,7 +43,8 @@ public class Scripture
     public string DisplayScripture()
     {
         // Display reference and all the words. The Word class has a job to make the word hidden or not
-        return $"{_reference.DisplayReference()} ";
+        string _displayedScripture = _reference.DisplayReference() + "\n";
+        
     }
 }
 
