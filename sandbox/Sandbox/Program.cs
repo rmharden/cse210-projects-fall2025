@@ -17,7 +17,7 @@ class Program
         ScriptureTest _proverbs356 = new ScriptureTest(referenceTest1, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknoledge Him, and He shall direct thy paths.");
 
 
-        List<ScriptureTest> _scriptureChoices = new List<ScriptureTest
+        List<ScriptureTest> _scriptureChoices = new List<ScriptureTest>()
         {
             _john316,
             _proverbs356
