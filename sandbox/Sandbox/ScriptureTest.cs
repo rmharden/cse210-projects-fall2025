@@ -21,7 +21,6 @@ public class ScriptureTest
             WordTest _aWord = new WordTest(_splitWords[i]);
             _words.Add(_aWord);
         }
-
     }
     public void HideWords()
     {
@@ -39,7 +38,18 @@ public class ScriptureTest
         Random _aNewRandom = new Random();
 
         List<int> _wordsNotHidden = new List<int>();
-
+        for (int i = 0; i < _words.Count; i++)
+        {
+            if (_words[i].IsHidden() == false)
+            {
+                _wordsNotHidden.Add(i);
+            }
+        }
+        if (_wordsNotHidden.Count == 0)
+        {
+            Console.Clear();
+            Console.Write(_words + " ");
+        }
     }
     public bool IsCompletelyHidden()
     {
@@ -55,7 +65,6 @@ public class ScriptureTest
         {
             _displayedRefScripture = _displayedRefScripture + _aWord.DisplayWord() + " ";
         }
-
         return _displayedRefScripture;
     }
 }
@@ -66,6 +75,8 @@ Sites I used for help:
 https://learn.microsoft.com/en-us/dotnet/csharp/how-to/parse-strings-using-split
 
 https://video.byui.edu/media/t/1_sv3gxgzs
+
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements
 
 
 

@@ -43,6 +43,7 @@ class Program
             Console.Clear();
         }
         Console.Clear();
+        Console.WriteLine(_chosenScripture.DisplayScripture());
     }
 }
 
