@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Sandbox World!");
+        string userInput = "";
+        while (userInput != "quit")
+        {
+            
+        }
     }
 }
