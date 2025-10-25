@@ -1,5 +1,5 @@
 // The Scripture class hides words and gets the rendered display of the text.
-
+/*
 public class Scripture
 {
     // Does this class need a list?
@@ -29,10 +29,11 @@ public class Scripture
         /*
         This splits the scripture verse into string objects between spaces. It then adds each new Word object made from the split words by removing spaces and adds them to the _words list as Word objects.
         */
+        /*
         foreach (string word in verse.Split(" "))
-        {
-            _words.Add(new Word(word));
-        }
+{
+    _words.Add(new Word(word));
+}
     }
 
     public void HideWords(int numberToHide)
