@@ -54,7 +54,7 @@ public class Scripture
         for (int i = 0; i < 5; i++)
         {
             int randomAvailableWordIndex = _aNewRandom.Next(_wordsNotHidden.Count);
-            // This gets a CLR/System.ArgumentOutOfRangeExeption for the John scripture. I don't know how to fix this.
+            // This gets a CLR/System.ArgumentOutOfRangeExeption for the John scripture. I don't know how to fix this. Now I get it on the Proverb scripture and not the John scripture when I changed it from 3 to 5.
             // Now I am getting an error with proverbs when I changed it to 5 instead.
             int _wordIndex = _wordsNotHidden[randomAvailableWordIndex];
             _words[_wordIndex].Hide();
