@@ -14,75 +14,59 @@ class Program
 {
     static void Main(string[] args)
     {
+        Random _random = new Random();
 
-        //         // Test code for Word. Creating a word object:
-        //         // Word w = new Word("truth");
-        //         // Console.WriteLine(w.GetRenderedText());
-
-        //         // making a random generator for any use:
-        //         Random newRandom = new Random();
-
-        //         string _john = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
-        //         Reference r1 = new Reference("John", 3, 6);
-        //         Scripture s1 = new Scripture(r1, _john);
-
-        //         string _proverbs = "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknoledge him, and he shall direct thy paths.";
-        //         Reference r2 = new Reference("Proverbs", 3, 5, 6);
-        //         Scripture s2 = new Scripture(r2, _proverbs);
-
-        //         // If we can handle different scriptures, what do we do for the two scriptures? Will it be a random scripture each time the user starts the program? If so, how do I do this? Is this like the random prompt generator in the Journal program?
-
-        //         List<string> _chosenScipture = new List<string>();
-        //         _chosenScipture.Add(_john);
-        //         _chosenScipture.Add(_proverbs);
+        Reference referenceTest1 = new Reference("John", 3, 16);
+        Reference referenceTest2 = new Reference("Proverbs", 3, 5, 6);
 
 
-        //         Scripture chosenScripture = _chosenScipture[newRandom.Next(_chosenScripture.Count)];
+        //WordTest _aWord = new WordTest("test");
+
+        Scripture _john316 = new Scripture(referenceTest1, "For God so loved the world, that He gave his only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life.");
+
+        Scripture _proverbs356 = new Scripture(referenceTest2, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknoledge Him, and He shall direct thy paths.");
 
 
-        Random newRandom = new Random();
-
-        Reference r1 = new Reference("John", 3, 16);
-        Scripture _john = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
-
-        Reference r2 = new Reference("Proverbs", 3, 5, 6);
-        Scripture _proverbs = new Scripture(r2, "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknoledge him, and he shall direct thy paths");
-
-        List<Scripture> _scriptures = new List<Scripture>()
+        List<Scripture> _scriptureChoices = new List<Scripture>()
         {
-            _john, _proverbs
+            _john316,
+            _proverbs356
         };
 
-        Scripture _chosenScripture = _scriptures[newRandom.Next(_scriptures.Count)];
+        Scripture _chosenScripture = _scriptureChoices[_random.Next(_scriptureChoices.Count)];
 
-        // Console.WriteLine(_chosenScripture.DisplayScripture());
-
-        // loop:
-        // "display, hide, check if we need to quit"
-        // "Use the functions in the Scripture class. We don't call anything else. Everything we need is in the Scripture class."
+        Console.Clear();
 
         string userInput = "";
-        while (!_chosenScripture.IsCompletelyHidden() && userInput.ToLower() != "quit")
+        while (_chosenScripture.IsCompletelyHidden() == false && userInput.ToLower().Trim() != "quit")
         {
-            Console.Clear();
+            // Console.Clear();
 
-            // Console.WriteLine($"{s1.DisplayScripture()}\n");
+            // Console.WriteLine($"\n{referenceTest1.DisplayReference()}\n");
+            // Console.WriteLine($"\n{referenceTest2.DisplayReference()}\n");
 
-            // Console.WriteLine($"{s2.DisplayScripture()}\n");
+            Console.WriteLine($"\n{_chosenScripture.DisplayScripture()}\n");
+            // Console.WriteLine(_aWord.DisplayWord());
 
-            Console.WriteLine(_chosenScripture.DisplayScripture());
-            //_chosenScripture.HideWords();
+            _chosenScripture.HideWords();
 
-            int numberToHide = newRandom.Next(1, 4);
-            _chosenScripture.HideWords(numberToHide);
+            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
 
-            Console.WriteLine("\nPress enter to continue or type 'quit' to finish:");
             userInput = Console.ReadLine();
+            Console.Clear();
         }
         Console.Clear();
-        Console.WriteLine(_chosenScripture.DisplayScripture());
-        }
+        // Console.WriteLine(_chosenScripture.DisplayScripture());
     }
+}
+
+/* 
+// Sites I used for help:
+ 
+// https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0
+// https://video.byui.edu/media/t/1_sv3gxgzs
+// https://video.byui.edu/media/t/1_vmeovorz
+//  */
 
 // Used this site to learn how to make the user input all lower case:
 // https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-9.0#system-string-tolower
