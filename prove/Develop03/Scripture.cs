@@ -1,55 +1,92 @@
 public class Scripture
 {
+    private List<Word> _words;
     private Reference _reference;
     private string _verse;
-    private List<Word> _words;
+
     public Scripture(Reference reference, string verse)
     {
-        // Split up the words in text and store each as a word object in the list _words:
-
-        _verse = verse;
         _reference = reference;
+        _verse = verse;
+        _words = new List<Word>();
 
-        string name = "John Deere";
-        string[] words = name.Split(" ");
-        Console.WriteLine(words[0]);
 
-        // Split and then loop each word
-        // Create a word object and put it into _words
-        string[] aWord = verse.Split(" ");
-        foreach (string word in aWord)
+        // The Mircorsoft Learn site had ' ' instead of " " in the example, does that matter? I thought " " was a string and ' ' is a Char data type. If I have ' ' will there be problems in my code later?
+
+        string[] _splitWords = _verse.Split(" ");
+        for (int i = 0; i < _splitWords.Length; i++)
         {
-            _words.Add(new Word(word));
+            Word _aWord = new Word(_splitWords[i]);
+            _words.Add(_aWord);
         }
-
-
     }
-    public void HideWords(int numberToHide)
+    public void HideWords()
     {
-        //Most difficult one.
+        /*
+        My notes from Brother Chad Macbeth's video on BYUI Videos:
+        Step 1: Need to find a set of visible words with WordTest IsHidden. If returns false it's visible.
 
-        // Set a state of randomly selected group of words to be hidden.
+        Step 2: Randomly select number to hide. Loops, if statements, call isvisible function, start a randomly selected group of owrds and it doesn't matter if they are hidden at first.
 
-        // Need to find a set of visible words = if ishidden in Word returns false it is hidden.
+        Step 3: How do you hide them? Use the Hide Function.
 
-        // Need to randomly select 'numberToHide' of those words. 
+        Step 4:
 
-        // To hide them, use the Hide function
+        Call GetDisplayText()
+        */
+        Random _aNewRandom = new Random();
+
+        List<int> _wordsNotHidden = new List<int>();
+        for (int i = 0; i < _words.Count; i++)
+        {
+            if (_words[i].IsHidden() == false)
+            {
+                _wordsNotHidden.Add(i);
+            }
+        }
+        if (_wordsNotHidden.Count == 0)
+        {
+            Console.Clear();
+            Console.Write(_words + " ");
+        }
+        for (int i = 0; i < 3; i++)
+        {
+            int _randomWordIndex = _aNewRandom.Next(_wordsNotHidden.Count);
+            // This gets a CLR/System.ArgumentOutOfRangeExeption for the John scripture. I don't know how to fix this.
+            int _wordsNotHiddenIndex = _wordsNotHidden[_randomWordIndex];
+            _words[_wordsNotHiddenIndex].Hide();
+            _wordsNotHidden.RemoveAt(_randomWordIndex);
+        }
     }
     public bool IsCompletelyHidden()
     {
-        return false;
+        foreach (Word _aWord in _words)
+        {
+            if (_aWord.IsHidden() == false) return false;
+        }
+        return true;
     }
+
     public string DisplayScripture()
     {
-        // Display reference and all the words. The Word class has a job to make the word hidden or not
-        string _displayedScripture = _reference.DisplayReference() + "\n";
-        return "";
-        
+        // Displays Reference, all the Words. It doesn't worry if it is hidden, that is a job in the Word class.
+        // This going to call the DisplayWord from the WordTest class.
+        string _displayedRefScripture = _reference.DisplayReference() + "\n";
+        foreach (Word _aWord in _words)
+        {
+            _displayedRefScripture = _displayedRefScripture + _aWord.DisplayWord() + " ";
+        }
+        return _displayedRefScripture.Trim();
     }
 }
 
-
-// https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/iterators
-
-// https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.add?view=net-9.0
+/* 
+Sites I used for help:
+ 
+https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0
+https://video.byui.edu/media/t/1_sv3gxgzs
+https://video.byui.edu/media/t/1_vmeovorz
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/iterators
+https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.add?view=net-9.0
+https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.removeat?view=net-9.0
+*/

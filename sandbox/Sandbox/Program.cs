@@ -51,9 +51,9 @@ class Program
 }
 
 /* 
-// Sites I used for help:
+Sites I used for help:
  
-// https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0
-// https://video.byui.edu/media/t/1_sv3gxgzs
-// https://video.byui.edu/media/t/1_vmeovorz
-//  */
+https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0
+https://video.byui.edu/media/t/1_sv3gxgzs
+https://video.byui.edu/media/t/1_vmeovorz
+ */
