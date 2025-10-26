@@ -49,13 +49,16 @@ public class Scripture
             Console.Clear();
             Console.Write(_words + " ");
         }
-        for (int i = 0; i < 3; i++)
+        // The 3 is giving the error: The number 5 worked better for the John scripture.
+        // I don't like this whole section here: I'm not sure how to do this bettter:
+        for (int i = 0; i < 5; i++)
         {
-            int _randomWordIndex = _aNewRandom.Next(_wordsNotHidden.Count);
+            int randomAvailableWordIndex = _aNewRandom.Next(_wordsNotHidden.Count);
             // This gets a CLR/System.ArgumentOutOfRangeExeption for the John scripture. I don't know how to fix this.
-            int _wordsNotHiddenIndex = _wordsNotHidden[_randomWordIndex];
-            _words[_wordsNotHiddenIndex].Hide();
-            _wordsNotHidden.RemoveAt(_randomWordIndex);
+            // Now I am getting an error with proverbs when I changed it to 5 instead.
+            int _wordIndex = _wordsNotHidden[randomAvailableWordIndex];
+            _words[_wordIndex].Hide();
+            _wordsNotHidden.RemoveAt(randomAvailableWordIndex);
         }
     }
     public bool IsCompletelyHidden()
