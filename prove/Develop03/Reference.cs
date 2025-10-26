@@ -6,12 +6,13 @@ public class Reference
     private int _chapter;
     private int _startVerse;
     private int _endVerse;
+
     public Reference(string book, int chapter, int startVerse)
     {
         _book = book;
         _chapter = chapter;
         _startVerse = startVerse;
-        _endVerse = _startVerse;
+        _endVerse = startVerse;
     }
     public Reference(string book, int chapter, int startVerse, int endVerse)
     {
@@ -22,13 +23,13 @@ public class Reference
     }
     public string DisplayReference()
     {
-        if (_endVerse != _startVerse)
+        if (_endVerse == _startVerse)
         {
-            return $"{_book} {_chapter}:{_startVerse}-{_endVerse}";
+            return $"{_book} {_chapter}:{_startVerse}";
         }
         else
         {
-            return $"{_book} {_chapter}:{_startVerse}";
+            return $"{_book} {_chapter}:{_startVerse}-{_endVerse}";
         }
     }
 }
