@@ -25,10 +25,10 @@ class Program
 
         ScriptureTest _chosenScripture = _scriptureChoices[_random.Next(_scriptureChoices.Count)];
 
-        // Console.Clear();
+        Console.Clear();
 
         string userInput = "";
-        while (userInput.ToLower() != "quit")
+        while (_chosenScripture.IsCompletelyHidden() == false && userInput.ToLower().Trim() != "quit")
         {
             // Console.Clear();
 
@@ -38,23 +38,22 @@ class Program
             Console.WriteLine($"\n{_chosenScripture.DisplayScripture()}\n");
             // Console.WriteLine(_aWord.DisplayWord());
 
+            _chosenScripture.HideWords();
+
             Console.WriteLine("Press enter to continue or type 'quit' to finish:");
 
             userInput = Console.ReadLine();
             Console.Clear();
         }
         Console.Clear();
-        //Console.WriteLine(_chosenScripture.DisplayScripture());
+        // Console.WriteLine(_chosenScripture.DisplayScripture());
     }
 }
 
 /* 
-
-Sites I used for help:
+// Sites I used for help:
  
-https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0
-https://video.byui.edu/media/t/1_sv3gxgzs
-https://video.byui.edu/media/t/1_vmeovorz
-
-
- */
+// https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0
+// https://video.byui.edu/media/t/1_sv3gxgzs
+// https://video.byui.edu/media/t/1_vmeovorz
+//  */
