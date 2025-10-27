@@ -1,3 +1,7 @@
+// This is not complete. There is something wrong when the program runs and it doesn't display the correct information. Fix this before submitting the assignment!
+
+
+
 using System;
 
 class Program
