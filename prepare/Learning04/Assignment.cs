@@ -10,6 +10,6 @@ public class Assignment
     }
     public string GetSummary()
     {
-        return;
+        return _studentName + "-" + _type;
     }
 }
