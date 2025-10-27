@@ -9,6 +9,8 @@ public class MathAssignment : Assignment
     }
     public string GetHomeWorkList()
     {
-        return GetSummary() +"\n" + _textbookSection + " " + _problems;
+        // This is what I had before seeing the sample solution:
+        // return GetSummary() +"\n" + _textbookSection + " " + _problems;
+        return $"Section {_textbookSection} Problems {_problems}";
     } 
 }

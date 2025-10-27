@@ -8,6 +8,18 @@ public class Assignment
         _studentName = studentName;
         _topic = topic;
     }
+
+    // This is from the sample solution:
+    public string GetStudentName()
+    {
+        return _studentName;
+    }
+    public string GetTopic()
+    {
+        return _topic;
+    }
+
+    // I used this without the getters and setters and it works without the getters.
     public string GetSummary()
     {
         return _studentName + " - " + _topic;
