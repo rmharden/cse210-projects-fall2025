@@ -5,6 +5,7 @@ public class WritingAssignment : Assignment
     {
         _title = title;
     }
+    // Do I need to do the getters and setters if I call the GetSummary method from the Base class?
     public string GetWritingInformation()
     {
         return GetSummary() + "\n" + _title;
