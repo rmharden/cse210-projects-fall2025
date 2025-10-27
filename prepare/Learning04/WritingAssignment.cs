@@ -5,4 +5,8 @@ public class WritingAssignment : Assignment
     {
         _title = title;
     }
+    public string GetWritingInformation()
+    {
+        return GetSummary() + "\n" + _title;
+    }
 }
