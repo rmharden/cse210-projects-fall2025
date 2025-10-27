@@ -7,5 +7,8 @@ public class MathAssignment : Assignment
         _textbookSection = textbookSection;
         _problems = problems;
     }
-
+    public string GetHomeWorkList()
+    {
+        return GetSummary() +"\n" + _textbookSection + " " + _problems;
+    } 
 }
