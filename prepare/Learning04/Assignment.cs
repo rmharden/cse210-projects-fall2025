@@ -1,3 +1,4 @@
+// This is going to be the base class:
 public class Assignment
 {
     private string _studentName;
@@ -6,5 +7,9 @@ public class Assignment
     {
         _studentName = studentName;
         _type = type;
+    }
+    public string GetSummary()
+    {
+        return;
     }
 }
