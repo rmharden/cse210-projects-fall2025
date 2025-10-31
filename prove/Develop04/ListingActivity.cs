@@ -1,4 +1,5 @@
 using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 
 public class ListingActivity
 {
@@ -10,8 +11,24 @@ public class ListingActivity
     }
     public void Run()
     {
+        Console.Clear();
         Console.Write("Welcome to the Listing Activity.\nThis activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.\n\nHow long in seconds, would you like your session? ");
 
+        string input = Console.ReadLine();
+        int seconds = int.Parse(input);
+
+        DateTime startTime = DateTime.Now;
+        DateTime futureTime = startTime.AddSeconds(seconds);
+
+        DateTime currentTime = DateTime.Now;
+        if (currentTime < futureTime)
+        {
+            for (int i = seconds; i > 0; i--)
+            {
+                Console.Write(".");
+                Thread.Sleep(3000);
+            }
+        }
         Console.WriteLine("List as many responses you can to the following prompt:");
 
         GetRandomPrompt();
@@ -28,6 +45,7 @@ public class ListingActivity
     {
         string usersInput = Console.ReadLine();
         List<string> usersList = new List<string>();
+
         Console.WriteLine("");
         usersList.Add(usersInput);
         int usersInputCount = usersList.Count();
