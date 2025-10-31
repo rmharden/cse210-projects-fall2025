@@ -26,7 +26,7 @@ public class ListingActivity
             for (int i = seconds; i > 0; i--)
             {
                 Console.Write(".");
-                Thread.Sleep(3000);
+                Thread.Sleep(1000);
             }
         }
         Console.WriteLine("List as many responses you can to the following prompt:");
