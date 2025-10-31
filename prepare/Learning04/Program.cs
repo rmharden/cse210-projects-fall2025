@@ -19,10 +19,10 @@ class Program
 
         // This is what I changed after seeing the sample solution:
         MathAssignment aMathAssignment = new MathAssignment("Roberto Rodriquez", "Fractions", "7.3", "8-19");
-        Console.WriteLine($"{anAssignment.GetSummary}\n{aMathAssignment.GetHomeWorkList()}\n");
+        Console.WriteLine($"{anAssignment.GetSummary()}\n{aMathAssignment.GetHomeWorkList()}\n");
 
 
         WritingAssignment aWritingAssignment = new WritingAssignment("Mary Waters", "European History", "The Causes of World War II by Mary Waters");
-        Console.WriteLine($"{anAssignment.GetSummary}\n{aWritingAssignment.GetWritingInformation()}\n");
+        Console.WriteLine($"{anAssignment.GetSummary()}\n{aWritingAssignment.GetWritingInformation()}\n");
     }
 }
