@@ -13,11 +13,34 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop04 World!");
-        // BreathingActivity b1 = new BreathingActivity();
-        // b1.Run();
-        ListingActivity l1 = new ListingActivity();
-        l1.Run();
+        var choice = "";
+        do
+        {
+            Console.WriteLine("Menu Options: ");
+            Console.WriteLine("  1. Start breathing activity");
+            Console.WriteLine("  2. Start reflecting activity");
+            Console.WriteLine("  3. Start listing activity");
+            Console.WriteLine("  4. Quit");
+            Console.WriteLine("Select a choice from the meny: ");
+            choice = Console.ReadLine();
+            if (choice == "1")
+            {
+                BreathingActivity b1 = new BreathingActivity();
+                b1.Run();
+                b1.DisplayStartingMessage();
+                b1.ShowSpinner(5);
+                b1.DisplayEndingMessage();
+            }
+            else if (choice == "2")
+            {
+
+            }
+            else if (choice == "3")
+            {
+                ListingActivity l1 = new ListingActivity();
+                l1.Run();
+            }
+        } while (choice != 4);
     }
 }
 
