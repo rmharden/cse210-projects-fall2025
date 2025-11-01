@@ -25,7 +25,7 @@ class Program
             choice = Console.ReadLine();
             if (choice == "1")
             {
-                BreathingActivity b1 = new BreathingActivity();
+                BreathingActivity b1 = new BreathingActivity("Breathing Activity", "", 5);
                 b1.Run();
                 b1.DisplayStartingMessage();
                 b1.ShowSpinner(5);
