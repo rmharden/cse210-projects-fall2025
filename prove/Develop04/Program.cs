@@ -13,7 +13,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var choice = "";
+        string choice = "";
         do
         {
             Console.WriteLine("Menu Options: ");
@@ -21,7 +21,7 @@ class Program
             Console.WriteLine("  2. Start reflecting activity");
             Console.WriteLine("  3. Start listing activity");
             Console.WriteLine("  4. Quit");
-            Console.WriteLine("Select a choice from the meny: ");
+            Console.WriteLine("Select a choice from the menu: ");
             choice = Console.ReadLine();
             if (choice == "1")
             {
@@ -37,10 +37,10 @@ class Program
             }
             else if (choice == "3")
             {
-                ListingActivity l1 = new ListingActivity();
+                ListingActivity l1 = new ListingActivity("Listing Activity", "", 5);
                 l1.Run();
             }
-        } while (choice != 4);
+        } while (choice != "4");
     }
 }
 

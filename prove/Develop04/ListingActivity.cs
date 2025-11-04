@@ -1,11 +1,11 @@
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 
-public class ListingActivity
+public class ListingActivity : Activity
 {
     private int _count;
     private List<string> _prompts;
-    public ListingActivity()
+    public ListingActivity(string activityName, string description, int duration) : base(activityName, description, duration)
     {
 
     }
