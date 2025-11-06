@@ -25,11 +25,7 @@ class Program
             choice = Console.ReadLine();
             if (choice == "1")
             {
-                BreathingActivity b1 = new BreathingActivity("Breathing Activity", "", 5);
-                b1.Run();
-                b1.DisplayStartingMessage();
-                b1.ShowSpinner(5);
-                b1.DisplayEndingMessage();
+
             }
             else if (choice == "2")
             {
@@ -37,8 +33,7 @@ class Program
             }
             else if (choice == "3")
             {
-                ListingActivity l1 = new ListingActivity("Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.", 5);
-                l1.Run();
+
             }
         } while (choice != "4");
     }

@@ -6,12 +6,12 @@ public class BreathingActivity : Activity
     }
     public void Run()
     {
-        DisplayStartingMessage();
+        DisplayStartingMessage("Breathing", "", 5);
         // Activity will run for the length of the amount of seconds the user provided.
         // Console.WriteLine("This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.");
         // I need a loop here:
         Console.WriteLine("Breathe in... ");
-        // Pause and show countdown:
+        ShowCountDown(5);
         Console.WriteLine("Breathe out... ");
         DisplayEndingMessage();
     }
