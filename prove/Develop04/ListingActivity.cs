@@ -5,14 +5,17 @@ public class ListingActivity : Activity
 {
     private int _count;
     private List<string> _prompts;
+    private string _activityName;
     public ListingActivity(string activityName, string description, int duration) : base(activityName, description, duration)
     {
+        _activityName = activityName;
 
     }
     public void Run()
     {
         Console.Clear();
-        Console.Write("Welcome to the Listing Activity.\nThis activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.\n\nHow long in seconds, would you like your session? ");
+        DisplayStartingMessage();
+        Console.Write($"This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.\n\nHow long in seconds, would you like your session? ");
 
         string input = Console.ReadLine();
         int seconds = int.Parse(input);

@@ -8,12 +8,23 @@ public class Activity
         _activityName = "";
         _description = "";
         _duration = 0;
-
     }
+    // public string GetActivityName()
+    // {
+    //     return _activityName;
+    // }
+    // public string GetDescription()
+    // {
+    //     return _description;
+    // }
+    // public int GetDuration()
+    // {
+    //     return _duration;
+    // }
     public void DisplayStartingMessage()
     {
         Console.Clear();
-        Console.WriteLine($"Welcome to the {_activityName}");
+        Console.WriteLine($"Welcome to the {_activityName}! {_description}");
         Console.WriteLine();
         string input = Console.ReadLine();
         int _duration = int.Parse(input);
@@ -21,11 +32,22 @@ public class Activity
     }
     public void DisplayEndingMessage()
     {
-
+        Console.WriteLine("Well done!");
+        ShowSpinner(_duration);
+        Console.Clear();
     }
     public void ShowSpinner(int seconds)
     {
-
+        List<string> _animationStrings = new List<string>();
+        _animationStrings.Add("|");
+        _animationStrings.Add("/");
+        _animationStrings.Add("-");
+        _animationStrings.Add("\\");
+        _animationStrings.Add("|");
+        _animationStrings.Add("/");
+        _animationStrings.Add("-");
+        _animationStrings.Add("\\");
+        Console.WriteLine();
     }
     public void ShowCountDown(int seconds)
     {

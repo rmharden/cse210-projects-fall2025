@@ -37,7 +37,7 @@ class Program
             }
             else if (choice == "3")
             {
-                ListingActivity l1 = new ListingActivity("Listing Activity", "", 5);
+                ListingActivity l1 = new ListingActivity("Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.", 5);
                 l1.Run();
             }
         } while (choice != "4");
