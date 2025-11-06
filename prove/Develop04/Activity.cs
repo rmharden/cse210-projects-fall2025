@@ -33,7 +33,7 @@ public class Activity
     public void DisplayEndingMessage()
     {
         Console.WriteLine("Well done!");
-        ShowSpinner(_duration);
+        ShowSpinner(5);
         Console.Clear();
     }
     public void ShowSpinner(int seconds)
@@ -47,7 +47,12 @@ public class Activity
         _animationStrings.Add("/");
         _animationStrings.Add("-");
         _animationStrings.Add("\\");
-        Console.WriteLine();
+        foreach (string s in _animationStrings)
+        {
+            Console.WriteLine(s);
+            Thread.Sleep(1000);
+            Console.WriteLine("\b \b");
+        }
     }
     public void ShowCountDown(int seconds)
     {
