@@ -27,7 +27,7 @@ public class Activity
         Console.WriteLine($"Welcome to the {_activityName}! {_description}");
         Console.WriteLine();
         string input = Console.ReadLine();
-        int _duration = int.Parse(input);
+        //int _duration = _duration.Parse(input);
         ShowSpinner(_duration);
     }
     public void DisplayEndingMessage()
@@ -49,9 +49,9 @@ public class Activity
         _animationStrings.Add("\\");
         foreach (string s in _animationStrings)
         {
-            Console.WriteLine(s);
+            Console.Write(s);
             Thread.Sleep(1000);
-            Console.WriteLine("\b \b");
+            Console.Write("\b \b");
         }
     }
     public void ShowCountDown(int seconds)
