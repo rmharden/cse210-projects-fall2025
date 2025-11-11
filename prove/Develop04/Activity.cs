@@ -27,14 +27,11 @@ public class Activity
     {
         Console.WriteLine($"Welcome to the {_activityName} Activity");
         Console.WriteLine($"\nThis activity will help you {_description}");
-        GetDuration();
-        //Console.WriteLine(_duration);
+        // GetDuration();
 
-        Console.Clear();
-        Console.WriteLine("Get ready...");
-        ShowSpinnerAnimation();
-        
-        // ShowCountDownTimer();
+        // Console.Clear();
+        // Console.WriteLine("Get ready...");
+        // ShowSpinnerAnimation();
     }
     public void DisplayEndMessage()
     {

@@ -7,10 +7,22 @@ public class BreathingActivity : Activity
     public void Run()
     {
         DisplayStartMessage();
-        Console.Write($"\nBreathe in...");
-        ShowCountDownTimer();
-        Console.Write($"\nNow breathe out...");
-        ShowCountDownTimer();
+        int duration = GetDuration();
+
+        Console.Clear();
+        Console.WriteLine("Get ready...");
+        ShowSpinnerAnimation();
+
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(duration);
+        while (DateTime.Now < endTime)
+        {
+            Console.Write($"\nBreathe in... ");
+            ShowCountDownTimer();
+            Console.Write($"\nNow breathe out... ");
+            ShowCountDownTimer();
+            Console.WriteLine(" ");
+        }
         DisplayEndMessage();
     }
 }
