@@ -7,6 +7,9 @@ public class BreathingActivity : Activity
     public void Run()
     {
         DisplayStartMessage();
-        
+        Console.Write($"\nBreathe in...");
+        ShowCountDownTimer();
+        Console.Write($"\nNow breathe out...");
+        ShowCountDownTimer();
     }
 }
