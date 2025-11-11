@@ -71,6 +71,11 @@ public class Activity
     }
     public void ShowCountDownTimer()
     {
+        for (int i = 5; i > 0; --i)
+        {
+            Console.WriteLine(i);
+            Thread.Sleep(1000);
+        }
 
     }
 }
