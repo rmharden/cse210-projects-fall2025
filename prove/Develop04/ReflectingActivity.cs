@@ -35,7 +35,7 @@ public class ReflectingActivity : Activity
         {
             for (int i = duration; i > 0; i--)
             {
-                Console.WriteLine($"{GetRandomQuestion()}");
+                Console.Write($"\n{GetRandomQuestion()} ");
                 ShowSpinnerAnimation();
                 Thread.Sleep(1000);
             }
