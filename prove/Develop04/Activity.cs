@@ -47,14 +47,9 @@ public class Activity
         _animationStrings.Add("/");
         _animationStrings.Add("-");
         _animationStrings.Add("\\");
-        // foreach (string s in _animationStrings)
-        // {
-        //     Console.Write(s);
-        //     Thread.Sleep(1000);
-        //     Console.Write("\b \b");
-        // }
+
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(10);
+        DateTime endTime = startTime.AddSeconds(8);
 
         int i = 0;
         while (DateTime.Now < endTime)
