@@ -1,11 +1,10 @@
-public class ListingActivity
+public class ListingActivity : Activity
 {
     int _count;
     List<string> _prompts;
-    public ListingActivity(int count, List<string> prompts)
+    public ListingActivity(string activityName, string description, int duration) : base(activityName, description, duration)
     {
-        _count = count;
-        _prompts = prompts;
+
     }
     public void Run()
     {
