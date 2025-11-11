@@ -75,8 +75,8 @@ public class Activity
         for (int i = 5; i > 0; --i)
         {
             Console.Write(i);
-            Console.Write("\b \b");
             Thread.Sleep(1000);
+            Console.Write("\b \b");
         }
     }
 }
