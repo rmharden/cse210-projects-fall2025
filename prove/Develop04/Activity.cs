@@ -17,15 +17,17 @@ public class Activity
     // {
     //     return _description;
     // }
-    // public int GetDuration()
-    // {
-    //     return _duration;
-    // }
+    public int GetDuration()
+    {
+        Console.WriteLine("\nHow long in seconds would like your session for? ");
+        _duration = int.Parse(Console.ReadLine());
+        return _duration;
+    }
     public void DisplayStartMessage()
     {
         Console.WriteLine($"Welcome to the {_activityName} Activity");
         Console.WriteLine($"\nThis activity will help you {_description}");
-        Console.WriteLine("\nHow long in seconds would like your session for? ");
+        GetDuration();
     }
     public void DisplayEndMessage()
     {
