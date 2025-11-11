@@ -30,6 +30,7 @@ public class Activity
         GetDuration();
         Console.WriteLine(_duration);
         ShowSpinnerAnimation();
+        ShowCountDownTimer();
     }
     public void DisplayEndMessage()
     {
@@ -76,6 +77,5 @@ public class Activity
             Console.WriteLine(i);
             Thread.Sleep(1000);
         }
-
     }
 }
