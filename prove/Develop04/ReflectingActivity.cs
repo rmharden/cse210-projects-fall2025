@@ -1,8 +1,8 @@
-public class ReflectingActivity
+public class ReflectingActivity : Activity
 {
     private List<string> _prompts;
     private List<string> _questions;
-    public ReflectingActivity()
+    public ReflectingActivity(string activityName, string description, int duration) : base(activityName, description, duration)
     {
 
     }
@@ -24,6 +24,6 @@ public class ReflectingActivity
     }
     public void DisplayQuestion()
     {
-        
+
     }
 }
