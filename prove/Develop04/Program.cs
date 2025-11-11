@@ -15,8 +15,10 @@ class Program
     static void Main(string[] args)
     {
         //Test code for the Activity base class:
-        Activity a1 = new Activity("test", "test", 0);
-        a1.DisplayStartMessage();
+        // Activity a1 = new Activity("test", "test", 0);
+        // a1.DisplayStartMessage();
+
+        BreathingActivity b1 = new BreathingActivity("Breathing", "relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.", 0);
 
     }
 }

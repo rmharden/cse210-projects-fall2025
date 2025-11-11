@@ -34,10 +34,11 @@ public class Activity
         Console.WriteLine("Get ready...");
         ShowSpinnerAnimation();
         
-        ShowCountDownTimer();
+        // ShowCountDownTimer();
     }
     public void DisplayEndMessage()
     {
+        Console.WriteLine("Well done!");
 
     }
     public void ShowSpinnerAnimation()
