@@ -10,6 +10,7 @@ public class ReflectingActivity : Activity
     }
     public void Run()
     {
+        Console.Clear();
         DisplayStartMessage();
         int duration = GetDuration();
 
@@ -18,7 +19,7 @@ public class ReflectingActivity : Activity
         ShowSpinnerAnimation();
 
         Console.WriteLine("Consider the folowing prompt:");
-        Console.WriteLine($"\n{GetRandomPrompt()}");
+        Console.WriteLine($"\n--- {GetRandomPrompt()} ---");
         Console.WriteLine("\nWhen you have something in mind, press enter to continue.");
         Console.ReadKey();
         Console.WriteLine("\nNow ponder on each of the following questions as they related to this experience.");
