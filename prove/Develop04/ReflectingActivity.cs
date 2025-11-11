@@ -4,4 +4,8 @@ public class ReflectingActivity
     {
 
     }
+    public void Run()
+    {
+        
+    }
 }
