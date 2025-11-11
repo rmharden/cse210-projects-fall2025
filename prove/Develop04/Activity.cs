@@ -19,7 +19,7 @@ public class Activity
     // }
     public int GetDuration()
     {
-        Console.WriteLine("\nHow long in seconds would like your session for? ");
+        Console.Write("\nHow long in seconds would like your session for? ");
         _duration = int.Parse(Console.ReadLine());
         return _duration;
     }
