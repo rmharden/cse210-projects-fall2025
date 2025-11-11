@@ -15,8 +15,8 @@ class Program
     static void Main(string[] args)
     {
         //Test code for the Activity base class:
-        // Activity a1 = new Activity("test", "test", 0);
-        // a1.DisplayStartMessage();
+        Activity a1 = new Activity("test", "test", 0);
+        a1.DisplayStartMessage();
 
     }
 }
