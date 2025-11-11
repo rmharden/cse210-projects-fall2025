@@ -8,7 +8,26 @@ public class ReflectingActivity : Activity
     }
     public void Run()
     {
+        DisplayStartMessage();
+        int duration = GetDuration();
 
+        Console.Clear();
+        Console.WriteLine("Get ready...");
+        ShowSpinnerAnimation();
+
+        Console.WriteLine("Consider the folowing prompt:");
+        Console.WriteLine($"\n{GetRandomPrompt()}");
+        Console.WriteLine("\nWhen you have something in mind, press enter to continue.");
+        Console.ReadKey();
+
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(duration);
+        while (DateTime.Now < endTime)
+        {
+            
+
+        }
+        DisplayEndMessage();
     }
     public string GetRandomPrompt()
     {
