@@ -7,4 +7,20 @@ public class Activity
     {
 
     }
+    public void DisplayStartMessage()
+    {
+
+    }
+    public void DisplayEndMessage()
+    {
+
+    }
+    public void ShowSpinnerAnimation()
+    {
+
+    }
+    public void ShowCountDownTimer()
+    {
+        
+    }
 }
