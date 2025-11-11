@@ -29,6 +29,7 @@ public class Activity
         Console.WriteLine($"\nThis activity will help you {_description}");
         GetDuration();
         Console.WriteLine(_duration);
+        ShowSpinnerAnimation();
     }
     public void DisplayEndMessage()
     {
@@ -36,7 +37,37 @@ public class Activity
     }
     public void ShowSpinnerAnimation()
     {
+        List<string> _animationStrings = new List<string>();
+        _animationStrings.Add("|");
+        _animationStrings.Add("/");
+        _animationStrings.Add("-");
+        _animationStrings.Add("\\");
+        _animationStrings.Add("|");
+        _animationStrings.Add("/");
+        _animationStrings.Add("-");
+        _animationStrings.Add("\\");
+        // foreach (string s in _animationStrings)
+        // {
+        //     Console.Write(s);
+        //     Thread.Sleep(1000);
+        //     Console.Write("\b \b");
+        // }
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(10);
 
+        int i = 0;
+        while (DateTime.Now < endTime)
+        {
+            string s = _animationStrings[i];
+            Console.Write(s);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
+            i++;
+            if (i >= _animationStrings.Count)
+            {
+                i = 0;
+            }
+        }
     }
     public void ShowCountDownTimer()
     {
