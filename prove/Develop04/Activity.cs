@@ -28,6 +28,7 @@ public class Activity
         Console.WriteLine($"Welcome to the {_activityName} Activity");
         Console.WriteLine($"\nThis activity will help you {_description}");
         GetDuration();
+        Console.WriteLine(_duration);
     }
     public void DisplayEndMessage()
     {
