@@ -38,8 +38,11 @@ public class Activity
     }
     public void DisplayEndMessage()
     {
-        Console.WriteLine("Well done!");
+        Console.WriteLine("Well done!!");
+        ShowSpinnerAnimation();
 
+        Console.WriteLine($"You have completed another {_duration} of the {_activityName} Activity!");
+        ShowSpinnerAnimation();
     }
     public void ShowSpinnerAnimation()
     {

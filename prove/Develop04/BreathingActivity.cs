@@ -11,5 +11,6 @@ public class BreathingActivity : Activity
         ShowCountDownTimer();
         Console.Write($"\nNow breathe out...");
         ShowCountDownTimer();
+        DisplayEndMessage();
     }
 }
