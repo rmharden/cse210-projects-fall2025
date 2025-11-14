@@ -1,4 +1,4 @@
-// Step 3:
+// Step 3: Create the base Shape class:
 public class Shape
 {
     private string _color;
