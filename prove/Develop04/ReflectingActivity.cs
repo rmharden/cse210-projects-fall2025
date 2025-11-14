@@ -47,7 +47,7 @@ public class ReflectingActivity : Activity
     {
         Random r1 = new Random();
         List<string> _prompts = new List<string>()
-        { 
+        {
             "1. Think of a time when you stood up for someone else.",
             "2. Think of a time when you did something really difficult.",
             "3. Think of a time when you helped someone in need.",
@@ -74,13 +74,14 @@ public class ReflectingActivity : Activity
         int i2 = r2.Next(_questions.Count);
         return _questions[i2];
     }
-    // 
-    public void DisplayPrompt()
-    {
+    // I didn't end up using these: I'm not sure if need to:
 
-    }
-    public void DisplayQuestion()
-    {
+    // public void DisplayPrompt()
+    // {
 
-    }
+    // }
+    // public void DisplayQuestion()
+    // {
+
+    // }
 }
