@@ -31,6 +31,7 @@ class EternalQuestGame
                 Console.WriteLine(" 3.  Checklist Goal");
 
                 Console.WriteLine("\nWhich type of goal would you like to create? ");
+
                 userInput = Console.ReadLine();
                 if (userInput == "1")
                 {
