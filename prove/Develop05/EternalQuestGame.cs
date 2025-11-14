@@ -1,15 +1,17 @@
-using System;
-
-class Program
+class EternalQuestGame
 {
-    static void Main(string[] args)
+    private double _points;
+    EternalQuestGame(double points)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        points = _points;
+    }
+    public void Menu()
+    {
         Console.Clear();
         var choice = "";
         do
         {
-            Console.WriteLine($"You have {points} points.");
+            Console.WriteLine($"You have {GetScore()} points.");
             Console.WriteLine("Menu Options:");
             Console.WriteLine(" 1.  Create New Goal");
             Console.WriteLine(" 2.  List Goals");
@@ -44,5 +46,9 @@ class Program
 
             }
         } while (choice != "6");
+    }
+    public double GetScore()
+    {
+        return _points;
     }
 }
