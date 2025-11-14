@@ -20,5 +20,10 @@ class Program
         Square s1 = new Square("yellow", 5);
         Console.WriteLine(s1.GetColor());
         Console.WriteLine(s1.GetArea());
+
+        //Step 6: Test the Rectangle class
+        Rectangle r1 = new Rectangle("orange", 15, 10);
+        Console.WriteLine(r1.GetColor());
+        Console.WriteLine(r1.GetArea());
     }
 }
