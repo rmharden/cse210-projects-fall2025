@@ -1,10 +1,11 @@
 class EternalQuestGame
 {
     private double _points;
-    EternalQuestGame(double points)
+    public EternalQuestGame(double points)
     {
         points = _points;
     }
+
     public void Menu()
     {
         Console.Clear();
