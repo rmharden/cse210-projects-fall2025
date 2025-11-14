@@ -13,7 +13,8 @@ class EternalQuestGame
         do
         {
             Console.WriteLine($"You have {GetScore()} points.");
-            Console.WriteLine("Menu Options:");
+            
+            Console.WriteLine("\nMenu Options:");
             Console.WriteLine(" 1.  Create New Goal");
             Console.WriteLine(" 2.  List Goals");
             Console.WriteLine(" 3.  Save Goals");
@@ -25,12 +26,12 @@ class EternalQuestGame
             if (choice == "1")
             {
                 var userInput = "";
-                Console.WriteLine("The types of Goals are:");
+                Console.WriteLine("\nThe types of Goals are:");
                 Console.WriteLine(" 1.  Simple Goal");
                 Console.WriteLine(" 2.  Eternal Goal");
                 Console.WriteLine(" 3.  Checklist Goal");
 
-                Console.WriteLine("\nWhich type of goal would you like to create? ");
+                Console.Write("\nWhich type of goal would you like to create? ");
 
                 userInput = Console.ReadLine();
                 if (userInput == "1")
