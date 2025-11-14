@@ -14,6 +14,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning05 World!");
+        // Console.WriteLine("Hello Learning05 World!");
+
+        // Step 5: Test the Square class
+        Square s1 = new Square("yellow", 5);
+        Console.WriteLine(s1.GetColor());
+        Console.WriteLine(s1.GetArea());
     }
 }
