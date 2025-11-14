@@ -25,5 +25,10 @@ class Program
         Rectangle r1 = new Rectangle("orange", 15, 10);
         Console.WriteLine(r1.GetColor());
         Console.WriteLine(r1.GetArea());
+
+        // Step 6: Test the Circle class
+        Circle c1 = new Circle("red", 5);
+        Console.WriteLine(c1.GetColor());
+        Console.WriteLine(c1.GetArea());
     }
 }
