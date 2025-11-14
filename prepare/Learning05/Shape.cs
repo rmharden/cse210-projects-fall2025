@@ -13,5 +13,10 @@ public class Shape
     {
 
     }
-    
+    // I am unsure if the datatype needs to be float or int or something else.
+    public virtual float GetArea()
+    {
+        // I am guessing here.
+        return 0;
+    }
 }
