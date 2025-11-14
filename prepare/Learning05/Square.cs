@@ -3,14 +3,14 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Square : Shape
 {
-    private float _side;
-    public Square(string color, float side) : base(color)
+    private double _side;
+    public Square(string color, double side) : base(color)
     {
         _side = side;
     }
-    public override float GetArea()
+    public override double GetArea()
     {
-        float _area = 0;
+        double _area = 0;
         _area = _side * _side;
         return _area;
     }   
