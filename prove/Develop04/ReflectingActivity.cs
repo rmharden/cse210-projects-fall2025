@@ -74,6 +74,7 @@ public class ReflectingActivity : Activity
         int i2 = r2.Next(_questions.Count);
         return _questions[i2];
     }
+    // 
     public void DisplayPrompt()
     {
 
