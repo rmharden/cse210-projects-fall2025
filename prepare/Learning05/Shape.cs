@@ -1,3 +1,4 @@
+// Step 3:
 public class Shape
 {
     private string _color;
