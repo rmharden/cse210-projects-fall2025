@@ -24,7 +24,26 @@ class EternalQuestGame
             choice = Console.ReadLine();
             if (choice == "1")
             {
+                var userInput = "";
+                Console.WriteLine("The types of Goals are:");
+                Console.WriteLine(" 1.  Simple Goal");
+                Console.WriteLine(" 2.  Eternal Goal");
+                Console.WriteLine(" 3.  Checklist Goal");
 
+                Console.WriteLine("\nWhich type of goal would you like to create? ");
+                userInput = Console.ReadLine();
+                if (userInput == "1")
+                {
+                    SimpleGoal s1 = new SimpleGoal();
+                }
+                else if (userInput == "2")
+                {
+                    EternalGoal e1 = new EternalGoal();
+                }
+                else if (userInput == "3")
+                {
+                    ChecklistGoal c1 = new ChecklistGoal();
+                }
             }
             else if (choice == "2")
             {
