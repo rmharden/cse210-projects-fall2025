@@ -39,10 +39,20 @@ class Program
         _shapes.Add(r1);
         _shapes.Add(c1);
 
+        // My code that I had before looking at the sample:
+        // foreach (Shape shape in _shapes)
+        // {
+        //     Console.WriteLine(shape.GetColor());
+        //     Console.WriteLine(shape.GetArea());
+        // }
+
+        // Adding the code from the sample because I like that better:
         foreach (Shape shape in _shapes)
         {
-            Console.WriteLine(shape.GetColor());
-            Console.WriteLine(shape.GetArea());
+            string color = shape.GetColor();
+            double area = shape.GetArea();
+
+            Console.WriteLine($"The {color} shape has an area of {area}.");
         }
     }
 }
