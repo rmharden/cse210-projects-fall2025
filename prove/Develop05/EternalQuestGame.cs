@@ -8,12 +8,13 @@ class EternalQuestGame
 
     public void Menu()
     {
+        List<Goal> _goals = new List<Goal>();
         Console.Clear();
         var choice = "";
         do
         {
             Console.WriteLine($"You have {GetScore()} points.");
-            
+
             Console.WriteLine("\nMenu Options:");
             Console.WriteLine(" 1.  Create New Goal");
             Console.WriteLine(" 2.  List Goals");
@@ -49,7 +50,11 @@ class EternalQuestGame
             }
             else if (choice == "2")
             {
-
+                Console.WriteLine("The goals are:");
+                foreach (Goal goal in _goals)
+                {
+                    Console.WriteLine($"{goal}");
+                }
 
             }
             else if (choice == "3")
