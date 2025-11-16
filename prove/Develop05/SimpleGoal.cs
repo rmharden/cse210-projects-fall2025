@@ -1,15 +1,25 @@
-public class SimpleGoal
+public class SimpleGoal : Goal
 {
-    string _goalName;
-    string _goalDescription;
-    double _points;
-    public SimpleGoal()
+    private bool _isComplete;
+    public SimpleGoal(string goalName, string goalDescription, int points) : base(goalName, goalDescription, points)
     {
         Console.Write("What is the name of your goal? ");
-        _goalName = Console.ReadLine();
+        goalName = Console.ReadLine();
         Console.Write("What is the a short description of it? ");
-        _goalDescription = Console.ReadLine();
+        goalDescription = Console.ReadLine();
         Console.Write("What is the amount of points associated with this goal? ");
-        int _points = int.Parse(Console.ReadLine());
+        points = int.Parse(Console.ReadLine());
+    }
+    public override void RecordEvent()
+    {
+
+    }
+    public override string GetDetailsString()
+    {
+        return "";
+    }
+    public override bool IsComplete()
+    {
+        return false;
     }
 }

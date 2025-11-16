@@ -1,7 +1,8 @@
 class EternalQuestGame
 {
-    private double _points;
-    public EternalQuestGame(double points)
+    private List<Goal> _goals;
+    private int _points;
+    public EternalQuestGame(int points)
     {
         points = _points;
     }
@@ -37,7 +38,15 @@ class EternalQuestGame
                 userInput = Console.ReadLine();
                 if (userInput == "1")
                 {
-                    SimpleGoal s1 = new SimpleGoal();
+                    Console.Write("\nWhat is the name of the goal? ");
+                    string goalName = Console.ReadLine();
+                    Console.Write("\nWhat is a short description of it? ");
+                    string goalDescription = Console.ReadLine();
+                    Console.Write("\nWhat is the amount of points associated with this goal?  ");
+                    int points = int.Parse(Console.ReadLine());
+
+                    SimpleGoal s1 = new SimpleGoal(goalName, goalDescription, points);
+                    
                 }
                 else if (userInput == "2")
                 {
@@ -50,32 +59,56 @@ class EternalQuestGame
             }
             else if (choice == "2")
             {
-                Console.WriteLine("The goals are:");
-                foreach (Goal goal in _goals)
-                {
-                    Console.WriteLine($"{goal}");
-                }
-
+                LoadGoals();
             }
             else if (choice == "3")
             {
-
-
+                ListGoalNames();
             }
             else if (choice == "4")
             {
-
-
+                SaveGoals();
             }
             else if (choice == "5")
             {
-
-
+                RecordEvent();
             }
         } while (choice != "6");
     }
     public double GetScore()
     {
         return _points;
+    }
+    public void DisplayPlayerInfo()
+    {
+
+    }
+    public void ListGoalNames()
+    {
+
+    }
+    public void ListGoalDetals()
+    {
+
+    }
+    public void CreateGoal()
+    {
+
+    }
+    public void RecordEvent()
+    {
+
+    }
+    public void SaveGoals()
+    {
+
+    }
+    public void LoadGoals()
+    {
+        Console.WriteLine("The goals are:");
+        foreach (Goal goal in _goals)
+        {
+            Console.WriteLine($"{goal}");
+        }
     }
 }
