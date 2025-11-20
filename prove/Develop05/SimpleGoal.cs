@@ -4,4 +4,16 @@ public class SimpleGoal : Goal
     {
 
     }
+    public override int RecordEvent()
+    {
+        return 0;
+    }
+    public override bool isComplete()
+    {
+        return false;
+    }
+    public override string GetStringRepresentation()
+    {
+        return "";
+    }
 }
