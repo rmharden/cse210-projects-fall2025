@@ -19,6 +19,6 @@ public class SimpleGoal : Goal
     public override string GetStringRepresentation()
     {
         // Test:
-        return $"You have {_points} points.\n[X] {_shortName} ({_description})";
+        return $"You have {_points} points.\n [X] {_shortName} ({_description})";
     }
 }

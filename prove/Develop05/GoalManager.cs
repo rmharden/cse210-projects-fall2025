@@ -1,5 +1,6 @@
 public class GoalManager
 {
+    // What are the string goals??
     private string _goals;
     private int _score;
     public GoalManager(string goals, int score)
@@ -19,7 +20,7 @@ public class GoalManager
             // This is probably going to be called from somewhere else. It's here temporarily.
             Console.WriteLine($"You have {_score} points.");
 
-            
+
             Console.WriteLine("\nMenu Options:");
             Console.WriteLine(" 1.  Create New Goal");
             Console.WriteLine(" 2.  List Goals");
