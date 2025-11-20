@@ -14,24 +14,26 @@ using System;
 class Program
 {
     static void Main(string[] args)
+    // Create a GoalManager object
+    // Call the Start function on that object
     {
         // Test
-        List<Goal> goals = new List<Goal>();
+        // List<Goal> goals = new List<Goal>();
 
-        Console.Write("What is the name of your goal? ");
-        string shortName = Console.ReadLine();
-        Console.Write("What is a short description of it? ");
-        string description = Console.ReadLine();
-        Console.Write("What is the amount of points associated with this goal? ");
-        int points = int.Parse(Console.ReadLine());
+        // Console.Write("What is the name of your goal? ");
+        // string shortName = Console.ReadLine();
+        // Console.Write("What is a short description of it? ");
+        // string description = Console.ReadLine();
+        // Console.Write("What is the amount of points associated with this goal? ");
+        // int points = int.Parse(Console.ReadLine());
 
-        SimpleGoal sg = new SimpleGoal(shortName, description, points);
-        goals.Add(sg);
+        // SimpleGoal sg = new SimpleGoal(shortName, description, points);
+        // goals.Add(sg);
 
-        // cannot do the simplegoal one. Use goal.
-        // This doesn't work though - it displays the name of the object.
-        Goal g = goals[0];
-        Console.WriteLine(g.GetStringRepresentation());
+        // // cannot do the simplegoal one. Use goal.
+        // // This doesn't work though - it displays the name of the object.
+        // Goal g = goals[0];
+        // Console.WriteLine(g.GetStringRepresentation());
     }
 }
 
