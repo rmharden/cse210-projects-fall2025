@@ -10,6 +10,7 @@ Unit 05 Develop: Eternal Quest Program
 
 
 using System;
+using System.Dynamic;
 
 class Program
 {
@@ -34,6 +35,13 @@ class Program
         // // This doesn't work though - it displays the name of the object.
         // Goal g = goals[0];
         // Console.WriteLine(g.GetStringRepresentation());
+
+
+        // I'm not sure what to do here because - What did they want specifically with 
+        // List<Goal> goals = new List<Goal>();
+
+        GoalManager gm = new GoalManager("goals", 0);
+        gm.Start();
     }
 }
 

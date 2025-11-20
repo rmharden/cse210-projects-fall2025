@@ -13,7 +13,44 @@ public class GoalManager
     // CreateGoal, ListGoalDetails, SaveGoals, LoadGoals, RecordEvent, Quit
     // Loop until user selects the quit option.
     {
+        var choice = "";
+        do
+        {
+            // This is probably going to be called from somewhere else. It's here temporarily.
+            Console.WriteLine($"You have {_score} points.");
 
+            
+            Console.WriteLine("\nMenu Options:");
+            Console.WriteLine(" 1.  Create New Goal");
+            Console.WriteLine(" 2.  List Goals");
+            Console.WriteLine(" 3.  Save Goals");
+            Console.WriteLine(" 4.  Load Goals");
+            Console.WriteLine(" 5.  Record Event");
+            Console.WriteLine(" 6.  Quit");
+            Console.Write("Select a choice from the menu: ");
+            choice = Console.ReadLine();
+
+            if (choice == "1")
+            {
+
+            }
+            else if (choice == "2")
+            {
+
+            }
+            else if (choice == "3")
+            {
+
+            }
+            else if (choice == "4")
+            {
+
+            }
+            else if (choice == "5")
+            {
+
+            }
+        } while (choice != "6");
     }
     public void DisplayPlayerInfo()
     // Display the points
