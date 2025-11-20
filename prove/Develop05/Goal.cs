@@ -13,6 +13,10 @@ public class Goal
 
     public abstract int RecordEvent();
     public abstract bool isComplete();
-    public abstract string GetDetailsString();
+    public string GetDetailsString()
+    {
+        // This one is going to be virtual.
+        return "details for list";
+    }
     public abstract string GetStringRepresentation();
 }
