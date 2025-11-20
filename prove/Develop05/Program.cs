@@ -18,3 +18,15 @@ class Program
 
     }
 }
+
+// Sites I used for help:
+
+/*
+
+BYU-Idaho Videos
+Chad Macbeth CSE:210 Week 5 Assignment
+https://video.byui.edu/media/t/1_6lpgm7dz
+
+
+
+*/
