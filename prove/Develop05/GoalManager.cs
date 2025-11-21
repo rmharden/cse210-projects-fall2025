@@ -59,7 +59,40 @@ public class GoalManager
     // 1. Create New Goal
     public void CreateGoal()
     {
-        
+        var choice = "";
+        choice = Console.ReadLine();
+
+        Console.WriteLine($"You have {_score} points.");
+
+        Console.WriteLine("\nThe types of goals are: ");
+        Console.WriteLine("1.   Simple Goal");
+        Console.WriteLine("2.   Eternal Goal");
+        Console.WriteLine("3.   Checklist Goal");
+
+        Console.Write("\nWhich goal type would you like to create? ");
+
+
+        if (choice == "1")
+        {
+            Console.Write("\nWhat is the name of your goal");
+            string shortName = Console.ReadLine();
+
+            Console.Write("\nWhat is a short description of your goal? ");
+            string description = Console.ReadLine();
+
+            Console.Write("\nWhat is the amount of points associated with this goal? ");
+            int points = int.Parse(Console.ReadLine());
+
+            SimpleGoal s1 = new SimpleGoal(shortName, description, points);
+        }
+        else if (choice == "2")
+        {
+            EternalGoal e1 = new EternalGoal();
+        }
+        else if (choice == "3")
+        {
+            ChecklistGoal c1 = new ChecklistGoal();
+        }      
 
     }
     // 2. List Goals
