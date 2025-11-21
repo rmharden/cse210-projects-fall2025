@@ -40,7 +40,7 @@ class Program
         // I'm not sure what to do here because - What did they want specifically with 
         // List<Goal> goals = new List<Goal>();
 
-        GoalManager gm = new GoalManager("goals", 0);
+        GoalManager gm = new GoalManager(, 0);
         gm.Start();
     }
 }
