@@ -11,6 +11,8 @@ public class GoalManager
     }
     public void Start()
     // Display the main menu:
+    // Call:
+    // CreateGoal, ListGoalDetails, SaveGoals, LoadGoals, RecordEvent, and quit
     {
         Console.Clear();
 
@@ -27,35 +29,61 @@ public class GoalManager
             Console.WriteLine("5.   Record Event");
             Console.WriteLine("6.   Quit");
             Console.Write("Select a choice from the menu: ");
+
+            if (choice == "1")
+            {
+                CreateGoal();
+            }
+            else if (choice == "2")
+            {
+                ListGoalNames();
+                ListGoalDetails();
+            }
+            else if (choice == "3")
+            {
+                SaveGoals();
+            }
+            else if (choice == "4")
+            {
+                LoadGoals();
+            }
+            else if (choice == "5")
+            {
+                RecordEvent();
+            }
         } while (choice != "6");
-
-
     }
-    public void DisplayPlayerInfo()
-    {
-
-    }
-    public void ListGoalNames()
-    {
-
-    }
-    public void ListGoalDetails()
-    {
-
-    }
+    // 1. Create New Goal
     public void CreateGoal()
     {
 
     }
-    public void RecordEvent()
+    // 2. List Goals
+    public void ListGoalNames()
     {
 
     }
+    // 2. List Goals
+    public void ListGoalDetails()
+    {
+
+    }
+    // 3. Save Goals
     public void SaveGoals()
     {
 
     }
+    // 4. Load Goals
     public void LoadGoals()
+    {
+
+    }
+    // 5. Record Event
+    public void RecordEvent()
+    {
+
+    }
+    public void DisplayPlayerInfo()
     {
 
     }
