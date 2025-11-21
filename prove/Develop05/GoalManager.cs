@@ -81,7 +81,50 @@ public class GoalManager
     // Checklist goal needs more information from the user.
     // Create the object that the user selects and add it to the goal list.
     {
+        /*
+        You have 0 point.
 
+    Menu Options:
+    1.	Create New Goal
+    2.	List Goals
+    3.	Save Goals
+    4.	Load Goals
+    
+    Select a choice from the menu: (cursor is here)1
+    The types of Goals are:
+    1.	Simple Goal
+    2.	Eternal Goal
+    3.	Checklist Goal
+    Which type of goal would you like to create? (cursor is here) 1
+    What is the name of your goal? (cursor is here) Give a talk
+    What is a short description of it? (cursor is here) Speak in Sacrament meeting when asked.
+    What is the amount of points associated with this goal? (cursor is here) 100
+    (These answers are added to a list.)
+
+    */
+
+    var choice = "";
+        Console.WriteLine("\nThe types of Goals are:");
+        Console.WriteLine(" 1.  Simple Goal");
+        Console.WriteLine(" 2.  Eternal Goal");
+        Console.WriteLine(" 3.  Checklist Goal");
+
+
+        Console.Write("Which type of goal woudl you like to create? ");
+        choice = Console.ReadLine();
+
+        if (choice == "1")
+        {
+
+        }
+        else if (choice == "2")
+        {
+
+        }
+        else if (choice == "3")
+        {
+
+        }
     }
     public void RecordEvent()
     // Display a list of all of the goal names. 
