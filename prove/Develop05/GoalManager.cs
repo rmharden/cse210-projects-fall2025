@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 public class GoalManager
 {
     private List<Goal> _goals = new List<Goal>();
@@ -14,8 +12,6 @@ public class GoalManager
     // Call:
     // CreateGoal, ListGoalDetails, SaveGoals, LoadGoals, RecordEvent, and quit
     {
-        Console.Clear();
-
         var choice = "";
 
         do
@@ -59,9 +55,6 @@ public class GoalManager
     // 1. Create New Goal
     public void CreateGoal()
     {
-        var choice = "";
-        choice = Console.ReadLine();
-
         Console.WriteLine($"You have {_score} points.");
 
         Console.WriteLine("\nThe types of goals are: ");
@@ -71,33 +64,76 @@ public class GoalManager
 
         Console.Write("\nWhich goal type would you like to create? ");
 
+        string choice = Console.ReadLine();
+        
+            Console.Write("What is the name of your goal? ");
+            string shortName = Console.ReadLine();
+
+            Console.Write("What is a short description of your goal? ");
+            string description = Console.ReadLine();
+
+            Console.Write("What are the amount of points associated with this goal? ");
+            int points = int.Parse(Console.ReadLine());
 
         if (choice == "1")
         {
-            Console.Write("\nWhat is the name of your goal");
-            string shortName = Console.ReadLine();
+            // Console.Write("\nWhat is the name of your goal? ");
+            // string shortName = Console.ReadLine();
 
-            Console.Write("\nWhat is a short description of your goal? ");
-            string description = Console.ReadLine();
+            // Console.Write("\nWhat is a short description of your goal? ");
+            // string description = Console.ReadLine();
 
-            Console.Write("\nWhat is the amount of points associated with this goal? ");
-            int points = int.Parse(Console.ReadLine());
-
-            SimpleGoal s1 = new SimpleGoal(shortName, description, points);
+            // Console.Write("\nWhat are the amount of points associated with this goal? ");
+            // int points = int.Parse(Console.ReadLine());
+  
+            SimpleGoal s1 = new SimpleGoal(shortName, description,points);
+            _goals.Add(s1);
         }
         else if (choice == "2")
         {
-            EternalGoal e1 = new EternalGoal();
+            // Console.Write("\nWhat is the name of your goal? ");
+            // string shortName = Console.ReadLine();
+
+            // Console.Write("\nWhat is a short description of your goal? ");
+            // string description = Console.ReadLine();
+
+            // Console.Write("\nWhat are the amount of points associated with this goal? ");
+            // int points = int.Parse(Console.ReadLine());
+
+            EternalGoal e1 = new EternalGoal(shortName, description, points);
+            _goals.Add(e1);
         }
         else if (choice == "3")
         {
-            ChecklistGoal c1 = new ChecklistGoal();
+            // Console.Write("\nWhat is the name of your goal? ");
+            // string shortName = Console.ReadLine();
+
+            // Console.Write("\nWhat is a short description of your goal? ");
+            // string description = Console.ReadLine();
+
+            // Console.Write("\nWhat are the amount of points associated with this goal? ");
+            // int points = int.Parse(Console.ReadLine());
+
+            Console.Write("How many times does this goal need to be accomplished for a bonus? ");
+            int target = int.Parse(Console.ReadLine());
+
+            Console.Write("What is the bonus for accomplishing it in that many times? ");
+            int bonus = int.Parse(Console.ReadLine());
+
+            // For amount completed - what is that? Where do I get that?
+
+            ChecklistGoal c1 = new ChecklistGoal(shortName, description, points, 0, target, bonus);
+            _goals.Add(c1);
         }      
 
     }
     // 2. List Goals
     public void ListGoalNames()
     {
+        foreach (Goal goal in _goals)
+        {
+            Console.WriteLine(goal.GetStringRepresentation());
+        }
 
     }
     // 2. List Goals
