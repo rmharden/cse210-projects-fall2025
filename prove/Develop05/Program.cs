@@ -18,29 +18,9 @@ class Program
     // Create a GoalManager object
     // Call the Start function on that object
     {
-        // Test
-        // List<Goal> goals = new List<Goal>();
+        List<Goal> goals = new List<Goal>();
 
-        // Console.Write("What is the name of your goal? ");
-        // string shortName = Console.ReadLine();
-        // Console.Write("What is a short description of it? ");
-        // string description = Console.ReadLine();
-        // Console.Write("What is the amount of points associated with this goal? ");
-        // int points = int.Parse(Console.ReadLine());
-
-        // SimpleGoal sg = new SimpleGoal(shortName, description, points);
-        // goals.Add(sg);
-
-        // // cannot do the simplegoal one. Use goal.
-        // // This doesn't work though - it displays the name of the object.
-        // Goal g = goals[0];
-        // Console.WriteLine(g.GetStringRepresentation());
-
-
-        // I'm not sure what to do here because - What did they want specifically with 
-        // List<Goal> goals = new List<Goal>();
-
-        GoalManager gm = new GoalManager(, 0);
+        GoalManager gm = new GoalManager(goals, 0);
         gm.Start();
     }
 }

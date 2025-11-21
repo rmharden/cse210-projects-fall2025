@@ -17,6 +17,7 @@ public class GoalManager
         Console.Clear();
 
         var choice = "";
+
         do
         {
             Console.WriteLine($"You have {_score} points.");
@@ -29,6 +30,8 @@ public class GoalManager
             Console.WriteLine("5.   Record Event");
             Console.WriteLine("6.   Quit");
             Console.Write("Select a choice from the menu: ");
+
+            choice = Console.ReadLine();
 
             if (choice == "1")
             {
@@ -56,6 +59,7 @@ public class GoalManager
     // 1. Create New Goal
     public void CreateGoal()
     {
+        
 
     }
     // 2. List Goals
