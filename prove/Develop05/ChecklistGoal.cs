@@ -1,7 +1,5 @@
 /*
-
 Checklist Goal must be accomplished a certain number of times to be complete. Each time the user records this goal, they gain some value, but when they achieve the desired amount, they get an extra bonus.
-
 */
 
 public class ChecklistGoal : Goal
@@ -22,18 +20,9 @@ This is from the lessons from the CSE 210 7 Week course:
 Each one needs to provide a check to see if it IS COMPLETE.
 This method should do whatever necessary for each specific kind of goal, such as making a simple goal complete and adding to the number of times a checklist goal has been completed. It should return the point value associated with recording the event. (Keep in mind that it may contain a bonus in some cases if a checklist goal was just finished.)"
 */
-    // public int GetTarget()
-    // {
-    //     return _target;
-    // }
-    // public void SetTarget(int target)
-    // {
-    //     _target = target;
-    // }
-
     public override void RecordEvent()
     {
-
+        Console.WriteLine($"Congratulations! You have earned {_points}!");
     }
 
     /*
@@ -71,6 +60,6 @@ This method should do whatever necessary for each specific kind of goal, such as
     public override string GetStringRepresentation()
     {
         // i think this is for the list. I need to go back and find out how to do this
-        return $"{_shortName} ({_description})";
+        return $"{_shortName} ({_description}) {_amountCompleted} {_target} {_bonus}";
     }
 }
