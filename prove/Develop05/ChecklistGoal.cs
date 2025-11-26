@@ -9,9 +9,9 @@ public class ChecklistGoal : Goal
     private int _amountCompleted;
     private int _target;
     private int _bonus;
-    public ChecklistGoal(string name, string description, int points, int amountCompleted, int target, int bonus) : base(name, description, points)
+    public ChecklistGoal(string name, string description, int points,  , int target, int bonus) : base(name, description, points)
     {
-        _amountCompleted = amountCompleted;
+        _amountCompleted = 0;
         _target = target;
         _bonus = bonus;
     }
@@ -24,7 +24,7 @@ This method should do whatever necessary for each specific kind of goal, such as
 */
     public override void RecordEvent()
     {
-        
+
     }
 
     /*
