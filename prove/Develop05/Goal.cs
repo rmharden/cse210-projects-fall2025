@@ -7,9 +7,9 @@
 */
 public abstract class Goal
 {
-    private string _shortName;
-    private string _description;
-    private int _points;
+    protected string _shortName;
+    protected string _description;
+    protected int _points;
 
     public Goal(string name, string description, int points)
     {
@@ -32,18 +32,21 @@ public abstract class Goal
     public abstract bool IsComplete();
 
     /*
-    This method should return the details of a goal that could be shown in a LIST. It should include the checkbox
+    This method should return the details of a goal that could be shown in a LIST. It should include the checkbox, the short name, and description. Then in the case of ChecklistGoal, it should be overridden in the derived class as needed.
     */
     public string GetDetailString()
     {
-        // if (IsComplete == true)
-        // {
-        //     return $"[X] {_shortName} ({_description})";
-        // }
-        // else
-        // {
+        if (IsComplete())
+        {
+            return $"[X] {_shortName} ({_description})";
+        }
+        else
+        {
             return $"[ ] {_shortName} ({_description})";
-        // }
+        }
     }
+    /*
+    This method should provide all the details of a goal in a way that is easy to save a file, and then load later.
+    */
     public abstract string GetStringRepresentation();
 }
