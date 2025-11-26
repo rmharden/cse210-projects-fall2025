@@ -43,9 +43,12 @@ This method should do whatever necessary for each specific kind of goal, such as
     {
         if (_amountCompleted == _target)
         {
-
+            return true;
         }
-        return false;
+        else
+        {
+            return false;
+        }
     }
 
     /*
