@@ -58,11 +58,11 @@ This method should do whatever necessary for each specific kind of goal, such as
     {
         if (IsComplete())
         {
-            return $"[X] {_shortName} ({_description})";
+            return $"[X] {_shortName} ({_description} - Currently completed: {_amountCompleted}/{_target})";
         }
         else
         {
-            return $"[ ] {_shortName} ({_description})";
+            return $"[ ] {_shortName} ({_description}- Currently completed: {_amountCompleted}/{_target})";
         }
     }
     /*
@@ -70,6 +70,7 @@ This method should do whatever necessary for each specific kind of goal, such as
     */
     public override string GetStringRepresentation()
     {
-        return "";
+        // i think this is for the list. I need to go back and find out how to do this
+        return $"{_shortName} ({_description})";
     }
 }
