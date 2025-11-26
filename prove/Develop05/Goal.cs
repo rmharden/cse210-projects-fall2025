@@ -17,4 +17,11 @@ public abstract class Goal
         _description = description;
         _points = points;
     }
+    public abstract void RecordEvent();
+    public abstract bool IsComplete();
+    public string GetDetailString()
+    {
+        return "";
+    }
+    public abstract string GetStringRepresentation();
 }
