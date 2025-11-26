@@ -10,42 +10,58 @@
 */
 public class GoalManager
 {
-    private List<Goal> _goals;
+    private List<Goal> _goals = new List<Goal>();
     private int _score;
     public GoalManager()
     {
 
     }
+    // This is the "main" function for this class/ It is called by Program.cs and then runs the menu loop.
     public void Start()
     {
-
+        var choice = "";
+        do
+        {
+            
+            Console.WriteLine();
+        } while (choice != "6");
     }
+    // This displays the player's current score.
     public void DisplayPlayerInfo()
     {
-
+        Console.WriteLine($"You now have {_score} points!");
     }
+    // This lists the names of each goal.
+    // ***** WHY do we list the names separate from the goal details?? is the types of goals?? or is this the user given _shortName goals?? ****
     public void ListGoalNames()
     {
 
     }
+    // This lists the details of each goal (including the checkbox of whether it is complete..... Do I call something here??)
     public void ListGoalDetails()
     {
 
     }
+    // This asks the user for the information about a new goal. Then, it creates the goal and adds it to the list.
+    // Is this the sub-menu??
     public void CreateGoal()
     {
 
     }
+    // This asks the user which goal they have done and then records the event by calling the RecordEvent method on that goal.
+    // Is this the sub-menu?
     public void RecordEvent()
     {
 
     }
+    // Saves the list of goals to a file.
     public void SaveGoals()
     {
 
     }
+    // Loads the lis of goals from a file.
     public void LoadGoals()
     {
-        
+
     }
 }
