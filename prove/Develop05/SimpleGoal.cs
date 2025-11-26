@@ -1,0 +1,5 @@
+/*
+
+Simple goals that can be marked complete and the user gains some value.
+
+*/
