@@ -1,3 +1,5 @@
+
+using System.IO; 
 public class GoalManager
 {
     private List<Goal> _goals = new List<Goal>();
@@ -65,15 +67,15 @@ public class GoalManager
         Console.Write("\nWhich goal type would you like to create? ");
 
         string choice = Console.ReadLine();
-        
-            Console.Write("What is the name of your goal? ");
-            string shortName = Console.ReadLine();
 
-            Console.Write("What is a short description of your goal? ");
-            string description = Console.ReadLine();
+        Console.Write("What is the name of your goal? ");
+        string shortName = Console.ReadLine();
 
-            Console.Write("What are the amount of points associated with this goal? ");
-            int points = int.Parse(Console.ReadLine());
+        Console.Write("What is a short description of your goal? ");
+        string description = Console.ReadLine();
+
+        Console.Write("What are the amount of points associated with this goal? ");
+        int points = int.Parse(Console.ReadLine());
 
         if (choice == "1")
         {
@@ -85,8 +87,8 @@ public class GoalManager
 
             // Console.Write("\nWhat are the amount of points associated with this goal? ");
             // int points = int.Parse(Console.ReadLine());
-  
-            SimpleGoal s1 = new SimpleGoal(shortName, description,points);
+
+            SimpleGoal s1 = new SimpleGoal(shortName, description, points);
             _goals.Add(s1);
         }
         else if (choice == "2")
@@ -124,7 +126,7 @@ public class GoalManager
 
             ChecklistGoal c1 = new ChecklistGoal(shortName, description, points, 0, target, bonus);
             _goals.Add(c1);
-        }      
+        }
 
     }
     // 2. List Goals
@@ -144,6 +146,24 @@ public class GoalManager
     // 3. Save Goals
     public void SaveGoals()
     {
+        Console.WriteLine("What is the filename?");
+        string filename = Console.ReadLine();
+
+        using (StreamWriter outputFile = new StreamWriter(filename))
+        {
+            // You can add text to the file with the WriteLine method
+            outputFile.WriteLine("This will be the first line in the file.");
+
+            // You can use the $ and include variables just like with Console.WriteLine
+            string color = "Blue";
+            outputFile.WriteLine($"My favorite color is {color}");
+    
+
+            foreach(Goal goal in _goals)
+            {
+                outputFile.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText}");
+            }
+        }
 
     }
     // 4. Load Goals
