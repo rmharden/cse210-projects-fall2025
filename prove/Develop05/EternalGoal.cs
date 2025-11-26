@@ -16,7 +16,7 @@ public class EternalGoal : Goal
     Each one needs to provide a check to see if it IS COMPLETE.
     This method should do whatever necessary for each specific kind of goal, such as making a simple goal complete and adding to the number of times a checklist goal has been completed. It should return the point value associated with recording the event. (Keep in mind that it may contain a bonus in some cases if a checklist goal was just finished.)"
     */
-    public override void RecordEvent()
+    public override void RecordEvent() // this needs to be changed to an int, so it wouldn't have a string, right?
     {
         Console.WriteLine($"Congratulations! You have earned {_points}!");
        // Console.WriteLine($"You now have {_score}");
