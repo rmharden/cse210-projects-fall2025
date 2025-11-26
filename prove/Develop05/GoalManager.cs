@@ -8,6 +8,8 @@
 5. Allow the user's score and the current score to be saved and loaded.
 
 */
+using System.Data;
+
 public class GoalManager
 {
     private List<Goal> _goals = new List<Goal>();
@@ -68,18 +70,30 @@ public class GoalManager
     // ***** WHY do we list the names separate from the goal details?? is the types of goals?? or is this the user given _shortName goals?? ****
     public void ListGoalNames()
     {
-
+        foreach (Goal goal in _goals)
+        {
+            Console.WriteLine($"");
+            // The above needs to have a number in front of each goal - I don't know how to do that yet.
+        }
     }
     // This lists the details of each goal (including the checkbox of whether it is complete..... Do I call something here??)
     public void ListGoalDetails()
     {
-
+        foreach (Goal goal in _goals)
+        {
+            Console.WriteLine(goal.GetDetailString());
+        }
     }
     // This asks the user for the information about a new goal. Then, it creates the goal and adds it to the list.
     // Is this the sub-menu??
     public void CreateGoal()
     {
+        Console.WriteLine("\nThe types of goals are:");
+        Console.WriteLine("     1. Simple Goal");
+        Console.WriteLine("     2. Eternal Goal");
+        Console.WriteLine("     3. Checklist Goal");
 
+        Console.Write("\nWhich goal would you like to create? ");
     }
     // This asks the user which goal they have done and then records the event by calling the RecordEvent method on that goal.
     // Is this the sub-menu?
