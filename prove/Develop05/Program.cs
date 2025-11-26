@@ -9,6 +9,16 @@ Polymorphism Development Project
 Unit 05 Develop: Eternal Quest Program
 */
 
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+    }
+}
+
 
 
 
