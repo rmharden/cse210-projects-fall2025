@@ -8,17 +8,12 @@ W13 Prove: Developer: Final Project
 
 Program 3: Inheritance with Event Planning
 */
-
-
-
-
-
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Foundation3 World!");
+        //Console.WriteLine("Hello Foundation3 World!");
     }
 }
