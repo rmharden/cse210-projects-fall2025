@@ -5,16 +5,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        var choice = "";
+        string country = "";
         EthnicityCalculator e1 = new EthnicityCalculator();
         do
         {
             Console.WriteLine("When finished, type 'quit'.");
             Console.Write("What is the name of the country? ");
-            string country = Console.ReadLine();
+            country = Console.ReadLine();
             e1.AddCountry(country);
         }
-        while (choice != "quit");
+        while (country != "quit");
         e1.GetEthnicityEstimate();
     }
 }
