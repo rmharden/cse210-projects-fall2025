@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 class Program
 {
@@ -16,7 +17,8 @@ class Program
             country = country.Trim().ToLower();
             if (country.ToLower() != "quit")
             {
-                e1.AddCountry(country.ToUpper());
+                TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
+                e1.AddCountry(ti.ToTitleCase(country));
             }
         }
         while (country.ToLower() != "quit");
@@ -208,5 +210,9 @@ https://learn.microsoft.com/en-us/dotnet/api/system.string.trim?view=net-10.0
 ToLower()
 https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-10.0
 
+ToUpper()
+https://learn.microsoft.com/en-us/dotnet/api/system.string.toupper?view=net-10.0
 
+ToTitleCase()
+https://learn.microsoft.com/en-us/dotnet/api/system.globalization.textinfo.totitlecase?view=net-10.0
 */

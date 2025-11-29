@@ -44,13 +44,14 @@ public class EthnicityCalculator
                 uniqueCountries[j] = tempCountry;
             }
         }
-        Console.WriteLine("Ethnicity Estimate based on data entered:");
+        Console.WriteLine("\nEthnicity Estimate based on data entered:");
         foreach (var country in uniqueCountries)
         {
             int index = uniqueCountries.IndexOf(country);
             double percentage = (double)numberOfCountries[index] / totalCountries * 100;
             Console.WriteLine($"{country}: {percentage:F2}%");
         }
+        Console.WriteLine(" ");
     }
 }
 
