@@ -1,24 +1,23 @@
-using System.Runtime.CompilerServices;
-
 public class Person
 {
-    protected string _relation;
-    protected string _surname;
-    protected string _givenName;
-    protected int _birthYear;
-    protected string _birthCountry;
-    protected int _deathYear;
-    protected string _deathCountry;
-    public Person(string relation, string surname, string giveName, int birthYear, string birthCountry, int deathYear, string deathCountry)
+    private string _relation;
+    private string _surname;
+    private string _givenName;
+    private int _birthYear;
+    private string _birthCountry;
+    private int _deathYear;
+    private string _deathCountry;
+    public Person(string relation, string surname, string givenName, int birthYear, string birthCountry, int deathYear, string deathCountry)
     {
-        relation = _relation;
-        surname = _surname;
-        giveName = _givenName;
-        birthYear = _birthYear;
-        birthCountry = _birthCountry;
-        deathYear = _deathYear;
-        deathCountry = _deathCountry;
+        _relation = relation;
+        _surname = surname;
+        _givenName = givenName;
+        _birthYear = birthYear;
+        _birthCountry = birthCountry;
+        _deathYear = deathYear;
+        _deathCountry = deathCountry;
     }
+    // This is created for the list:
     public string GetPersonString()
     {
         return $"{_surname}, {_givenName} - your {_relation} - Year of Birth: {_birthYear}, Born in: {_birthCountry}, Year of Death: {_deathYear}, Died in: {_deathCountry} ";
