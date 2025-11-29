@@ -99,6 +99,8 @@ class Program
 
                         Console.WriteLine("What is your ancestor's birth country?");
                         string birthCountry = Console.ReadLine();
+
+                        e1.GetEthnicityEstimate();
                     }
                     else if (userInput != "1" && userInput != "2")
                     {
