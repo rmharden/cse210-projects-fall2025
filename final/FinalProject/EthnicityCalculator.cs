@@ -33,7 +33,7 @@ public class EthnicityCalculator
         }
         for (int i = 0; i < numberOfCountries.Count - 1; i++)
         {
-            for (int j = 1 + 1; j < numberOfCountries.Count; j++)
+            for (int j = i + 1; j < numberOfCountries.Count; j++)
             {
                 int tempCount = numberOfCountries[i];
                 numberOfCountries[i] = numberOfCountries[j];
@@ -51,5 +51,14 @@ public class EthnicityCalculator
             double percentage = (double)numberOfCountries[index] / totalCountries * 100;
             Console.WriteLine($"{country}: {percentage:F2}%");
         }
-    }    
+    }
 }
+
+
+// Sites I used for help:
+
+/*
+IndexOf:
+https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.indexof?view=net-10.0&utm_source=chatgpt.com
+
+*/

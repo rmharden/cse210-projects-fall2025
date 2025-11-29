@@ -12,9 +12,14 @@ class Program
             Console.WriteLine("When finished, type 'quit'.");
             Console.Write("What is the name of the country? ");
             country = Console.ReadLine();
-            e1.AddCountry(country);
+
+            if (country.ToLower() != "quit")
+            {
+                e1.AddCountry(country);
+            }
         }
-        while (country != "quit");
+        while (country.ToLower() != "quit");
+
         e1.GetEthnicityEstimate();
     }
 }
