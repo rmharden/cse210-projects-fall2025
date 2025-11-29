@@ -13,6 +13,7 @@ class Program
             Console.Write("What is the name of the country? ");
             country = Console.ReadLine();
 
+            country = country.Trim().ToLower();
             if (country.ToLower() != "quit")
             {
                 e1.AddCountry(country);
@@ -196,3 +197,16 @@ class Program
     //     }
 // }
 // }
+
+
+// Sites I used for help:
+
+/*
+Trim()
+https://learn.microsoft.com/en-us/dotnet/api/system.string.trim?view=net-10.0
+
+ToLower()
+https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-10.0
+
+
+*/
