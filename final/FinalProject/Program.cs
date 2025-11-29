@@ -16,7 +16,7 @@ class Program
             country = country.Trim().ToLower();
             if (country.ToLower() != "quit")
             {
-                e1.AddCountry(country);
+                e1.AddCountry(country.ToUpper());
             }
         }
         while (country.ToLower() != "quit");
