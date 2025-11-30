@@ -32,20 +32,9 @@ public class EthnicityCalculator
                 numberOfCountries[index]++;
             }
         }
-        for (int i = 0; i < numberOfCountries.Count - 1; i++)
-        {
-            for (int j = i + 1; j < numberOfCountries.Count; j++)
-            {
-                int tempCount = numberOfCountries[i];
-                numberOfCountries[i] = numberOfCountries[j];
-                numberOfCountries[j] = tempCount;
 
-                string tempCountry = uniqueCountries[i];
-                uniqueCountries[i] = uniqueCountries[j];
-                uniqueCountries[j] = tempCountry;
-            }
-        }
         Console.WriteLine("\nEthnicity Estimate based on data entered:");
+
         foreach (var country in uniqueCountries)
         {
             int index = uniqueCountries.IndexOf(country);
