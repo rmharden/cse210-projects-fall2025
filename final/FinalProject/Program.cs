@@ -6,23 +6,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Genealogy Program\nWhen finished, type 'quit'.");
-        string country = "";
+        Console.WriteLine("Welcome to the Genealogy Program!\nWhen finished, type 'quit'.");
+
         EthnicityCalculator e1 = new EthnicityCalculator();
-        do
+
+        Console.Write("What is the name of the country? ");
+        string country = Console.ReadLine();
+        country = country.Trim().ToLower();
+
+        while (country != "quit")
         {
+            TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
+            e1.AddCountry(ti.ToTitleCase(country));
+
             Console.Write("What is the name of the country? ");
             country = Console.ReadLine();
-
             country = country.Trim().ToLower();
-            if (country.ToLower() != "quit")
-            {
-                TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
-                e1.AddCountry(ti.ToTitleCase(country));
-            }
         }
-        while (country.ToLower() != "quit");
-
         e1.GetEthnicityEstimate();
     }
 }
