@@ -6,11 +6,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Welcome to the Genealogy Program\nWhen finished, type 'quit'.");
         string country = "";
         EthnicityCalculator e1 = new EthnicityCalculator();
         do
         {
-            Console.WriteLine("When finished, type 'quit'.");
             Console.Write("What is the name of the country? ");
             country = Console.ReadLine();
 
