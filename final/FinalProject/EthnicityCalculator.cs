@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 public class EthnicityCalculator
 {
+    // DISPLAYED LIST OF ETHNICITY ESTIMATE IS NOT IN ORDER - NEED TO LEARN HOW TO SORT THIS!
     private List<string> _countries;
     public EthnicityCalculator()
     {
