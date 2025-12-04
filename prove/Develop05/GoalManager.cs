@@ -1,22 +1,81 @@
 public class GoalManager
 {
-    int _scorePoints;
+    private int _scorePoints;
+    List<Goal> _goals = new List<Goal>();
+    Goal aGoal = new Goal();
+
     public GoalManager()
     {
-        Console.WriteLine();
+        _goals.Add(aGoal);
 
     }
     public void Start()
     {
-        Console.WriteLine($"You have {_scorePoints}.");
-        Console.WriteLine($"\nMenu Options:");
-        Console.WriteLine($"1.  Create New Goal");
-        Console.WriteLine($"2.  List Goals");
-        Console.WriteLine($"3.  Save Goals");
-        Console.WriteLine($"4.  Load Goals");
-        Console.WriteLine($"5.  Record Event");
-        Console.WriteLine($"6.  Quit");
-        Console.Write($"Select a choice from the menu: ");
+        Console.WriteLine("\nWelcome to the Eternal Quest Program!");
+
+        string userResponse = "";
+        while (userResponse != "6")
+        {
+            Console.WriteLine($"You have {_scorePoints}.");
+
+            Console.WriteLine($"\nMenu Options:");
+            Console.WriteLine($"1.  Create New Goal");
+            Console.WriteLine($"2.  List Goals");
+            Console.WriteLine($"3.  Save Goals");
+            Console.WriteLine($"4.  Load Goals");
+            Console.WriteLine($"5.  Record Event");
+            Console.WriteLine($"6.  Quit");
+
+            Console.Write($"Select a choice from the menu: ");
+
+            userResponse = Console.ReadLine();
+
+            if (userResponse == "1")
+            {
+                // Create New Goal
+                CreateGoal();
+            }
+            else if (userResponse == "2")
+            {
+                // List Goals
+                ListGoals();
+            }
+        }
+    }
+    public void CreateGoal()
+    {
+        string choice = "";
+
+        Console.WriteLine($"The types of Goals are:");
+        Console.WriteLine($"1.  Simple Goal");
+        Console.WriteLine($"2.  Eternal Goal");
+        Console.WriteLine($"3.  Checklist Goal");
+
+        Console.Write($"\nWhich type of goal would you like to create? ");
+
+        if (choice == "1")
+        {
+            SimpleGoal sg1 = new SimpleGoal();
+        }
+        else if (choice == "2")
+        {
+            EternalGoal eg1 = new EternalGoal();
+        }
+        else if (choice == "3")
+        {
+            ChecklistGoal cg1 = new ChecklistGoal();
+        }
+        else
+        {
+            Console.WriteLine("Invalid number.");
+        }
+    }
+    public void ListGoals()
+    {
+        foreach (Goal goal in _goals)
+        {
+            goal.GetListDetails();
+        }
     }
 }
 
