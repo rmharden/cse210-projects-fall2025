@@ -45,6 +45,10 @@ public class GoalManager
                 // Save Goals
                 SaveGoals();
             }
+            else if (userResponse == "4")
+            {
+                // Load Goals
+            }
         }
     }
     public void CreateGoal()
@@ -85,7 +89,7 @@ public class GoalManager
     }
     public void SaveGoals()
     {
-        Console.WriteLine("What is the name of the file?");
+        Console.Write("\nWhat is the name of the file? ");
         string fileName = Console.ReadLine();
 
         // is this the Goal class with the GetStringRepresentation?
@@ -95,6 +99,24 @@ public class GoalManager
                 outputFile.WriteLine(aGoal.GetStringRepresentation());
         }
         Console.WriteLine($"{fileName} saved.");
+    }
+    public void LoadGoals()
+    {
+        Console.WriteLine("\nWhat is the name of the file? ");
+        string fileName = Console.ReadLine();
+
+        string[] lines = System.IO.File.ReadAllLines(fileName);
+        foreach (string line in lines)
+        {
+            // I'm not sure this is correct.
+            string[] parts = line.Split("~|~");
+            Goal newGoal = new Goal();
+            newGoal._points = parts[0];
+            newGoal._goalName = parts[1];
+            newGoal._description = parts[2];
+
+            _goals.Add(aGoal);
+        }
     }
 }
 

@@ -1,8 +1,8 @@
 public class Goal
 {
-    protected string _goalName;
-    protected string _description;
-    protected string _points;
+    public string _goalName;
+    public string _description;
+    public string _points;
     public Goal()
     {
 
@@ -15,7 +15,7 @@ public class Goal
     public string GetStringRepresentation()
     {
         // this might need a if statement for the [X] or [ ].
-        return $"[ ]|{_goalName}|({_description})";
+        return $"{_points}~|~{_goalName}~|~({_description})";
     }
 }
 
