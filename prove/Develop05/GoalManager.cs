@@ -40,6 +40,11 @@ public class GoalManager
                 // List Goals
                 ListGoals();
             }
+            else if (userResponse == "3")
+            {
+                // Save Goals
+                SaveGoals();
+            }
         }
     }
     public void CreateGoal()
@@ -56,6 +61,7 @@ public class GoalManager
         if (choice == "1")
         {
             SimpleGoal sg1 = new SimpleGoal();
+            _goals.Add(aGoal); // Not sure this is right
         }
         else if (choice == "2")
         {
@@ -76,6 +82,19 @@ public class GoalManager
         {
             goal.GetListDetails();
         }
+    }
+    public void SaveGoals()
+    {
+        Console.WriteLine("What is the name of the file?");
+        string fileName = Console.ReadLine();
+
+        // is this the Goal class with the GetStringRepresentation?
+        using (StreamWriter outputFile = new StreamWriter(fileName))
+        {
+            foreach (Goal goal in _goals)
+                outputFile.WriteLine(aGoal.GetStringRepresentation());
+        }
+        Console.WriteLine($"{fileName} saved.");
     }
 }
 

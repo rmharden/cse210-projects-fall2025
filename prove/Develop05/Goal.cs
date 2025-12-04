@@ -12,6 +12,11 @@ public class Goal
         // This may need to have an if statement for [X] or [ ].
         Console.WriteLine($"[ ] {_goalName} ({_description})");
     }
+    public string GetStringRepresentation()
+    {
+        // this might need a if statement for the [X] or [ ].
+        return $"[ ]|{_goalName}|({_description})";
+    }
 }
 
 

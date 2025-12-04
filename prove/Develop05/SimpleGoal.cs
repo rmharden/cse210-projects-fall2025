@@ -4,6 +4,10 @@ public class SimpleGoal
     {
 
     }
+    public void RecordGoal()
+    {
+        
+    }
 }
 
 
