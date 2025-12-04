@@ -48,6 +48,20 @@ public class GoalManager
             else if (userResponse == "4")
             {
                 // Load Goals
+                LoadGoals();
+            }
+            else if (userResponse == "5")
+            {
+                // Record Event
+
+            }
+            else if (userResponse == "6")
+            {
+                Console.WriteLine("Thank you for using the Eternal Quest Program!");
+            }
+            else
+            {
+                Console.WriteLine("Invalid number.\n");
             }
         }
     }
