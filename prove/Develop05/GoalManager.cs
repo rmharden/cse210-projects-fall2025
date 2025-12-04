@@ -108,8 +108,9 @@ public class GoalManager
         // is this the Goal class with the GetStringRepresentation?
         using (StreamWriter outputFile = new StreamWriter(fileName))
         {
+            outputFile.WriteLine(_scorePoints);
             foreach (Goal goal in _goals)
-                outputFile.WriteLine(aGoal.GetStringRepresentation());
+                outputFile.WriteLine(goal.GetStringRepresentation());
         }
         Console.WriteLine($"{fileName} saved.");
     }
@@ -123,18 +124,17 @@ public class GoalManager
         {
             // I'm not sure this is correct.
             string[] parts = line.Split("~|~");
-            Goal newGoal = new Goal();
-            newGoal._points = parts[0];
-            newGoal._goalName = parts[1];
-            newGoal._description = parts[2];
+            _points = parts[0];
+            _goalName = parts[1];
+            _description = parts[2];
 
-            _goals.Add(aGoal);
+            _goals.Add(newGoal);
         }
     }
 
     public void RecordEvent()
     {
-
+        ListGoalNames();
 
         Console.Write("\nWhich goal did you accomplish? ");
         string userInput = Console.ReadLine();
