@@ -20,19 +20,12 @@ public class SimpleGoal : Goal
     public override bool IsComplete()
     // I need to do more than this but I don't know what.
     {
-        if (isComplete == true)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return isComplete;
     }
     public override string GetStringRepresentation()
     {
-        // this might need a if statement for the [X] or [ ].
-        return $"{_points}~|~{_goalName}~|~({_description})";
+        // I'm not sure about this either.
+        return $"Eternal Goal:~|~{_points}~|~{_goalName}~|~({_description})";
     }
 }
 
