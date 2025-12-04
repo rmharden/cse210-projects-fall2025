@@ -10,18 +10,22 @@ public abstract class Goal
         _description = goalDescription;
         _points = goalPoints;
     }
+    public string GetName()
+    {
+        return _goalName;
+    }
     public abstract void RecordGoal();
     public abstract bool IsComplete();
     public string GetListDetails()
     {
-        if (isComplete == false)
+        if (IsComplete())
         {
             // This may need to have an if statement for [X] or [ ].
-            return $"[ ] {_goalName} ({_description})";
+            return $"[X] {_goalName} ({_description})";
         }
         else
         {
-            return $"[X] {_goalName} ({_description})";
+            return $"[ ] {_goalName} ({_description})";
         }
     }
     public abstract string GetStringRepresentation();

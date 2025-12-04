@@ -2,12 +2,14 @@ public class GoalManager
 {
     private int _scorePoints;
     List<Goal> _goals = new List<Goal>();
-    Goal aGoal = new Goal();
 
     public GoalManager()
     {
-        _goals.Add(aGoal);
 
+    }
+    public void DisplayUserScore()
+    {
+        Console.WriteLine($"You have {_scorePoints}");
     }
     public void Start()
     {
@@ -16,7 +18,7 @@ public class GoalManager
         string userResponse = "";
         while (userResponse != "6")
         {
-            Console.WriteLine($"You have {_scorePoints}.");
+            DisplayUserScore();
 
             Console.WriteLine($"\nMenu Options:");
             Console.WriteLine($"1.  Create New Goal");
@@ -53,7 +55,7 @@ public class GoalManager
             else if (userResponse == "5")
             {
                 // Record Event
-
+                RecordEvent();
             }
             else if (userResponse == "6")
             {
@@ -96,10 +98,7 @@ public class GoalManager
     }
     public void ListGoals()
     {
-        foreach (Goal goal in _goals)
-        {
-            goal.GetListDetails();
-        }
+        ListGoalDetails();
     }
     public void SaveGoals()
     {
@@ -132,8 +131,32 @@ public class GoalManager
             _goals.Add(aGoal);
         }
     }
-}
 
+    public void RecordEvent()
+    {
+
+
+        Console.Write("\nWhich goal did you accomplish? ");
+        string userInput = Console.ReadLine();
+
+
+    }
+    public void ListGoalNames()
+    {
+        int numbersCount = 1;
+        foreach (Goal goal in _goals)
+        {
+            Console.WriteLine($"{numbersCount}. {goal.GetName()}");
+        }
+    }
+    public void ListGoalDetails()
+    {
+        foreach (Goal goal in _goals)
+        {
+            Console.WriteLine($"{goal.GetListDetails}");
+        }
+    }
+}
 /* 
 
 Displays the user's score. (Is this here or is this in Goal?)
