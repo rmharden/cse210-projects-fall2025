@@ -8,14 +8,15 @@ public class SimpleGoal : Goal
     public override void RecordGoal()
     {
         // This doesn't go here: 
-        Console.Write("\nWhat is the name of the goal? ");
-        string goalName = Console.ReadLine();
+        // Console.Write("\nWhat is the name of the goal? ");
+        // string goalName = Console.ReadLine();
 
-        Console.Write("\nWhat is a short description of the goal? ");
-        string goalDescription = Console.ReadLine();
+        // Console.Write("\nWhat is a short description of the goal? ");
+        // string goalDescription = Console.ReadLine();
 
-        Console.Write("\nWhat is the amount of points associated with this the goal? ");
-        int goalPoints = int.Parse(Console.ReadLine());
+        // Console.Write("\nWhat is the amount of points associated with this the goal? ");
+        // int goalPoints = int.Parse(Console.ReadLine());
+        _isComplete = true;
     }
     public override bool IsComplete()
     // I need to do more than this but I don't know what.
@@ -25,7 +26,7 @@ public class SimpleGoal : Goal
     public override string GetStringRepresentation()
     {
         // I'm not sure about this either.
-        return $"Eternal Goal:~|~{_points}~|~{_goalName}~|~({_description})";
+        return $"Eternal Goal:{_goalName}~|~({_description}~|~{_points}~|~{_isComplete})";
     }
 }
 
