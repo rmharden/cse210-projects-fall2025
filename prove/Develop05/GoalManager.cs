@@ -80,8 +80,8 @@ public class GoalManager
 
         if (choice == "1")
         {
-            SimpleGoal sg1 = new SimpleGoal();
-            _goals.Add(aGoal); // Not sure this is right
+            // SimpleGoal sg1 = new SimpleGoal();
+            // _goals.Add(aGoal); // Not sure this is right
         }
         else if (choice == "2")
         {
