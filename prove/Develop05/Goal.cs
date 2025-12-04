@@ -1,23 +1,37 @@
-public class Goal
+public abstract class Goal
 {
-    public string _goalName;
-    public string _description;
-    public string _points;
-    public Goal()
+    protected bool isComplete = false;
+    protected string _goalName;
+    protected string _description;
+    protected int _points;
+    protected Goal(string goalName, string goalDescription, int goalPoints)
     {
-
+        _goalName = goalName;
+        _description = goalDescription;
+        _points = goalPoints;
     }
-    public void GetListDetails()
+    public abstract void RecordGoal();
+    public abstract bool IsComplete();
+    public string GetListDetails()
     {
-        // This may need to have an if statement for [X] or [ ].
-        Console.WriteLine($"[ ] {_goalName} ({_description})");
+        if (isComplete == false)
+        {
+            // This may need to have an if statement for [X] or [ ].
+            return $"[ ] {_goalName} ({_description})";
+        }
+        else
+        {
+            return $"[X] {_goalName} ({_description})";
+        }
     }
-    public string GetStringRepresentation()
-    {
-        // this might need a if statement for the [X] or [ ].
-        return $"{_points}~|~{_goalName}~|~({_description})";
-    }
+    public abstract string GetStringRepresentation();
+    // {
+    //     // this might need a if statement for the [X] or [ ].
+    //     return $"{_points}~|~{_goalName}~|~({_description})";
+    // }
 }
+
+
 
 
 /* 
