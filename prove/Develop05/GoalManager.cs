@@ -1,3 +1,5 @@
+using System.Reflection.Metadata;
+
 public class GoalManager
 {
     private int _scorePoints;
@@ -124,11 +126,11 @@ public class GoalManager
         {
             // I'm not sure this is correct.
             string[] parts = line.Split("~|~");
-            _points = parts[0];
-            _goalName = parts[1];
-            _description = parts[2];
+            int _points = int.Parse(parts[0]);
+            string _goalName = parts[1];
+            string _description = parts[2];
 
-            _goals.Add(newGoal);
+            _goals.Add(/*I need an object of goal, right?*/);
         }
     }
 
