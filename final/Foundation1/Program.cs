@@ -6,9 +6,7 @@ December 9, 2025
 
 Final Project
 Program 1: Abstraction with YouTube Videos
-
 */
-
 
 using System;
 class Program
@@ -17,6 +15,7 @@ class Program
     {
         List<Video> _videos = new List<Video>();
 
+        Console.Clear();
         Console.WriteLine("Welcome to Foundation 1: Abtraction with YouTube Videos!");
 
 
@@ -80,14 +79,13 @@ class Program
         foreach (Video video in _videos)
         {
             Console.WriteLine();
-            Console.WriteLine(video._title);
-            Console.WriteLine(video._author);
-            Console.WriteLine($"{video._length} seconds");
-            Console.WriteLine($"Comments: {video.GetCommentsNumber()}");
+            Console.WriteLine($"\n{video._title} by {video._author} ({video._length} seconds)");
+            
+            Console.WriteLine($"Comments: ({video.GetCommentsNumber()})");
 
             foreach (Comment comment in video._comments)
             {
-                Console.WriteLine(comment);
+                Console.WriteLine($"> {comment.DisplayComment()}");
             }
         }
     }

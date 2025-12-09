@@ -7,8 +7,8 @@ public class Comment
         _commenterName = commenterName;
         _text = text;
     }
-    public void DisplayComment()
+    public string DisplayComment()
     {
-        Console.WriteLine($"{_commenterName}: {_text}");
+        return $"{_commenterName}: {_text}";
     }
 }
