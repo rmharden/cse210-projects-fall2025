@@ -53,8 +53,6 @@ class Program
 
 
         // Third Video
-
-
         Video v3 = new Video("Painting Techniques", "Sidse Thøgersdatter", 720);
 
         Comment c1v3 = new Comment("Hugh Falconer", "It didn't occur to me to use a flat brush for that technique. Awesome!");

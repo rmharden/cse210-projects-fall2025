@@ -5,6 +5,7 @@ public class Video
     public int _length;
     public List<Comment> _comments = new List<Comment>();
     public List<Video> _videos = new List<Video>();
+    
     public Video(string title, string author, int length)
     {
         _title = title;
