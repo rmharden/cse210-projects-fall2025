@@ -9,6 +9,9 @@ class Program
     }
     public class UsersInfo
     {
+        private string _usersName;
+        private string _relation;
+
         public UsersInfo()
         {
 
@@ -16,7 +19,7 @@ class Program
         public void GetUsersInfo()
         {
             Console.Write("\nWhat is your name? ");
-            string _preparerName = Console.ReadLine();
+            string _usersName = Console.ReadLine();
 
             Console.Write("\nWhat is your relation to this relative? (example: son, daughter, grandson, granddaugher...) ");
             string _relation = Console.ReadLine();
@@ -43,6 +46,10 @@ class Program
     {
         public AdvancedQuestions()
         {
+
+        }
+        public string GetAdvancedQuestions()
+        {
             Console.Write("\nWhat is the year your relative died? ");
             int _yearDied = int.Parse(Console.ReadLine());
 
@@ -57,6 +64,8 @@ class Program
 
             Console.Write("\nWhat is your your relative's spouse's surname name? ");
             string _spouseSurname = Console.ReadLine();
+
+            return 
         }
     }
     public class FamilyGroupSheet
@@ -68,7 +77,7 @@ class Program
         public void DisplayFamilyGroupSheet()
         {
             Console.WriteLine($"Family Group Record");
-            Console.WriteLine($"Prepared by {_preparerName}");
+            Console.WriteLine($"Prepared by {}");
             Console.WriteLine($"");
             Console.WriteLine($"");
             Console.WriteLine($"");
