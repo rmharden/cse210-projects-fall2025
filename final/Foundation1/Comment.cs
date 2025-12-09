@@ -1,14 +1,14 @@
 public class Comment
 {
-    private string _name;
+    private string _commenterName;
     private string _text;
-    public Comment(string name, string text)
+    public Comment(string commenterName, string text)
     {
-        _name = name;
+        _commenterName = commenterName;
         _text = text;
     }
     public void DisplayComment()
     {
-        Console.WriteLine($"{_name}: {_text}");
+        Console.WriteLine($"{_commenterName}: {_text}");
     }
 }
