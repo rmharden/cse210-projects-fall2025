@@ -83,7 +83,7 @@ class Program
             Console.WriteLine(video._title);
             Console.WriteLine(video._author);
             Console.WriteLine($"{video._length} seconds");
-            Console.WriteLine($"Comments {video.GetCommentsNumber}");
+            Console.WriteLine($"Comments: {video.GetCommentsNumber()}");
 
             foreach (Comment comment in video._comments)
             {
