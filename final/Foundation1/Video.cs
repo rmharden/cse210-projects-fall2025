@@ -25,6 +25,6 @@ public class Video
     }
     public int GetCommentsNumber()
     {
-        return 0;
+        return _comments.Count;
     }
 }
