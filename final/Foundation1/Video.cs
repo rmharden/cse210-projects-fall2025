@@ -11,9 +11,9 @@ public class Video
         _author = author;
         _length = length;
     }
-    public void AddCommentToList()
+    public void AddCommentToList(Comment comment)
     {
-
+        _comments.Add(comment);
 
     }
     public void DisplayAll()
