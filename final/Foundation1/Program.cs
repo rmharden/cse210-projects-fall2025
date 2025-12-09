@@ -69,11 +69,6 @@ class Program
 
         _videos.Add(v3);
 
-
-        // v1.DisplayVideos();
-        // v2.DisplayVideos();
-        // v3.DisplayVideos();
-
         foreach (Video video in _videos)
         {
             video.Display();
