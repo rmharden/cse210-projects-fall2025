@@ -21,8 +21,13 @@ public class Video
         return _comments.Count;
     }
 
-    public void DisplayVideos()
+    public void Display()
     {
-        
+        Console.WriteLine($"\n{_title} by {_author} ({_length} seconds)");
+        Console.WriteLine($"Comments: ({GetCommentsNumber()})");
+        foreach (Comment comment in _comments)
+        {
+            Console.WriteLine($"> {comment.DisplayComment()}");
+        }
     }
 }

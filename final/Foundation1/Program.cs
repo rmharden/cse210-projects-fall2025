@@ -78,15 +78,7 @@ class Program
 
         foreach (Video video in _videos)
         {
-            Console.WriteLine();
-            Console.WriteLine($"\n{video._title} by {video._author} ({video._length} seconds)");
-            
-            Console.WriteLine($"Comments: ({video.GetCommentsNumber()})");
-
-            foreach (Comment comment in video._comments)
-            {
-                Console.WriteLine($"> {comment.DisplayComment()}");
-            }
+            video.Display();
         }
     }
 }
@@ -97,5 +89,4 @@ Sites I used for help:
 BYU-Idaho Video by Chad Macbeth
 https://video.byui.edu/media/t/1_fnsp1qsi/259941952
 https://video.byui.edu/media/t/1_fnsp1qsi
-
 */
