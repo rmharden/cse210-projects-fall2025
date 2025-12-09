@@ -20,8 +20,8 @@ public class Video
     {
         return _comments.Count;
     }
+}
     // public string DisplayVideos()
     // {
     //     return $"{_title} by {_author}\nComments ({GetCommentsNumber()})\n";
     // }
-}
