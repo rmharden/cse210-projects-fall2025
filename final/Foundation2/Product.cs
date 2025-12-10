@@ -14,6 +14,6 @@ public class Product
     }
     public double CalculateCost()
     {
-        return 0;
+        return _productPrice * _productQty;
     }
 }
