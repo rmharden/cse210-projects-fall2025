@@ -14,17 +14,27 @@ public class Order
     }
     public double GetOrderTotalCost()
     {
+        if (_customer.IsCustomerUSA() == true)
+        {
+           return 5;
+        }
+        else
+        {
+            return 35;
+        }
+        
+
         // Total price is calculated as the sum of the total cost of each product plus a one-time shipping cost.
-        // string country;
-        // if (country == "USA")
-        // {
-        //     return 5;
-        // }
-        // else
-        // {
-        //     return 35;
-        // }
-        return 0;
+            // string country;
+            // if (country == "USA")
+            // {
+            //     return 5;
+            // }
+            // else
+            // {
+            //     return 35;
+            // }
+            return 0;
     }
     public string GetPackingLabel()
     {
