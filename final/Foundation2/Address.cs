@@ -18,7 +18,7 @@ public class Address
     // {
     //     _country = country;
     // }
-    
+
     public string GetCountry()
     {
         return _country;
@@ -37,6 +37,6 @@ public class Address
     }
     public string GetAddress()
     {
-        return $"{_street}\n{_city}, {_stateProv}, {_country}";
+        return $"{_street}\n{_city}, {_stateProv}, {GetCountry()}";
     }
 }
