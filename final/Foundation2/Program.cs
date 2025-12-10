@@ -1,3 +1,14 @@
+/*
+Rebekah Harden
+CSE 210: Programming with Classes
+Brother Randall Booth
+December 10, 2025
+
+W13 Prove: Developer: Final Project
+
+Program 2: Encapsulation with Online Ordering
+*/
+
 using System;
 
 class Program
