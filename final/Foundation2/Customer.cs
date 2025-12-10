@@ -9,15 +9,17 @@ public class Customer
         _name = name;
     }
 
-    public double IsCustomerUSA()
+    public bool IsCustomerUSA()
     {
-        if (_address.IsAddressUSA() == true)
-        {
-            return 5;
-        }
-        else
-        {
-            return 35;
-        }
+        // Not sure here:
+        // if (_address.IsAddressUSA() == true)
+        // {
+        //     return 5;
+        // }
+        // else
+        // {
+        //     return 35;
+        // }
+        return _address.IsAddressUSA();
     }
 }
