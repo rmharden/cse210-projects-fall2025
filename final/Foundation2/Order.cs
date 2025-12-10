@@ -3,9 +3,10 @@ public class Order
     private Customer _customer;
     private List<Product> _products;
 
-    public Order(List<Product> products)
+    public Order(List<Product> products, Customer customer)
     {
-        products = _products = new List<Product>();
+        _products = products = new List<Product>();
+        _customer = customer;
     }
     public void AddProductToOrder()
     {
@@ -34,3 +35,10 @@ public class Order
         return "";
     }
 }
+
+
+/*
+
+I left off here. I need to go through the description and see what I am missing.
+
+*/
