@@ -38,11 +38,12 @@ public class Order
     }
     public string GetPackingLabel()
     {
-        return Customer.;
+        return $"Packing Label\n================ {_customer.GetCustomerName()}";
     }
     public string GetShippingLabel()
     {
-        return "";
+        
+        return $"Shipping Label\n================ {_customer.GetCustomerName()}\n{_customer.GetCustomerAddress}";
     }
 }
 
