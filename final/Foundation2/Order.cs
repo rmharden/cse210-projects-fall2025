@@ -8,9 +8,9 @@ public class Order
         _products = products = new List<Product>();
         _customer = customer;
     }
-    public void AddProductToOrder()
+    public void AddProductToOrder(Product product)
     {
-
+        _products.Add(product);
     }
     public double GetOrderTotalCost()
     {
@@ -38,11 +38,11 @@ public class Order
     }
     public string GetPackingLabel()
     {
-        return $"Packing Label\n================ {_customer.GetCustomerName()}";
+        Product p1 = new Product(Lost);
+        return $"Packing Label\n================ {}";
     }
     public string GetShippingLabel()
     {
-        
         return $"Shipping Label\n================ {_customer.GetCustomerName()}\n{_customer.GetCustomerAddress}";
     }
 }
