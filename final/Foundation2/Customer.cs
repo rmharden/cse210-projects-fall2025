@@ -8,7 +8,15 @@ public class Customer
         _address = address;
         _name = name;
     }
-
+    public string GetCustomerName()
+    {
+        return _name;
+    }
+    // do I need this if it's done in the contructor?
+    public void SetCustomerName(string name)
+    {
+        _name = name;
+    }
     public bool IsCustomerUSA()
     {
         // Not sure here:

@@ -38,7 +38,7 @@ public class Order
     }
     public string GetPackingLabel()
     {
-        return "";
+        return Customer.;
     }
     public string GetShippingLabel()
     {
