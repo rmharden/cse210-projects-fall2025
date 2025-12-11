@@ -30,10 +30,12 @@ public class Order
     }
     public string GetPackingLabel()
     {
+        // Need to do more work with this:
         foreach (var product in _products)
         {
-            return $"Packing Label\n================ {product.GetProductName}";
+            return $"Packing Label\n================ {product.GetProductName("")}";
         }
+        return "";
     }
     public string GetShippingLabel()
     {
