@@ -1,9 +1,10 @@
 public class Cycling : Activity
 {
     protected double _distance;
-    public Cycling(string date, string name, double minutes, double distance) : base(date, name, minutes)
+    protected double _speed;
+    public Cycling(string date, string name, double minutes, double distance, double speed) : base(date, name, minutes)
     {
-        _distance = distance;
+        _speed = speed;
     }
     public override double GetDistance()
     {

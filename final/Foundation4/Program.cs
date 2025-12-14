@@ -14,7 +14,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Foundation4 World!");
+        Console.WriteLine("Welcome to the Foundation 4: Polymorphism with Exercises Tracking Program!");
 
         Running r1 = new Running("5/3/2023", "Running", 90, 3);
         Console.WriteLine(r1.GetSummary());
