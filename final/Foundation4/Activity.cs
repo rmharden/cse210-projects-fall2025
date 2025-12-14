@@ -26,8 +26,8 @@ public abstract class Activity
     public virtual string GetSummary()
     {
         // this says it is unreachable code. I don't know why.
-        
-        //return $"{_date}" { GetName()} { _minutes};
+
+        return $"{_date}" { GetName()} { _minutes}- Distance {_distance} miles, Speed {};
         return "";
     }
 }
