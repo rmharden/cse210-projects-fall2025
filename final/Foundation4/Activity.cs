@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices;
-
 public abstract class Activity
 {
     protected string _date;
@@ -12,14 +10,15 @@ public abstract class Activity
         _name = name;
         _minutes = minutes;
     }
-    public string GetName()
-    {
-        return _name;
-    }
-    public void SetName(string name)
-    {
-        _name = name;
-    }
+    // I don't know if I need this:
+    // public string GetName()
+    // {
+    //     return _name;
+    // }
+    // public void SetName(string name)
+    // {
+    //     _name = name;
+    // }
     public abstract double GetDistance();
     public abstract double GetSpeed();
     public abstract double GetPace();
@@ -27,7 +26,7 @@ public abstract class Activity
     {
         // this says it is unreachable code. I don't know why.
 
-        //return $"{_date}" { GetName()} { _minutes}- Distance {_distance} miles, Speed {};
-        return "";
+        return $"{_date} {_name} ({_minutes} min) - Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: ";
+//        return "";
     }
 }
