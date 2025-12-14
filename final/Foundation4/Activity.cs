@@ -27,7 +27,7 @@ public abstract class Activity
     {
         // this says it is unreachable code. I don't know why.
 
-        return $"{_date}" { GetName()} { _minutes}- Distance {_distance} miles, Speed {};
+        //return $"{_date}" { GetName()} { _minutes}- Distance {_distance} miles, Speed {};
         return "";
     }
 }
