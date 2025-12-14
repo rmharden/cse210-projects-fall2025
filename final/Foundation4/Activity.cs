@@ -25,6 +25,9 @@ public abstract class Activity
     public abstract double GetPace();
     public virtual string GetSummary()
     {
-        return $"{_date}" {GetName()} {_minutes};
+        // this says it is unreachable code. I don't know why.
+        
+        //return $"{_date}" { GetName()} { _minutes};
+        return "";
     }
 }
