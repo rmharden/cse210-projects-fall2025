@@ -22,8 +22,9 @@ class Program
         Cycling c1 = new Cycling("5/4/2023", "Biking", 60, 15);
         Console.WriteLine(c1.GetSummary());
 
-        Swimming s1 = new Swimming("5/5/2023", "Swimming", 20, 0.155);
-        Console.WriteLine(s1.GetSummary());
+        // Need to figure out what is upsetting this:
+        // Swimming s1 = new Swimming("5/5/2023", "Swimming", 20, 0.155);
+        // Console.WriteLine(s1.GetSummary());
     }
 }
 
