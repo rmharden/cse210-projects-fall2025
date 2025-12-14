@@ -26,6 +26,6 @@ public abstract class Activity
     {
         // This did say it was unreachable code. I don't know why. But it seems to be working now.
 
-        return $"{_date} {_name} ({_minutes} min) - Distance: {GetDistance()} miles, Speed: {GetSpeed():F2} mph, Pace: {GetPace():F2} min per mile";
+        return $"\n{_date} {_name} ({_minutes} min) - Distance: {GetDistance():F1} miles, Speed: {GetSpeed():F1} mph, Pace: {GetPace():F1} min per mile";
     }
 }
