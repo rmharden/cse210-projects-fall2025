@@ -24,9 +24,8 @@ public abstract class Activity
     public abstract double GetPace();
     public virtual string GetSummary()
     {
-        // this says it is unreachable code. I don't know why.
+        // This did say it was unreachable code. I don't know why. But it seems to be working now.
 
-        return $"{_date} {_name} ({_minutes} min) - Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: ";
-//        return "";
+        return $"{_date} {_name} ({_minutes} min) - Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
     }
 }
