@@ -17,13 +17,13 @@ class Program
         Console.WriteLine("Hello Foundation4 World!");
 
         Running r1 = new Running("5/3/2023", "Running", 90, 3);
-        r1.GetSummary();
+        Console.WriteLine(r1.GetSummary());
 
         Cycling c1 = new Cycling("5/4/2023", "Biking", 60, 15);
-        c1.GetSummary();
+        Console.WriteLine(c1.GetSummary());
 
         Swimming s1 = new Swimming("5/5/2023", "Swimming", 20, 0.155);
-        s1.GetSummary();
+        Console.WriteLine(s1.GetSummary());
     }
 }
 
