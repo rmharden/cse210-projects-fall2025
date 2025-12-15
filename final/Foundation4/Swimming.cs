@@ -18,8 +18,4 @@ public class Swimming : Activity
     {
         return 60 / GetSpeed();
     }
-    public override string GetSummary()
-    {
-        return "";
-    }
 }
