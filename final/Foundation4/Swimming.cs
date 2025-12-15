@@ -16,6 +16,6 @@ public class Swimming : Activity
     }
     public override double GetPace()
     {
-        return 60 / GetSpeed();
+        return _minutes / GetDistance();
     }
 }
