@@ -14,7 +14,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("Hello Foundation3 World!");
+        Console.Clear();
+        Console.WriteLine("Welcome to Program 3: Inheritance with Event Planning!");
 
         // 1st example:
         Console.WriteLine($"\nExample 1:");
@@ -39,8 +40,8 @@ class Program
 
         Console.WriteLine($"\nBridge Tour - Tour the London Bridge\nOctober 13,2023 @ 11:30pm\n246 Oak Circle\nLondon, England, UK\n");
 
-        Console.WriteLine($"Type: Outdoors\nBridge Tour - Tour the London Bridge\nOctober 13, 2023 @ 11:30am\n246 Oak Circle\nLondon, England, UK\nWeather: Chance of Rain and Wind\n");
+        Console.WriteLine($"Type: Outdoor Gathering\nBridge Tour - Tour the London Bridge\nOctober 13, 2023 @ 11:30am\n246 Oak Circle\nLondon, England, UK\nWeather: Chance of Rain and Wind\n");
 
-        Console.WriteLine($"\nOutdoors: Bridge Tour - October 13, 2023\n========================================");
+        Console.WriteLine($"\nOutdoor Gathering: Bridge Tour - October 13, 2023\n========================================");
     }
 }
