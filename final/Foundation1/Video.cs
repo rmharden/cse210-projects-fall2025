@@ -4,8 +4,9 @@ public class Video
     public string _author;
     public int _length;
     public List<Comment> _comments = new List<Comment>();
-    public List<Video> _videos = new List<Video>();
-    
+    // Took this out due to feedback received on the class diagram 
+    //public List<Video> _videos = new List<Video>();
+
     public Video(string title, string author, int length)
     {
         _title = title;
