@@ -5,7 +5,7 @@ public class Order
 
     public Order(List<Product> products, Customer customer)
     {
-        _products = products = new List<Product>();
+        _products = products;
         _customer = customer;
     }
     public void AddProductToOrder(Product product)
