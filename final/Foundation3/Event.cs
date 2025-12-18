@@ -11,7 +11,11 @@ public abstract class Event
     private Address _address;
     public Event(string eventTitle, string description, string date, string time, Address address)
     {
-        
+        _eventTitle = eventTitle;
+        _description = description;
+        _date = date;
+        _time = time;
+        _address = address;
     }
     public string StandardDetails()
     {
