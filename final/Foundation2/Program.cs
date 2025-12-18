@@ -54,7 +54,7 @@ class Program
         Console.WriteLine(o2.GetPackingLabel());
 
         // I'm trying a different format for writing the last Order and Customer:
-
+        // I like this better.
 
         Address a3 = new Address("420 N Main St", "Muenster", "Texas", "USA");
         Customer c3 = new Customer("Catherine Höpler", a3);
@@ -66,12 +66,12 @@ class Program
 
         products3.Add(p1c3);
         products3.Add(p2c3);
-        products3.Add(p2c3);
+        products3.Add(p3c3);
 
         Order o3 = new Order(products3, c3);
         Console.WriteLine(o3.GetShippingLabel());
         Console.WriteLine($"\nOrder 3 Total Price: ${o3.GetOrderTotalCost():F2}");
-        Console.WriteLine(o2.GetPackingLabel());
+        Console.WriteLine(o3.GetPackingLabel());
     }
 }
 /*
