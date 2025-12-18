@@ -31,7 +31,7 @@ public class Order
     public string GetPackingLabel()
     {
         // Need to do more work with this:
-        foreach (var product in _products)
+        foreach (Product product in _products)
         {
             return $"Packing Label\n================ {product.GetProductName("")}";
         }
@@ -42,10 +42,3 @@ public class Order
         return $"Shipping Label\n================ {_customer.GetCustomerName()}\n{_customer.GetCustomerAddress}";
     }
 }
-
-
-/*
-
-I left off here. I need to go through the description and see what I am missing.
-
-*/

@@ -19,6 +19,8 @@ class Program
         Console.Clear();
         Console.WriteLine("Welcome to Program 3: Inheritance with Event Planning!");
 
+
+        /*
         // 1st example:
         Console.WriteLine($"\nExample 1:");
 
@@ -45,5 +47,6 @@ class Program
         Console.WriteLine($"Type: Outdoor Gathering\nBridge Tour - Tour the London Bridge\nOctober 13, 2023 @ 11:30am\n246 Oak Circle\nLondon, England, UK\nWeather: Chance of Rain and Wind\n");
 
         Console.WriteLine($"\nOutdoor Gathering: Bridge Tour - October 13, 2023\n========================================");
+        */
     }
 }
