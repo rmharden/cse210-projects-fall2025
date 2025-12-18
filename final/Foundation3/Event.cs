@@ -35,7 +35,20 @@ public abstract class Event
 }
 
 
-/*        
+/*       
+        Output Examples from Chad Macbeth's BYU-I Video:
+
+        Object Oriented Programming - Inheritance
+        January 1, 2023 @ 9:00am
+        123 Elm St
+        New York City, NY, USA
+        Speaker: Bob the Builder
+        Capacity: 100
+
+        Lecture - Object Oriented Programming - January 1, 2023
+        =======================================================
+
+        Lecture - Object Oriented Programming - January 1, 2023
         Console.WriteLine($"\nObject Oriented Programming - Inheritance\nJanuary 1, 2023 @ 9:00am\n123 Elm St\nNew York City, NY, USA\n");
 
         Console.WriteLine($"Type: Lecture\nObject Oriented Programming - Inheritance\nJanuary 1, 2023 @ 9:00am\n123 Elm St\nNew York City, NY, USA\nSpeaker: Bob the Builder\nCapacity: 100\n");
