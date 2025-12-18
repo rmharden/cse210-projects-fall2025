@@ -35,7 +35,21 @@ class Program
         Console.WriteLine(o1.GetPackingLabel());
 
         
+        List<Product> products2 = new List<Product>();
 
+        Address a2 = new Address("Tradespark Road", "Nairn", "Highland", "Scotland, UK");
+        Customer c2 = new Customer("Helen Rose Falconer", a1);
+        Product p1c2 = new Product("Chair", "ch1234", 499.99, 2);
+        products2.Add(p1c2);
+        Product p2c2 = new Product("Storage Bench", "sb1234", 299.99, 1);
+        products1.Add(p2c2);
+        Product p3c2 = new Product("Cabinet", "cs1234", 439.99, 2);
+        products1.Add(p3c2);
+
+        Order o2 = new Order(products2, c2);
+        Console.WriteLine(o2.GetShippingLabel());
+        Console.WriteLine($"\nOrder 2 Total Price: ${o2.GetOrderTotalCost()}");
+        Console.WriteLine(o2.GetPackingLabel());
 
 
     }
