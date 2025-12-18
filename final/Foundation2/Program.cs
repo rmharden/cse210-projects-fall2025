@@ -38,7 +38,7 @@ class Program
         List<Product> products2 = new List<Product>();
 
         Address a2 = new Address("Houvej 59", "Tranekær", "Region Syddanmark", "Danmark");
-        Customer c2 = new Customer("Erastus Frandsen", a1);
+        Customer c2 = new Customer("Erastus Frandsen", a2);
         Product p1c2 = new Product("Chair", "ch1234", 499.99, 1);
         products2.Add(p1c2);
         Product p2c2 = new Product("Indoor Pouf", "IP1234", 99.99, 4);
