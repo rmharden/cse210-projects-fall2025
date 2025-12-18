@@ -14,7 +14,7 @@ public class Product
     }
     public string GetProductName(string productName)
     {
-        return productName;
+        return _productName;
     }
     public double CalculateCost()
     {
