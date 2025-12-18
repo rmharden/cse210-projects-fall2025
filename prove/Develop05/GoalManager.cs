@@ -130,7 +130,7 @@ public class GoalManager
             string _goalName = parts[1];
             string _description = parts[2];
 
-            _goals.Add(/*I need an object of goal, right?*/);
+            //_goals.Add(/*I need an object of goal, right?*/);
         }
     }
 
