@@ -31,10 +31,10 @@ class Program
 
         Order o1 = new Order(products1, c1);
         Console.WriteLine(o1.GetShippingLabel());
-        Console.WriteLine($"\nOrder 1 Total Price: ${o1.GetOrderTotalCost()}");
+        Console.WriteLine($"\nOrder 1 Total Price: ${o1.GetOrderTotalCost():F2}");
         Console.WriteLine(o1.GetPackingLabel());
 
-        
+
         List<Product> products2 = new List<Product>();
 
         Address a2 = new Address("Houvej 59", "Tranekær", "Region Syddanmark", "Danmark");
@@ -53,6 +53,25 @@ class Program
         Console.WriteLine($"\nOrder 2 Total Price: ${o2.GetOrderTotalCost():F2}");
         Console.WriteLine(o2.GetPackingLabel());
 
+        // I'm trying a different format for writing the last Order and Customer:
+
+
+        Address a3 = new Address("420 N Main St", "Muenster", "Texas", "USA");
+        Customer c3 = new Customer("Catherine Höpler", a3);
+
+        List<Product> products3 = new List<Product>();
+        Product p1c3 = new Product("", "", 0, 0);
+        Product p2c3 = new Product("", "", 0, 0);
+        Product p3c3 = new Product("", "", 0, 0);
+
+        products3.Add(p1c3);
+        products3.Add(p2c3);
+        products3.Add(p2c3);
+
+        Order o3 = new Order(products3, c3);
+        Console.WriteLine(o3.GetShippingLabel());
+        Console.WriteLine($"\nOrder 3 Total Price: ${o3.GetOrderTotalCost():F2}")
+        
 
     }
 }
