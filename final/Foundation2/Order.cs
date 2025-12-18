@@ -15,17 +15,18 @@ public class Order
     public double GetOrderTotalCost()
     {
         double totalCost = 0;
+
         foreach (var product in _products)
         {
             totalCost += product.CalculateCost();
         }
         if (_customer.IsCustomerUSA()) //== true)
         {
-            return totalCost += 5;
+            return totalCost + 5;
         }
         else
         {
-            return totalCost += 35;
+            return totalCost + 35;
         }
     }
     public string GetPackingLabel()
