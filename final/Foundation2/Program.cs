@@ -37,14 +37,16 @@ class Program
         
         List<Product> products2 = new List<Product>();
 
-        Address a2 = new Address("Tradespark Road", "Nairn", "Highland", "Scotland, UK");
-        Customer c2 = new Customer("Helen Rose Falconer", a1);
-        Product p1c2 = new Product("Chair", "ch1234", 499.99, 2);
+        Address a2 = new Address("Houvej 59", "Tranekær", "Region Syddanmark", "Danmark");
+        Customer c2 = new Customer("Erastus Frandsen", a1);
+        Product p1c2 = new Product("Chair", "ch1234", 499.99, 1);
         products2.Add(p1c2);
-        Product p2c2 = new Product("Storage Bench", "sb1234", 299.99, 1);
+        Product p2c2 = new Product("Indoor Pouf", "IP1234", 99.99, 4);
         products1.Add(p2c2);
-        Product p3c2 = new Product("Cabinet", "cs1234", 439.99, 2);
+        Product p3c2 = new Product("Ivory Throw", "IT1234", 39.99, 1);
         products1.Add(p3c2);
+        Product p4c2 = new Product("Throw Pillow", "TPi123", 9.99, 4);
+        products1.Add(p4c2);
 
         Order o2 = new Order(products2, c2);
         Console.WriteLine(o2.GetShippingLabel());
