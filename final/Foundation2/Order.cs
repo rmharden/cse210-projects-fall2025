@@ -33,12 +33,12 @@ public class Order
         // Need to do more work with this:
         foreach (Product product in _products)
         {
-            return $"Packing Label\n================ {product.GetProductName("")}";
+            return $"Packing Label\n================\n{product.GetProductName("")}";
         }
         return "";
     }
     public string GetShippingLabel()
     {
-        return $"Shipping Label\n================ {_customer.GetCustomerName()}\n{_customer.GetCustomerAddress}";
+        return $"Shipping Label\n================ \n{_customer.GetCustomerName()}\n{_customer.GetCustomerAddress()}";
     }
 }
