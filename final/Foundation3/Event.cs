@@ -9,9 +9,9 @@ public abstract class Event
     private string _date;
     private string _time;
     private Address _address;
-    public Event()
+    public Event(string eventTitle, string description, string date, string time, Address address)
     {
-
+        
     }
     public string StandardDetails()
     {
