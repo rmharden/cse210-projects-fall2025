@@ -20,7 +20,7 @@ public abstract class Event
     public string StandardDetails()
     {
         //Lists
-        return _eventTitle + "\n" + _description + "\n" + _date + "\n" + _time + "\n" + _address;
+        return _eventTitle + "\n" + _description + "\n" + _date + "\n" + "at" + _time + "\n" + _address;
     }
     public void FullDetails()
     {
