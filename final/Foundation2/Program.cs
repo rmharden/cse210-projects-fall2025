@@ -60,9 +60,9 @@ class Program
         Customer c3 = new Customer("Catherine Höpler", a3);
 
         List<Product> products3 = new List<Product>();
-        Product p1c3 = new Product("", "", 0, 0);
-        Product p2c3 = new Product("", "", 0, 0);
-        Product p3c3 = new Product("", "", 0, 0);
+        Product p1c3 = new Product("Tufted Floor Cushion", "TFC12", 54.99, 2);
+        Product p2c3 = new Product("Scented Oil", "SO123", 11.89, 1);
+        Product p3c3 = new Product("Area Rug", "AR123", 399.99, 1);
 
         products3.Add(p1c3);
         products3.Add(p2c3);
