@@ -19,7 +19,7 @@ public class Order
         {
             totalCost += product.CalculateCost();
         }
-        if (_customer.IsCustomerUSA() == true)
+        if (_customer.IsCustomerUSA()) //== true)
         {
             return totalCost += 5;
         }
@@ -30,7 +30,7 @@ public class Order
     }
     public string GetPackingLabel()
     {
-        string label = $"Packing Label\n================";
+        string label = $"Packing Label\n================\n";
         foreach (Product product in _products)
         {
             label += $"{product.GetProductName()}\n";
@@ -39,6 +39,6 @@ public class Order
     }
     public string GetShippingLabel()
     {
-        return $"Shipping Label\n================ \n{_customer.GetCustomerName()}\n{_customer.GetCustomerAddress()}";
+        return $"Shipping Label\n================ \n{_customer.GetCustomerName()}\n{_customer.GetCustomerAddress().GetAddress()}";
     }
 }

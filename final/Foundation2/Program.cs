@@ -40,6 +40,22 @@ class Program
     }
 }
 
+
+/*
+Shipping Label
+================
+Helen Rose Falconer
+Tradespark Road, Nairn, Highland, Scotland, UK
+
+Order 1 Total Cost: $2214.95
+Packing Label
+================
+ch1234 - Chair
+sb1234 - Storage Bench
+cs1234 - Cabinet
+
+*/
+
 /*
 Sites I used for help:
 
