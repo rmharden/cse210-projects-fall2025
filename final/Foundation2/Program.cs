@@ -42,15 +42,15 @@ class Program
         Product p1c2 = new Product("Chair", "ch1234", 499.99, 1);
         products2.Add(p1c2);
         Product p2c2 = new Product("Indoor Pouf", "IP1234", 99.99, 4);
-        products1.Add(p2c2);
+        products2.Add(p2c2);
         Product p3c2 = new Product("Ivory Throw", "IT1234", 39.99, 1);
-        products1.Add(p3c2);
+        products2.Add(p3c2);
         Product p4c2 = new Product("Throw Pillow", "TPi123", 9.99, 4);
-        products1.Add(p4c2);
+        products2.Add(p4c2);
 
         Order o2 = new Order(products2, c2);
         Console.WriteLine(o2.GetShippingLabel());
-        Console.WriteLine($"\nOrder 2 Total Price: ${o2.GetOrderTotalCost()}");
+        Console.WriteLine($"\nOrder 2 Total Price: ${o2.GetOrderTotalCost():F2}");
         Console.WriteLine(o2.GetPackingLabel());
 
 
