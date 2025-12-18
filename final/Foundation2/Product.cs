@@ -12,7 +12,7 @@ public class Product
         _productPrice = productPrice;
         _productQty = productQty;
     }
-    public string GetProductName(string productName)
+    public string GetProductName()
     {
         return _productName;
     }
