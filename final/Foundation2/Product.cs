@@ -16,6 +16,11 @@ public class Product
     {
         return _productName;
     }
+    public string GetProductID()
+    {
+        return _productId;
+    }
+    
     public double CalculateCost()
     {
         return _productPrice * _productQty;

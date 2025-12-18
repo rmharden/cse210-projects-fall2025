@@ -33,7 +33,7 @@ public class Order
         string label = $"Packing Label\n================\n";
         foreach (Product product in _products)
         {
-            label += $"{product.GetProductName()}\n";
+            label += $"{product.GetProductID()} - {product.GetProductName()}\n";
         }
         return label;
     }
